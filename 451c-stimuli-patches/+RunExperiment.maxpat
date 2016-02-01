@@ -3,13 +3,13 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 0,
-			"revision" : 1,
+			"minor" : 1,
+			"revision" : 0,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 952.0, 78.0, 926.0, 987.0 ],
+		"rect" : [ 480.0, 79.0, 926.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,33 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-72",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 507.0, 151.0, 48.0, 22.0 ],
+					"presentation_rect" : [ 582.5, 143.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "pack i i"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-70",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 180.5, 155.0, 48.0, 22.0 ],
+					"style" : "",
+					"text" : "pack i i"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-75",
 					"maxclass" : "message",
@@ -819,7 +846,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 163.0, 461.0, 117.0, 35.0 ],
 					"style" : "",
-					"text" : "01_-2"
+					"text" : "BB-TT"
 				}
 
 			}
@@ -942,7 +969,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 333.0, 144.0, 53.0, 22.0 ],
+					"patching_rect" : [ 334.0, 155.0, 53.0, 22.0 ],
 					"style" : "",
 					"text" : "s notein"
 				}
@@ -1046,7 +1073,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 502.5, 148.0, 65.0, 22.0 ],
+					"patching_rect" : [ 502.5, 184.0, 65.0, 22.0 ],
 					"style" : "",
 					"text" : "prepend 2"
 				}
@@ -1054,6 +1081,7 @@
 			}
 , 			{
 				"box" : 				{
+					"hkeycolor" : [ 0.952941, 0.564706, 0.098039, 1.0 ],
 					"id" : "obj-28",
 					"maxclass" : "kslider",
 					"mode" : 2,
@@ -1087,7 +1115,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 176.0, 148.0, 65.0, 22.0 ],
+					"patching_rect" : [ 176.0, 184.0, 65.0, 22.0 ],
 					"style" : "",
 					"text" : "prepend 1"
 				}
@@ -1119,6 +1147,7 @@
 			}
 , 			{
 				"box" : 				{
+					"hkeycolor" : [ 0.952941, 0.564706, 0.098039, 1.0 ],
 					"id" : "obj-83",
 					"maxclass" : "kslider",
 					"mode" : 2,
@@ -1144,7 +1173,16 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-90", 0 ],
+					"destination" : [ "obj-70", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-107", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-70", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-107", 0 ]
@@ -1261,7 +1299,16 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-27", 0 ],
+					"destination" : [ "obj-72", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-25", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-72", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-25", 0 ]
@@ -1639,10 +1686,28 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-90", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-70", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-68", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-71", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-27", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-72", 0 ]
 				}
 
 			}
@@ -1730,20 +1795,18 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "piece1.coll.txt",
-				"bootpath" : "~/Experiments/TwoPiano/stimuli-patches",
-				"patcherrelativepath" : ".",
+				"bootpath" : "/Volumes/NICKGANG_64/Stanford/Music451c/TwoPiano_NG/stimuli-patches",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "piece2.coll.txt",
-				"bootpath" : "~/Experiments/TwoPiano/stimuli-patches",
-				"patcherrelativepath" : ".",
+				"bootpath" : "/Volumes/NICKGANG_64/Stanford/Music451c/TwoPiano_NG/stimuli-patches",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
  ],
-		"embedsnapshot" : 0
+		"autosave" : 0
 	}
 
 }
