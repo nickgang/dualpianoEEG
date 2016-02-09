@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 1100.0, 139.0, 926.0, 787.0 ],
+		"rect" : [ 760.0, 95.0, 961.0, 945.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -86,7 +86,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 420.5, 11.0, 143.0, 20.0 ],
-									"presentation_rect" : [ 420.5, 13.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "Player 2 key and velocity"
 								}
@@ -561,7 +560,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 214.0, 866.0, 36.0, 22.0 ],
+					"patching_rect" : [ 158.75, 869.0, 36.0, 22.0 ],
 					"style" : "",
 					"text" : "write"
 				}
@@ -573,7 +572,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 219.0, 794.0, 93.0, 20.0 ],
+					"patching_rect" : [ 207.0, 746.0, 93.0, 20.0 ],
 					"style" : "",
 					"text" : "clear+reset log"
 				}
@@ -586,7 +585,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 191.5, 794.0, 24.0, 24.0 ],
+					"patching_rect" : [ 179.5, 746.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -597,10 +596,10 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "bang", "bang" ],
-					"patching_rect" : [ 191.5, 828.0, 34.0, 22.0 ],
+					"outlettype" : [ "bang", "clear" ],
+					"patching_rect" : [ 179.5, 780.0, 53.0, 22.0 ],
 					"style" : "",
-					"text" : "t b b"
+					"text" : "t b clear"
 				}
 
 			}
@@ -682,25 +681,12 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-58",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 158.0, 866.0, 37.0, 22.0 ],
-					"style" : "",
-					"text" : "clear"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-56",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 28.5, 899.0, 86.0, 22.0 ],
+					"patching_rect" : [ 68.25, 869.0, 86.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0
 					}
@@ -717,7 +703,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 58.25, 861.0, 80.0, 22.0 ],
+					"patching_rect" : [ 80.75, 828.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "39402 83"
 				}
@@ -769,7 +755,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 67.5, 780.0, 114.0, 33.0 ],
+					"patching_rect" : [ 58.25, 780.0, 114.0, 33.0 ],
 					"style" : "",
 					"text" : "To match Curry's 500 Hz sample rate"
 				}
@@ -1969,15 +1955,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-56", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-58", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-61", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -2050,7 +2027,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-58", 0 ],
+					"destination" : [ "obj-56", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-68", 1 ]
@@ -2150,13 +2127,13 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "piece1.coll.txt",
-				"bootpath" : "~/repos/dualpianoEEG/451c-stimuli-patches",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "piece2.coll.txt",
-				"bootpath" : "~/repos/dualpianoEEG/451c-stimuli-patches",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
