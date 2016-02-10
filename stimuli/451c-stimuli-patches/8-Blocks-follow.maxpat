@@ -3,13 +3,13 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 0,
-			"revision" : 1,
+			"minor" : 1,
+			"revision" : 0,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 1160.0, 96.0, 668.0, 642.0 ],
+		"rect" : [ 34.0, 78.0, 652.0, 783.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,13 +38,24 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-24",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 496.0, 634.0, 117.0, 22.0 ],
+					"style" : "",
+					"text" : "spat.multi.connect 8"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-19",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"patching_rect" : [ 497.0, 463.0, 29.5, 22.0 ],
-					"presentation_rect" : [ 375.0, 747.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "int"
 				}
@@ -58,7 +69,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 513.0, 543.0, 63.0, 22.0 ],
-					"presentation_rect" : [ 391.0, 827.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "delay 300"
 				}
@@ -72,7 +82,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"patching_rect" : [ 497.0, 517.0, 35.0, 22.0 ],
-					"presentation_rect" : [ 375.0, 801.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "shell"
 				}
@@ -86,7 +95,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 497.0, 490.0, 136.0, 22.0 ],
-					"presentation_rect" : [ 375.0, 774.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "say block $1 completed"
 				}
@@ -677,86 +685,86 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "block-follow.maxpat",
-				"bootpath" : "~/Experiments/TwoPiano/stimuli-patches",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/School/Grad School/Stanford/Winter 2016/Music 451C/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "piece-follow.maxpat",
-				"bootpath" : "~/Experiments/TwoPiano/stimuli-patches",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/School/Grad School/Stanford/Winter 2016/Music 451C/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "piano-note.maxpat",
-				"bootpath" : "~/Experiments/TwoPiano/stimuli-patches",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/School/Grad School/Stanford/Winter 2016/Music 451C/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "piece1.coll.txt",
-				"bootpath" : "~/Experiments/TwoPiano/stimuli-patches",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/School/Grad School/Stanford/Winter 2016/Music 451C/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "midi2scaledegree.maxpat",
-				"bootpath" : "~/Experiments/TwoPiano/stimuli-patches",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/School/Grad School/Stanford/Winter 2016/Music 451C/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "majorscale.coll.txt",
-				"bootpath" : "~/Experiments/TwoPiano/stimuli-patches",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/School/Grad School/Stanford/Winter 2016/Music 451C/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "==2.maxpat",
-				"bootpath" : "~/Experiments/TwoPiano/stimuli-patches",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/School/Grad School/Stanford/Winter 2016/Music 451C/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "scaledegree2midi.maxpat",
-				"bootpath" : "~/Experiments/TwoPiano/stimuli-patches",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "establish-tempo.maxpat",
-				"bootpath" : "~/Experiments/TwoPiano/stimuli-patches",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "metronome-tock.maxpat",
-				"bootpath" : "~/Experiments/TwoPiano/stimuli-patches",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/School/Grad School/Stanford/Winter 2016/Music 451C/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "piece2.coll.txt",
-				"bootpath" : "~/Experiments/TwoPiano/stimuli-patches",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/School/Grad School/Stanford/Winter 2016/Music 451C/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "pause-between-trials.maxpat",
-				"bootpath" : "~/Experiments/TwoPiano/stimuli-patches",
-				"patcherrelativepath" : ".",
+				"name" : "establish-tempo.maxpat",
+				"bootpath" : "~/Documents/School/Grad School/Stanford/Winter 2016/Music 451C/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "metronome-tock.maxpat",
+				"bootpath" : "~/Documents/School/Grad School/Stanford/Winter 2016/Music 451C/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pause-between-trials.maxpat",
+				"bootpath" : "~/Documents/School/Grad School/Stanford/Winter 2016/Music 451C/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "spat.multi.connect.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/ircam-spat/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "spat.multi-connect.js",
+				"bootpath" : "~/Documents/Max 7/Packages/ircam-spat/javascript",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
@@ -764,7 +772,7 @@
 				"type" : "iLaX"
 			}
  ],
-		"embedsnapshot" : 0
+		"autosave" : 0
 	}
 
 }
