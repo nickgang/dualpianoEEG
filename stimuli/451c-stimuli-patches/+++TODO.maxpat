@@ -3,13 +3,13 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 0,
-			"revision" : 6,
+			"minor" : 1,
+			"revision" : 0,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 3005.0, 82.0, 810.0, 613.0 ],
+		"rect" : [ 596.0, 79.0, 810.0, 613.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,19 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"linecount" : 17,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 30.5, 382.0, 567.0, 234.0 ],
+					"style" : "",
+					"text" : "2/10/16 Changes:\n\nNew design for AAAA and BCBC conditions\n\n- 3 reps x 2 players x 2 deviant positions in phrase x 2 phrase positions x 2 score patterns = 48 trials per block\n- This is changed from 36 (2 reps -> 3, 3 dev positions ->2)\n\n\n- Need to implement new trigger codes and scores\n\n- Add unison last measure? Player of previous phrase is \"leader\". In this case, is frontal/parietal alpha different between two players?\n\n- This brings total notes from 25 to 31 notes\n- contour of last measure doesn't change\n- AAAA D, BCBC D"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-3",
 					"maxclass" : "comment",
@@ -233,7 +246,7 @@
  ],
 		"lines" : [  ],
 		"dependency_cache" : [  ],
-		"embedsnapshot" : 0
+		"autosave" : 0
 	}
 
 }
