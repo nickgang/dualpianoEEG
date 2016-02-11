@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 754.0, 78.0, 652.0, 347.0 ],
+		"rect" : [ 77.0, 79.0, 1329.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -53,7 +53,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 34.0, 79.0, 652.0, 783.0 ],
+						"rect" : [ 77.0, 79.0, 652.0, 783.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -82,6 +82,19 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-3",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 77.0, 492.5, 50.0, 22.0 ],
+									"style" : "",
+									"text" : "62"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-63",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
@@ -108,39 +121,12 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-55",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 71.0, 387.0, 50.0, 22.0 ],
-									"style" : "",
-									"text" : "62"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-37",
-									"linecount" : 2,
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 309.0, 693.0, 50.0, 35.0 ],
-									"style" : "",
-									"text" : "noteoff 55"
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"id" : "obj-35",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 147.5, 445.0, 94.0, 22.0 ],
+									"patching_rect" : [ 350.5, 447.0, 94.0, 22.0 ],
 									"style" : "",
 									"text" : "prepend noteoff"
 								}
@@ -182,7 +168,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 346.0, 156.5, 50.0, 22.0 ],
-									"presentation_rect" : [ 346.0, 155.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "1 62"
 								}
@@ -196,9 +181,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 85.0, 129.0, 50.0, 62.0 ],
+									"patching_rect" : [ 85.0, 129.0, 48.0, 62.0 ],
 									"style" : "",
-									"text" : "10 1387 1 62 62 -999"
+									"text" : "6 439 1 62 15 -999"
 								}
 
 							}
@@ -208,7 +193,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 189.5, 492.5, 80.0, 20.0 ],
+									"patching_rect" : [ 189.5, 487.5, 80.0, 20.0 ],
 									"style" : "",
 									"text" : "to piano note"
 								}
@@ -686,7 +671,7 @@
 							}
 , 							{
 								"box" : 								{
-									"comment" : "Duration of Note",
+									"comment" : "MIDI Note of note off",
 									"id" : "obj-137",
 									"maxclass" : "outlet",
 									"numinlets" : 1,
@@ -834,15 +819,6 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-55", 1 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-15", 1 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-58", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -873,13 +849,13 @@
 									"destination" : [ "obj-137", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"source" : [ "obj-35", 0 ]
+									"source" : [ "obj-58", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-35", 0 ],
+									"destination" : [ "obj-3", 1 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-58", 0 ]
@@ -917,7 +893,6 @@
 					}
 ,
 					"patching_rect" : [ 903.333313, 502.5, 115.0, 22.0 ],
-					"presentation_rect" : [ 891.333313, 457.166656, 0.0, 0.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1726,7 +1701,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 729.0, 194.0, 50.0, 22.0 ],
 					"style" : "",
-					"text" : "1 62 62"
+					"text" : "1 62 15"
 				}
 
 			}
@@ -3524,7 +3499,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 256.75, 176.5, 40.0, 22.0 ],
 									"style" : "",
-									"text" : "2 8"
+									"text" : "1 7"
 								}
 
 							}
@@ -8025,7 +8000,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 124.5, 489.0, 50.0, 22.0 ],
 									"style" : "",
-									"text" : "2 4"
+									"text" : "1 6"
 								}
 
 							}
@@ -8480,7 +8455,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 985.75, 747.0, 50.0, 22.0 ],
 					"style" : "",
-					"text" : "2 4"
+					"text" : "1 6"
 				}
 
 			}
@@ -8490,7 +8465,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 5,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1003.0, 957.0, 67.0, 22.0 ],
+					"patching_rect" : [ 903.333313, 957.0, 67.0, 22.0 ],
 					"style" : "",
 					"text" : "piano-note"
 				}
@@ -9944,6 +9919,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-76", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-81", 0 ]
 				}
 
 			}
