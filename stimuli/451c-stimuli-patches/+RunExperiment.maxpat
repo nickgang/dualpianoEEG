@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 2318.0, 203.0, 961.0, 945.0 ],
+		"rect" : [ 741.0, 79.0, 310.0, 782.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -1195,7 +1195,7 @@
 				"box" : 				{
 					"fontsize" : 24.0,
 					"id" : "obj-66",
-					"items" : [ "onbeat", ",", "offbeat" ],
+					"items" : [ "AAAA", ",", "BCBC" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -2217,13 +2217,13 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "piece1.coll.txt",
-				"bootpath" : "~/repos/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "piece2.coll.txt",
-				"bootpath" : "~/repos/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "TEXT",
 				"implicit" : 1
 			}

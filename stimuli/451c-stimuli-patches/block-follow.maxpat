@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 140.0, 91.0, 1095.0, 1024.0 ],
+		"rect" : [ 124.0, 79.0, 927.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -2126,7 +2126,7 @@
 				"box" : 				{
 					"fontsize" : 24.0,
 					"id" : "obj-42",
-					"items" : [ "onbeat", ",", "offbeat" ],
+					"items" : [ "AAAA", ",", "BCBC" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
