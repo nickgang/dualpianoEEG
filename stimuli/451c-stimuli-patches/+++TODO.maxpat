@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 596.0, 79.0, 810.0, 613.0 ],
+		"rect" : [ 221.0, 79.0, 1165.0, 709.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,14 +38,41 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontsize" : 24.0,
+					"id" : "obj-6",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 281.0, 428.0, 195.0, 33.0 ],
+					"presentation_rect" : [ 281.0, 428.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "Nick Added 2/10"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 24.0,
+					"id" : "obj-2",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 274.0, 15.0, 172.0, 33.0 ],
+					"style" : "",
+					"text" : "As Matt Left It:"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-4",
 					"linecount" : 17,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 30.5, 382.0, 567.0, 234.0 ],
+					"patching_rect" : [ 142.5, 471.0, 584.0, 234.0 ],
 					"style" : "",
-					"text" : "2/10/16 Changes:\n\nNew design for AAAA and BCBC conditions\n\n- 3 reps x 2 players x 2 deviant positions in phrase x 2 phrase positions x 2 score patterns = 48 trials per block\n- This is changed from 36 (2 reps -> 3, 3 dev positions ->2)\n\n\n- Need to implement new trigger codes and scores\n\n- Add unison last measure? Player of previous phrase is \"leader\". In this case, is frontal/parietal alpha different between two players?\n\n- This brings total notes from 25 to 31 notes\n- contour of last measure doesn't change\n- AAAA D, BCBC D"
+					"text" : "2/10/16 Changes:\n\nNew design for AAAA and BCBC conditions\n\n- 3 reps x 2 players x 2 deviant positions in phrase x 2 phrase positions x 2 score patterns = 48 trials per block\n- This is changed from 36 (2 reps -> 3, 3 dev positions ->2)\n\n\n- Need to implement new trigger codes and scores\n\n- Add 5th phrase, where Odd player plays first 3 notes, both players play next 4. Both players players play first and only note of sixth phrase.\n\n- This brings total notes from 25 to 31 notes\n- contour of last measure doesn't change\n- AAAA D, BCBC D"
 				}
 
 			}
@@ -55,7 +82,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 370.0, 45.0, 150.0, 20.0 ],
+					"patching_rect" : [ 510.0, 41.0, 150.0, 20.0 ],
 					"style" : "",
 					"text" : "DONE"
 				}
@@ -68,7 +95,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 383.0, 267.5, 271.0, 47.0 ],
+					"patching_rect" : [ 523.0, 263.5, 271.0, 47.0 ],
 					"style" : "",
 					"text" : "Make a log, from Max's POV, of all the triggers it sends to Curry (to track down the occasional spurious triggers)"
 				}
@@ -129,7 +156,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 379.0, 85.0, 159.0, 20.0 ],
+					"patching_rect" : [ 519.0, 81.0, 159.0, 20.0 ],
 					"style" : "",
 					"text" : "say practice 5 ticks"
 				}
@@ -153,7 +180,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 379.0, 147.0, 213.0, 20.0 ],
+					"patching_rect" : [ 519.0, 143.0, 213.0, 20.0 ],
 					"style" : "",
 					"text" : "display success or not of previous trial"
 				}
@@ -177,7 +204,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 379.0, 117.0, 159.0, 20.0 ],
+					"patching_rect" : [ 519.0, 113.0, 159.0, 20.0 ],
 					"style" : "",
 					"text" : "display practice trials"
 				}
@@ -189,7 +216,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 379.0, 221.0, 159.0, 20.0 ],
+					"patching_rect" : [ 519.0, 217.0, 159.0, 20.0 ],
 					"style" : "",
 					"text" : "num-trials-in-block wrong?"
 				}
@@ -237,7 +264,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 379.0, 186.0, 159.0, 20.0 ],
+					"patching_rect" : [ 519.0, 182.0, 159.0, 20.0 ],
 					"style" : "",
 					"text" : "Abort trial (as failure) button"
 				}
