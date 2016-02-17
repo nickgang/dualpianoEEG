@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 79.0, 79.0, 1113.0, 607.0 ],
+		"rect" : [ 79.0, 79.0, 812.0, 607.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -50,12 +50,13 @@
 			}
 , 			{
 				"box" : 				{
+					"fontsize" : 16.0,
 					"id" : "obj-117",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1261.0, 80.5, 150.0, 33.0 ],
+					"patching_rect" : [ 1261.0, 80.5, 131.0, 42.0 ],
 					"style" : "",
 					"text" : "This comes from 8-Blocks Follow"
 				}
@@ -1164,7 +1165,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 80.75, 828.0, 80.0, 22.0 ],
 					"style" : "",
-					"text" : "4133440 233"
+					"text" : "4187687 242"
 				}
 
 			}
