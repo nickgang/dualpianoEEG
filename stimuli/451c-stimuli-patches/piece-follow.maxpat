@@ -38,6 +38,32 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-35",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 450.0, 326.5, 146.25, 33.0 ],
+					"style" : "",
+					"text" : "TODO: Count each players' notes separately"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-25",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 228.0, 275.5, 150.0, 60.0 ],
+					"style" : "",
+					"text" : "TODO: Look in here to change which piece is played for Max conditions for each pair"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-72",
 					"linecount" : 5,
 					"maxclass" : "comment",
@@ -57,7 +83,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 613.5, 20.0, 47.0, 22.0 ],
-					"presentation_rect" : [ 615.5, 17.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "2 1 1 0"
 				}
@@ -1012,7 +1037,6 @@
 					}
 ,
 					"patching_rect" : [ 1052.0, 621.5, 96.75, 49.0 ],
-					"presentation_rect" : [ 986.5, 552.5, 0.0, 0.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1936,7 +1960,6 @@
 					}
 ,
 					"patching_rect" : [ 946.0, 621.5, 96.0, 49.0 ],
-					"presentation_rect" : [ 998.5, 583.5, 0.0, 0.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1958,7 +1981,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 474.416656, 20.0, 51.0, 22.0 ],
-					"presentation_rect" : [ 474.0, 18.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "1 1 1 -1"
 				}
@@ -13629,7 +13651,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 985.75, 747.0, 50.0, 22.0 ],
 					"style" : "",
-					"text" : "1 "
+					"text" : "1"
 				}
 
 			}
@@ -13847,7 +13869,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 612.0, 291.0, 161.0, 33.0 ],
+					"patching_rect" : [ 611.25, 296.5, 161.0, 33.0 ],
 					"style" : "",
 					"text" : "How many notes have been played during this trial?"
 				}
@@ -15277,7 +15299,79 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "piano-note-1.maxpat",
+				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "AAAA1.coll.txt",
+				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "midi2scaledegree.maxpat",
+				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "majorscale.coll.txt",
+				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "==2.maxpat",
+				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "scaledegree2midi.maxpat",
+				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "establish-tempo.maxpat",
+				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "metronome-tock.maxpat",
+				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "piece1.coll.txt",
+				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "piece2.coll.txt",
+				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "piano-note-2.maxpat",
+				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "shell.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0
 	}
 
 }
