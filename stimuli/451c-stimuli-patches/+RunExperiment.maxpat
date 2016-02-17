@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 79.0, 79.0, 812.0, 607.0 ],
+		"rect" : [ 79.0, 79.0, 1327.0, 736.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,19 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-121",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1273.0, 386.0, 50.0, 22.0 ],
+					"style" : "",
+					"text" : "2"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-119",
 					"maxclass" : "comment",
@@ -1165,7 +1178,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 80.75, 828.0, 80.0, 22.0 ],
 					"style" : "",
-					"text" : "4187687 242"
+					"text" : "6456160 233"
 				}
 
 			}
@@ -1783,7 +1796,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 163.0, 461.0, 117.0, 35.0 ],
 					"style" : "",
-					"text" : "05_-2"
+					"text" : "BB-TT"
 				}
 
 			}
@@ -2056,6 +2069,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-115", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-100", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-121", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-100", 0 ]
