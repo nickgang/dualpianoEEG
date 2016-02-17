@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 79.0, 652.0, 783.0 ],
+		"rect" : [ 74.0, 79.0, 652.0, 783.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -673,85 +673,85 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "block-follow.maxpat",
-				"bootpath" : "~/Documents/School/Grad School/Stanford/Winter 2016/Music 451C/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "piece-follow.maxpat",
-				"bootpath" : "~/Documents/School/Grad School/Stanford/Winter 2016/Music 451C/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "piano-note-1.maxpat",
-				"bootpath" : "~/Documents/School/Grad School/Stanford/Winter 2016/Music 451C/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "AAAA1.coll.txt",
-				"bootpath" : "~/Documents/School/Grad School/Stanford/Winter 2016/Music 451C/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "midi2scaledegree.maxpat",
-				"bootpath" : "~/Documents/School/Grad School/Stanford/Winter 2016/Music 451C/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "majorscale.coll.txt",
-				"bootpath" : "~/Documents/School/Grad School/Stanford/Winter 2016/Music 451C/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "==2.maxpat",
-				"bootpath" : "~/Documents/School/Grad School/Stanford/Winter 2016/Music 451C/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "scaledegree2midi.maxpat",
-				"bootpath" : "~/Documents/School/Grad School/Stanford/Winter 2016/Music 451C/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "establish-tempo.maxpat",
-				"bootpath" : "~/Documents/School/Grad School/Stanford/Winter 2016/Music 451C/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "metronome-tock.maxpat",
-				"bootpath" : "~/Documents/School/Grad School/Stanford/Winter 2016/Music 451C/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "piece1.coll.txt",
-				"bootpath" : "~/Documents/School/Grad School/Stanford/Winter 2016/Music 451C/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "piece2.coll.txt",
-				"bootpath" : "~/Documents/School/Grad School/Stanford/Winter 2016/Music 451C/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "piano-note-2.maxpat",
-				"bootpath" : "~/Documents/School/Grad School/Stanford/Winter 2016/Music 451C/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "pause-between-trials.maxpat",
-				"bootpath" : "~/Documents/School/Grad School/Stanford/Winter 2016/Music 451C/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "JSON",
 				"implicit" : 1
 			}

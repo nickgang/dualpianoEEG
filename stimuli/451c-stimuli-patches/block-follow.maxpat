@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 754.0, 79.0, 652.0, 783.0 ],
+		"rect" : [ 750.0, 79.0, 652.0, 783.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,19 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-27",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 313.75, 434.5, 189.0, 33.0 ],
+					"style" : "",
+					"text" : "Put this in order: Human/Max, Even/Odd, AA/BC"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-68",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -59,7 +72,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 236.0, 683.0, 50.0, 35.0 ],
 					"style" : "",
-					"text" : "set 1 1 1"
+					"text" : "set 2 1 2"
 				}
 
 			}
@@ -72,7 +85,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 265.0, 541.0, 50.0, 22.0 ],
 					"style" : "",
-					"text" : "1 1 1"
+					"text" : "2 1 2"
 				}
 
 			}
@@ -1835,7 +1848,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 96.25, 784.0, 75.0, 22.0 ],
 					"style" : "",
-					"text" : "1 1 1 -1"
+					"text" : "2 1 2 -1"
 				}
 
 			}
@@ -1977,7 +1990,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 96.25, 578.0, 75.0, 22.0 ],
 					"style" : "",
-					"text" : "1 1 1 -2"
+					"text" : "2 1 2 -2"
 				}
 
 			}
