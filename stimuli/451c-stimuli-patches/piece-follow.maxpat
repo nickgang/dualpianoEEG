@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 79.0, 652.0, 792.0 ],
+		"rect" : [ 73.0, 79.0, 1333.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,14 +38,41 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-99",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 267.666656, 326.5, 73.0, 22.0 ],
+					"style" : "",
+					"text" : "routepass 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-82",
+					"linecount" : 2,
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 342.666656, 356.5, 89.0, 35.0 ],
+					"style" : "",
+					"text" : "sprintf refer BCBC%d.coll"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-91",
-					"linecount" : 3,
+					"linecount" : 4,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 220.375, 302.0, 154.0, 47.0 ],
+					"patching_rect" : [ 209.0, 257.0, 154.0, 60.0 ],
 					"style" : "",
-					"text" : "TODO: Need a switch to choose between AAAA sprintf and BCBC sprintf"
+					"text" : "TODO: The location of this arg in the list changed. Change which outlet of the pack goes here"
 				}
 
 			}
@@ -912,7 +939,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 107.0, 305.0, 50.0, 22.0 ],
 									"style" : "",
-									"text" : "1 51"
+									"text" : "1 56"
 								}
 
 							}
@@ -992,7 +1019,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 346.0, 156.5, 50.0, 22.0 ],
 									"style" : "",
-									"text" : "1 51"
+									"text" : "1 56"
 								}
 
 							}
@@ -2949,7 +2976,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-14",
@@ -6382,11 +6408,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-123",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 337.0, 338.0, 145.0, 22.0 ],
+					"patching_rect" : [ 251.875, 360.5, 79.0, 35.0 ],
 					"style" : "",
 					"text" : "sprintf refer AAAA%d.coll"
 				}
@@ -9851,15 +9878,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-123", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-106", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-133", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -9901,6 +9919,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-106", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-99", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-106", 0 ]
 				}
 
 			}
@@ -11024,6 +11051,24 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-210", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-82", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-88", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-82", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-220", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -11127,6 +11172,24 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-97", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-123", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-99", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-82", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-99", 1 ]
 				}
 
 			}
