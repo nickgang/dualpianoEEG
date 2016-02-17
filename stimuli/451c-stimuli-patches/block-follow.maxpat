@@ -38,6 +38,19 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-47",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 159.5, 438.0, 99.0, 33.0 ],
+					"style" : "",
+					"text" : "current order:\nred, blue, green"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-27",
 					"linecount" : 2,
 					"maxclass" : "comment",
@@ -56,7 +69,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 236.0, 458.0, 57.0, 22.0 ],
+					"patching_rect" : [ 248.25, 449.0, 57.0, 22.0 ],
 					"style" : "",
 					"text" : "$3 $1 $2"
 				}
@@ -356,7 +369,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 425.75, 788.5, 54.0, 22.0 ],
 					"style" : "",
-					"text" : "1 1 2 6"
+					"text" : "1 1 2 5"
 				}
 
 			}
@@ -2038,7 +2051,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 248.25, 431.0, 54.0, 22.0 ],
+					"patching_rect" : [ 260.5, 422.0, 54.0, 22.0 ],
 					"style" : "",
 					"text" : "pack i i i"
 				}
@@ -2911,7 +2924,7 @@
 					"destination" : [ "obj-56", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 245.5, 478.75, 161.75, 478.75 ],
+					"midpoints" : [ 257.75, 478.75, 161.75, 478.75 ],
 					"source" : [ "obj-68", 0 ]
 				}
 
