@@ -43,7 +43,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 979.75, 425.0, 156.0, 74.0 ],
+					"patching_rect" : [ 959.75, 334.5, 156.0, 74.0 ],
 					"style" : "",
 					"text" : "route each player's note to trigger code generator for even or odd player, depending on even/odd state parameter"
 				}
@@ -70,7 +70,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 998.0, 523.0, 87.5, 22.0 ],
+					"patching_rect" : [ 978.0, 432.5, 87.5, 22.0 ],
 					"style" : "",
 					"text" : "gate 2"
 				}
@@ -83,7 +83,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 1066.5, 560.0, 58.0, 22.0 ],
+					"patching_rect" : [ 1074.5, 473.5, 58.0, 22.0 ],
 					"style" : "",
 					"text" : "route 2 1"
 				}
@@ -96,7 +96,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 998.0, 560.0, 58.0, 22.0 ],
+					"patching_rect" : [ 978.0, 473.5, 58.0, 22.0 ],
 					"style" : "",
 					"text" : "route 1 2"
 				}
@@ -1011,7 +1011,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 1052.0, 628.5, 96.75, 49.0 ],
+					"patching_rect" : [ 1052.0, 621.5, 96.75, 49.0 ],
 					"presentation_rect" : [ 986.5, 552.5, 0.0, 0.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
@@ -1935,7 +1935,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 934.5, 619.0, 96.0, 49.0 ],
+					"patching_rect" : [ 946.0, 621.5, 96.0, 49.0 ],
 					"presentation_rect" : [ 998.5, 583.5, 0.0, 0.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
@@ -1971,7 +1971,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 357.916656, 770.0, 150.0, 60.0 ],
+					"patching_rect" : [ 493.25, 828.5, 150.0, 60.0 ],
 					"style" : "",
 					"text" : "Two instantiations inside here for two players. That way we can track when they have to play together"
 				}
@@ -2999,7 +2999,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 256.75, 176.5, 40.0, 22.0 ],
 													"style" : "",
-													"text" : "2 5"
+													"text" : "6 8"
 												}
 
 											}
@@ -5198,7 +5198,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 256.75, 176.5, 40.0, 22.0 ],
 													"style" : "",
-													"text" : "2 5"
+													"text" : "6 8"
 												}
 
 											}
@@ -7223,7 +7223,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 404.5, 78.0, 50.0, 22.0 ],
 					"style" : "",
-					"text" : "2 1 1 0"
+					"text" : "2 1 1 -1"
 				}
 
 			}
@@ -7422,7 +7422,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 453.0, 422.0, 50.0, 35.0 ],
 									"style" : "",
-									"text" : "1053 53"
+									"text" : "1073 73"
 								}
 
 							}
@@ -7474,7 +7474,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 536.0, 391.0, 50.0, 35.0 ],
 									"style" : "",
-									"text" : "1053 53"
+									"text" : "1073 73"
 								}
 
 							}
@@ -7500,7 +7500,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 691.0, 295.0, 50.0, 22.0 ],
 									"style" : "",
-									"text" : "1053"
+									"text" : "1073"
 								}
 
 							}
@@ -7513,7 +7513,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 219.0, 175.0, 50.0, 22.0 ],
 									"style" : "",
-									"text" : "53"
+									"text" : "73"
 								}
 
 							}
@@ -7526,7 +7526,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 592.5, 204.0, 31.0, 22.0 ],
 									"style" : "",
-									"text" : "53"
+									"text" : "73"
 								}
 
 							}
@@ -8090,7 +8090,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 107.0, 305.0, 50.0, 22.0 ],
 									"style" : "",
-									"text" : "1 53"
+									"text" : "1 76"
 								}
 
 							}
@@ -8170,21 +8170,21 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 346.0, 156.5, 50.0, 22.0 ],
 									"style" : "",
-									"text" : "1 53"
+									"text" : "1 76"
 								}
 
 							}
 , 							{
 								"box" : 								{
 									"id" : "obj-12",
-									"linecount" : 4,
+									"linecount" : 5,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 85.0, 129.0, 42.0, 76.0 ],
 									"style" : "",
-									"text" : "11 318 1 53 33 -999"
+									"text" : "31 521214 1 73 19 -999"
 								}
 
 							}
@@ -9720,7 +9720,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 729.0, 194.0, 50.0, 22.0 ],
 					"style" : "",
-					"text" : "1 53 33"
+					"text" : "1 73 19"
 				}
 
 			}
@@ -11974,7 +11974,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 1029.75, 714.0, 36.0, 22.0 ],
 									"style" : "",
-									"text" : "1 4"
+									"text" : "-1 -1"
 								}
 
 							}
@@ -12019,7 +12019,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 1140.5, 703.0, 36.0, 22.0 ],
 									"style" : "",
-									"text" : "2 4"
+									"text" : "-1 -1"
 								}
 
 							}
@@ -12214,7 +12214,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1259.25, 635.5, 61.0, 35.0 ],
 					"style" : "",
-					"text" : "2 4"
+					"text" : "-1 -1"
 				}
 
 			}
@@ -12229,7 +12229,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1183.75, 635.5, 61.0, 35.0 ],
 					"style" : "",
-					"text" : "1 4"
+					"text" : "-1 -1"
 				}
 
 			}
@@ -13129,7 +13129,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 263.5, 489.0, 50.0, 22.0 ],
 									"style" : "",
-									"text" : "2 5"
+									"text" : "6 1"
 								}
 
 							}
@@ -14363,7 +14363,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"color" : [ 1.0, 0.0, 1.0, 1.0 ],
+					"color" : [ 1.0, 0.4, 1.0, 1.0 ],
 					"destination" : [ "obj-15", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -14423,7 +14423,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"color" : [ 1.0, 0.0, 1.0, 1.0 ],
+					"color" : [ 1.0, 0.4, 1.0, 1.0 ],
 					"destination" : [ "obj-26", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -14475,6 +14475,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-16", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-19", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-160", 1 ]
 				}
 
 			}
