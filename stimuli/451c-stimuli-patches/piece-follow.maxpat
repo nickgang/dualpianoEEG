@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 2006.0, 78.0, 1458.0, 918.0 ],
+		"rect" : [ 77.0, 79.0, 1329.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -2015,7 +2015,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 479.0, 141.0, 951.0, 579.0 ],
+						"rect" : [ 455.0, 141.0, 951.0, 579.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -4773,7 +4773,7 @@
 																	"maxclass" : "comment",
 																	"numinlets" : 1,
 																	"numoutlets" : 0,
-																	"patching_rect" : [ 231.0, 137.0, 135.0, 33.0 ],
+																	"patching_rect" : [ 231.0, 137.0, 137.0, 33.0 ],
 																	"style" : "",
 																	"text" : "Put this information into score"
 																}
@@ -6943,7 +6943,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 2150.0, 138.0, 643.0, 793.0 ],
+						"rect" : [ 763.0, 138.0, 643.0, 793.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -7302,6 +7302,7 @@
 							}
 , 							{
 								"patchline" : 								{
+									"color" : [ 0.25098, 0.501961, 0.0, 1.0 ],
 									"destination" : [ "obj-24", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -7311,6 +7312,7 @@
 							}
 , 							{
 								"patchline" : 								{
+									"color" : [ 1.0, 0.0, 0.0, 1.0 ],
 									"destination" : [ "obj-91", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -7467,9 +7469,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 256.625, 101.0, 197.875, 20.0 ],
+					"patching_rect" : [ 247.0625, 101.0, 284.0, 20.0 ],
 					"style" : "",
-					"text" : "odd/even, AA/BC, H/M H/H or M/H"
+					"text" : "P1 odd/even, AA/BC, H/M H/H or M/H, Trial #/type"
 				}
 
 			}
@@ -13969,13 +13971,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-102",
-					"linecount" : 4,
+					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 93.625, 32.0, 191.0, 60.0 ],
+					"patching_rect" : [ 17.0, 21.0, 206.0, 47.0 ],
 					"style" : "",
-					"text" : "Start trial: piece number (1/2), even/odd, AAAA/BCBC,  trial type (0-15 if deviant, negative for practice)"
+					"text" : "Start trial: P1 odd/even (1/2), AA/BC (1/2),  trial type (0-15 if deviant, negative for practice)"
 				}
 
 			}
@@ -14350,7 +14352,7 @@
 					"destination" : [ "obj-158", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 453.5, 155.0, 478.0, 155.0, 478.0, 67.0, 1402.0, 67.0, 1402.0, 516.0, 1171.25, 516.0 ],
+					"midpoints" : [ 453.5, 155.0, 494.0, 155.0, 494.0, 67.0, 1402.0, 67.0, 1402.0, 516.0, 1171.25, 516.0 ],
 					"source" : [ "obj-106", 3 ]
 				}
 
@@ -15536,7 +15538,73 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "piano-note-1.maxpat",
+				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "midi2scaledegree.maxpat",
+				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "majorscale.coll.txt",
+				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "==2.maxpat",
+				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "scaledegree2midi.maxpat",
+				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "establish-tempo.maxpat",
+				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "metronome-tock.maxpat",
+				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "piece1.coll.txt",
+				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "piece2.coll.txt",
+				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "piano-note-2.maxpat",
+				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "shell.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0
 	}
 
 }
