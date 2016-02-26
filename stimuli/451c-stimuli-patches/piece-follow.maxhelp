@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 2517.0, 378.0, 498.0, 647.0 ],
+		"rect" : [ 256.0, 138.0, 1130.0, 700.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,20 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 381.875, 402.0, 152.0, 47.0 ],
+					"presentation_rect" : [ 380.875, 406.5, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "1 = Human P1 Max P2\n2 = Human P1 Human P2\n3 = Max P1 Human P2"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-112",
 					"maxclass" : "newobj",
@@ -131,13 +145,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-24",
-					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 155.0, 89.0, 54.0, 33.0 ],
+					"patching_rect" : [ 312.875, 80.5, 272.375, 20.0 ],
 					"style" : "",
-					"text" : "onbeat/offbeat"
+					"text" : "Human/Max, Human/Human, Max/Human (1,2,3)"
 				}
 
 			}
@@ -152,7 +165,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 155.0, 121.0, 36.0, 35.0 ],
+					"patching_rect" : [ 431.0625, 104.0, 36.0, 35.0 ],
 					"style" : ""
 				}
 
@@ -160,13 +173,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-22",
-					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 74.0, 89.0, 61.0, 33.0 ],
+					"patching_rect" : [ 183.0, 66.5, 108.0, 20.0 ],
 					"style" : "",
-					"text" : "odd/even (1/2)"
+					"text" : "Piece AA/BC (1/2)"
 				}
 
 			}
@@ -181,21 +193,8 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 74.0, 121.0, 36.0, 35.0 ],
+					"patching_rect" : [ 201.0, 92.0, 36.0, 35.0 ],
 					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-21",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 110.0, 39.5, 126.0, 33.0 ],
-					"style" : "",
-					"text" : "piece # (1/2),\n\n"
 				}
 
 			}
@@ -206,7 +205,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 61.0, 216.0, 40.0, 40.0 ],
+					"patching_rect" : [ 42.0, 176.0, 40.0, 40.0 ],
 					"style" : ""
 				}
 
@@ -227,13 +226,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-15",
-					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1.0, 89.0, 43.0, 33.0 ],
+					"patching_rect" : [ 23.0, 66.5, 109.0, 20.0 ],
 					"style" : "",
-					"text" : "Piece 1 or 2 "
+					"text" : "P1 Odd/Even (1/2)"
 				}
 
 			}
@@ -248,7 +246,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1.0, 121.0, 36.0, 35.0 ],
+					"patching_rect" : [ 46.0, 92.0, 36.0, 35.0 ],
 					"style" : ""
 				}
 
@@ -272,9 +270,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 241.0, 46.0, 269.0, 20.0 ],
+					"patching_rect" : [ 596.75, 82.0, 269.0, 20.0 ],
 					"style" : "",
-					"text" : "Trial type (0-35 for deviant, negative for practice)"
+					"text" : "Trial type (0-15 for deviant, negative for practice)"
 				}
 
 			}
@@ -289,7 +287,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 241.0, 76.0, 66.0, 35.0 ],
+					"patching_rect" : [ 698.25, 109.0, 66.0, 35.0 ],
 					"style" : ""
 				}
 
@@ -301,7 +299,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 559.5, 119.0, 142.0, 22.0 ],
+					"patching_rect" : [ 758.5, 313.0, 142.0, 22.0 ],
 					"style" : "",
 					"text" : "loadmess testhelp-01-01"
 				}
@@ -314,7 +312,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 559.5, 154.0, 131.0, 22.0 ],
+					"patching_rect" : [ 758.5, 348.0, 131.0, 22.0 ],
 					"style" : "",
 					"text" : "value block+trial-name"
 				}
@@ -323,12 +321,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-4",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 377.875, 373.5, 134.0, 20.0 ],
+					"patching_rect" : [ 381.875, 367.0, 116.0, 33.0 ],
 					"style" : "",
-					"text" : "1 = onbeat 2 = offbeat"
+					"text" : "1 = AA \n2 = BC"
 				}
 
 			}
@@ -339,9 +338,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 343.625, 261.0, 174.0, 60.0 ],
+					"patching_rect" : [ 343.625, 261.0, 283.0, 60.0 ],
 					"style" : "",
-					"text" : "Start trial: piece number (1/2), even/odd, onbeat/offbeat,  trial type (0-35 if deviant, negative for practice)"
+					"text" : "Start trial: P1 odd/even (1/2), \nPiece AA/BC (1,2),\nHuman/Max, Human/Human, Max/Human (1,2,3),  trial type (0-15 if deviant, negative for practice)"
 				}
 
 			}
@@ -352,7 +351,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 377.875, 337.5, 116.0, 33.0 ],
+					"patching_rect" : [ 381.875, 332.0, 116.0, 33.0 ],
 					"style" : "",
 					"text" : "1 = first player odd, 2 = first player even"
 				}
@@ -365,7 +364,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 335.875, 408.5, 162.0, 33.0 ],
+					"patching_rect" : [ 331.875, 461.0, 162.0, 33.0 ],
 					"style" : "",
 					"text" : "Message comes one IOI before first note"
 				}
@@ -392,19 +391,6 @@
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 110.0, 378.0, 53.0, 53.0 ],
 					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-5",
-					"linecount" : 3,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 37.0, 6.5, 126.0, 47.0 ],
-					"style" : "",
-					"text" : "piece # (1/2),\nodd/even (1/2), onbeat/offbeat (1/2)\n"
 				}
 
 			}
@@ -551,49 +537,49 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "piece-follow.maxpat",
-				"bootpath" : "~/repos/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "midi2scaledegree.maxpat",
-				"bootpath" : "~/repos/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "majorscale.coll.txt",
-				"bootpath" : "~/repos/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "==2.maxpat",
-				"bootpath" : "~/repos/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "scaledegree2midi.maxpat",
-				"bootpath" : "~/repos/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "piano-note.maxpat",
-				"bootpath" : "~/repos/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "establish-tempo.maxpat",
-				"bootpath" : "~/repos/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "metronome-tock.maxpat",
-				"bootpath" : "~/repos/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
