@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 2154.0, 78.0, 1597.0, 1084.0 ],
+		"rect" : [ 2782.0, 78.0, 1597.0, 1084.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -230,7 +230,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 2224.0, 78.0, 995.0, 959.0 ],
+						"rect" : [ 2147.0, 79.0, 1045.0, 1083.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -259,15 +259,169 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-62",
+									"linecount" : 3,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 521.25, 1018.5, 269.0, 47.0 ],
+									"presentation_rect" : [ 570.5, 1020.0, 0.0, 0.0 ],
+									"style" : "",
+									"text" : "Next phrase is unison so in addition to the output that shows we expect the human to play, also self-trigger Skynet to play phrase 999"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-61",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 652.0, 382.0, 31.0, 22.0 ],
+									"style" : "",
+									"text" : "999"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-57",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 688.0, 383.0, 29.5, 22.0 ],
+									"style" : "",
+									"text" : "5"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bubble" : 1,
+									"bubbleside" : 3,
+									"id" : "obj-55",
+									"linecount" : 2,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 339.25, 969.0, 127.25, 37.0 ],
+									"presentation_rect" : [ 226.0, 985.5, 0.0, 0.0 ],
+									"style" : "",
+									"text" : "Next phrase that should be played"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-54",
+									"maxclass" : "number",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 470.25, 974.5, 50.0, 22.0 ],
+									"presentation_rect" : [ 400.75, 993.5, 0.0, 0.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-53",
+									"maxclass" : "button",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 430.25, 1030.0, 24.0, 24.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bubble" : 1,
+									"bubbleside" : 3,
+									"id" : "obj-51",
+									"linecount" : 2,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 289.0, 894.5, 174.0, 37.0 ],
+									"presentation_rect" : [ 305.25, 899.0, 0.0, 0.0 ],
+									"style" : "",
+									"text" : "In case the unison phrase follows this Skynet phrase"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-50",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 470.25, 1003.0, 87.0, 22.0 ],
+									"style" : "",
+									"text" : "routepass 999"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-45",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "int", "int" ],
+									"patching_rect" : [ 470.25, 948.5, 61.0, 22.0 ],
+									"style" : "",
+									"text" : "unpack i i"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-48",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 495.25, 894.5, 89.0, 22.0 ],
+									"style" : "",
+									"text" : "r set-score-coll"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-49",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 4,
+									"outlettype" : [ "", "", "", "" ],
+									"patching_rect" : [ 470.25, 923.0, 79.0, 22.0 ],
+									"saved_object_attributes" : 									{
+										"embed" : 0
+									}
+,
+									"style" : "",
+									"text" : "coll thispiece"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"bubble" : 1,
 									"id" : "obj-47",
 									"linecount" : 4,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 663.25, 877.0, 165.0, 64.0 ],
+									"patching_rect" : [ 678.5, 881.0, 171.0, 64.0 ],
 									"style" : "",
-									"text" : "Which note (of the piece) we expect the human to play, sent one IOI before we expect it"
+									"text" : "Which note (of the piece) we now expect the human to play, sent one IOI before we expect it"
 								}
 
 							}
@@ -305,7 +459,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "int", "int", "int" ],
-									"patching_rect" : [ 741.0, 408.5, 40.0, 22.0 ],
+									"patching_rect" : [ 741.0, 425.5, 40.0, 22.0 ],
 									"style" : "",
 									"text" : "t i i i"
 								}
@@ -360,7 +514,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 615.75, 894.5, 50.0, 22.0 ],
+									"patching_rect" : [ 631.0, 898.5, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -385,7 +539,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 615.75, 928.0, 30.0, 30.0 ],
+									"patching_rect" : [ 631.0, 932.0, 30.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -1872,7 +2026,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 799.0, 372.5, 140.0, 37.0 ],
+									"patching_rect" : [ 791.5, 389.5, 140.0, 37.0 ],
 									"style" : "",
 									"text" : "Which phrase is now about to start?"
 								}
@@ -1899,7 +2053,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 741.0, 380.0, 50.0, 22.0 ],
+									"patching_rect" : [ 741.0, 397.0, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -2425,6 +2579,15 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-49", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-38", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-17", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -2506,10 +2669,83 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-54", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-45", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-49", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-48", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-45", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-49", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-103", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-5", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-104", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"midpoints" : [ 479.75, 1036.0, 1004.0, 1036.0, 1004.0, 384.0, 750.5, 384.0 ],
+									"source" : [ "obj-50", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-53", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-50", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-50", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-54", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-104", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-57", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-104", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-61", 0 ]
 								}
 
 							}
@@ -7149,7 +7385,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 445.5, 21.0, 184.0, 87.0 ],
-									"presentation_rect" : [ 445.5, 22.5, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "TO-DO: rearchitect or at least debug this"
 								}
@@ -7213,7 +7448,6 @@
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 199.583344, 103.0, 50.0, 22.0 ],
-									"presentation_rect" : [ 324.583344, 96.0, 0.0, 0.0 ],
 									"style" : ""
 								}
 
@@ -7226,7 +7460,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 195.583344, 30.5, 38.0, 33.0 ],
-									"presentation_rect" : [ 185.0, 14.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "scale offset"
 								}
@@ -12710,7 +12943,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 401.5, 92.0, 50.0, 22.0 ],
 					"style" : "",
-					"text" : "1 1 1 -2"
+					"text" : "2 1 1 -1"
 				}
 
 			}
