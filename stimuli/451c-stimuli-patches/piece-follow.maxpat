@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 2209.0, 78.0, 1368.0, 1084.0 ],
+		"rect" : [ 2154.0, 109.0, 1368.0, 1084.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -162,12 +162,82 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"bubble" : 1,
+									"id" : "obj-47",
+									"linecount" : 4,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 663.25, 877.0, 165.0, 64.0 ],
+									"presentation_rect" : [ 673.0, 865.0, 0.0, 0.0 ],
+									"style" : "",
+									"text" : "Which note (of the piece) we expect the human to play, sent one IOI before we expect it"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bubble" : 1,
+									"id" : "obj-46",
+									"linecount" : 4,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 691.0, 806.0, 165.0, 64.0 ],
+									"presentation_rect" : [ 718.0, 773.5, 0.0, 0.0 ],
+									"style" : "",
+									"text" : "If Skynet/human unison phrase, we expect the human to start playing this phrase immediately"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-44",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "int" ],
+									"patching_rect" : [ 656.0, 827.0, 29.5, 22.0 ],
+									"presentation_rect" : [ 657.75, 636.0, 0.0, 0.0 ],
+									"style" : "",
+									"text" : "int"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-42",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "int", "int", "int" ],
+									"patching_rect" : [ 741.0, 408.5, 40.0, 22.0 ],
+									"style" : "",
+									"text" : "t i i i"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-41",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "bang", "" ],
+									"patching_rect" : [ 666.0, 647.5, 49.0, 22.0 ],
+									"style" : "",
+									"text" : "sel 999"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-38",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 593.75, 833.0, 29.5, 22.0 ],
+									"patching_rect" : [ 593.75, 827.0, 29.5, 22.0 ],
 									"style" : "",
 									"text" : "int"
 								}
@@ -176,15 +246,16 @@
 , 							{
 								"box" : 								{
 									"bubble" : 1,
+									"bubbleside" : 3,
 									"id" : "obj-31",
-									"linecount" : 3,
+									"linecount" : 4,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 635.75, 818.5, 161.0, 51.0 ],
+									"patching_rect" : [ 420.25, 805.0, 174.0, 64.0 ],
 									"presentation_rect" : [ 931.0, 658.5, 0.0, 0.0 ],
 									"style" : "",
-									"text" : "After Skynet's phrase, which note do we expect next from the human?"
+									"text" : "After Skynet's phrase, we expct the human to resume starting from the first note of the next phrase."
 								}
 
 							}
@@ -196,7 +267,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 593.75, 861.5, 50.0, 22.0 ],
+									"patching_rect" : [ 615.75, 894.5, 50.0, 22.0 ],
 									"presentation_rect" : [ 885.0, 587.5, 0.0, 0.0 ],
 									"style" : ""
 								}
@@ -209,7 +280,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 604.25, 801.0, 29.5, 22.0 ],
+									"patching_rect" : [ 604.25, 795.0, 29.5, 22.0 ],
 									"presentation_rect" : [ 887.0, 551.5, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "+ 1"
@@ -223,7 +294,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 593.75, 895.0, 30.0, 30.0 ],
+									"patching_rect" : [ 615.75, 928.0, 30.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -938,7 +1009,7 @@
 													"maxclass" : "inlet",
 													"numinlets" : 0,
 													"numoutlets" : 1,
-													"outlettype" : [ "" ],
+													"outlettype" : [ "int" ],
 													"patching_rect" : [ 82.25, 40.0, 30.0, 30.0 ],
 													"style" : ""
 												}
@@ -1172,7 +1243,7 @@
  ]
 									}
 ,
-									"patching_rect" : [ 741.0, 414.5, 116.0, 22.0 ],
+									"patching_rect" : [ 763.5, 458.0, 116.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -1654,7 +1725,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 838.0, 483.5, 50.0, 22.0 ],
+									"patching_rect" : [ 860.5, 514.0, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -1666,7 +1737,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 724.0, 438.5, 154.0, 33.0 ],
+									"patching_rect" : [ 746.5, 482.0, 154.0, 33.0 ],
 									"style" : "",
 									"text" : "Range of note numbers of phrase that is about to start"
 								}
@@ -1697,7 +1768,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 739.75, 483.5, 50.0, 22.0 ],
+									"patching_rect" : [ 762.25, 514.0, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -1946,16 +2017,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-112", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-104", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-70", 0 ],
+									"destination" : [ "obj-42", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-104", 0 ]
@@ -2004,6 +2066,15 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-112", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-44", 1 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-126", 0 ]
 								}
 
 							}
@@ -2138,7 +2209,7 @@
 									"destination" : [ "obj-9", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 519.75, 784.0, 609.75, 784.0, 609.75, 567.0, 448.5, 567.0 ],
+									"midpoints" : [ 519.75, 774.0, 609.75, 774.0, 609.75, 567.0, 448.5, 567.0 ],
 									"source" : [ "obj-18", 1 ]
 								}
 
@@ -2290,10 +2361,55 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-44", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-41", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-112", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-42", 2 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-41", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-42", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-70", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-42", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-101", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-43", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-10", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-44", 0 ]
 								}
 
 							}
