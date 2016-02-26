@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 102.0, 163.0, 1703.0, 937.0 ],
+		"rect" : [ 102.0, 163.0, 1101.0, 937.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -180,13 +180,13 @@
 				"box" : 				{
 					"fontsize" : 24.0,
 					"id" : "obj-106",
-					"items" : [ "Human/Max", ",", "Human/Human", ",", "Max/Human" ],
+					"items" : [ "Human", "1/Max", 2, ",", "Human", "1/Human", 2, ",", "Max", "1/Human", 2 ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 391.75, 264.5, 171.0, 35.0 ],
+					"patching_rect" : [ 398.0, 264.5, 241.0, 35.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 528.25, 320.5, 124.0, 35.0 ],
 					"style" : ""
@@ -1181,7 +1181,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 578.0, 241.5, 149.0, 20.0 ],
+					"patching_rect" : [ 612.0, 531.834717, 149.0, 20.0 ],
 					"style" : "",
 					"text" : "Most recent trial outcome:"
 				}
@@ -1197,7 +1197,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 578.0, 263.5, 131.0, 35.0 ],
+					"patching_rect" : [ 612.0, 553.834717, 131.0, 35.0 ],
 					"style" : ""
 				}
 
@@ -1209,7 +1209,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 578.0, 210.0, 87.0, 22.0 ],
+					"patching_rect" : [ 612.0, 500.334717, 87.0, 22.0 ],
 					"style" : "",
 					"text" : "r trial-outcome"
 				}
