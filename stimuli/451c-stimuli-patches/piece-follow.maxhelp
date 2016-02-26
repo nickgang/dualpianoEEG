@@ -3,13 +3,13 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 0,
-			"revision" : 6,
+			"minor" : 1,
+			"revision" : 0,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 3169.0, 384.0, 498.0, 647.0 ],
+		"rect" : [ 2517.0, 378.0, 498.0, 647.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,60 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-112",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 176.5, 586.0, 254.0, 22.0 ],
+					"style" : "",
+					"text" : "s which-set-of-pieces-does-the-computer-play"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-111",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 80.5, 613.0, 50.0, 22.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-67",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 105.0, 517.0, 293.0, 20.0 ],
+					"style" : "",
+					"text" : "Experimenter must set this for each pair of subjects!!!"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 24.0,
+					"id" : "obj-65",
+					"items" : [ "humans", "set1", "computer", "set2", ",", "humans", "set2", "computer", "set1" ],
+					"maxclass" : "umenu",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "int", "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 80.5, 544.0, 350.0, 35.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1032.0, 754.5, 215.0, 35.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-29",
 					"maxclass" : "newobj",
@@ -360,7 +414,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "int" ],
 					"patching_rect" : [ 110.0, 343.0, 74.0, 22.0 ],
 					"style" : "",
 					"text" : "piece-follow"
@@ -392,6 +446,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-112", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-111", 0 ]
 				}
 
 			}
@@ -476,65 +539,62 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-111", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-65", 0 ]
+				}
+
+			}
  ],
 		"dependency_cache" : [ 			{
 				"name" : "piece-follow.maxpat",
-				"bootpath" : "~/Work/Neuromusic-Max",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "piano-note.maxpat",
-				"bootpath" : "~/Work/Neuromusic-Max",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "piece1.coll.txt",
-				"bootpath" : "~/Work/Neuromusic-Max",
-				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "midi2scaledegree.maxpat",
-				"bootpath" : "~/Work/Neuromusic-Max",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "majorscale.coll.txt",
-				"bootpath" : "~/Work/Neuromusic-Max",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "==2.maxpat",
-				"bootpath" : "~/Work/Neuromusic-Max",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "scaledegree2midi.maxpat",
-				"bootpath" : "~/Work/Neuromusic-Max",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "piano-note.maxpat",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "establish-tempo.maxpat",
-				"bootpath" : "~/Work/Neuromusic-Max",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "metronome-tock.maxpat",
-				"bootpath" : "~/Work/Neuromusic-Max",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "piece2.coll.txt",
-				"bootpath" : "~/Work/Neuromusic-Max",
-				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
@@ -542,7 +602,7 @@
 				"type" : "iLaX"
 			}
  ],
-		"embedsnapshot" : 0
+		"autosave" : 0
 	}
 
 }

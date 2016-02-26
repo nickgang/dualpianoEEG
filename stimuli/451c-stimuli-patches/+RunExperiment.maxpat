@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 1978.0, 141.0, 1703.0, 937.0 ],
+		"rect" : [ 102.0, 163.0, 1703.0, 937.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,58 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-70",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 385.25, 185.0, 64.0, 22.0 ],
+					"style" : "",
+					"text" : "2 71"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-72",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 398.0, 153.0, 54.0, 22.0 ],
+					"style" : "",
+					"text" : "r noteoff"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-66",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 229.75, 185.0, 64.0, 22.0 ],
+					"style" : "",
+					"text" : "2 71 50"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-25",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 242.5, 153.0, 55.0, 22.0 ],
+					"style" : "",
+					"text" : "r noteon"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-116",
 					"maxclass" : "newobj",
@@ -184,7 +236,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1273.0, 386.0, 50.0, 22.0 ],
 					"style" : "",
-					"text" : "2"
+					"text" : "1"
 				}
 
 			}
@@ -1189,7 +1241,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 80.75, 828.0, 80.0, 22.0 ],
 					"style" : "",
-					"text" : "1241556 201"
+					"text" : "239207 240"
 				}
 
 			}
@@ -2251,6 +2303,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-66", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-25", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -2629,6 +2690,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-70", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-72", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-60", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -2815,12 +2885,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "piano-note-1.maxpat",
-				"bootpath" : "~/repos/dualpianoEEG/stimuli/451c-stimuli-patches",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "midi2scaledegree.maxpat",
 				"bootpath" : "~/repos/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "JSON",
@@ -2845,6 +2909,12 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "piano-note.maxpat",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "establish-tempo.maxpat",
 				"bootpath" : "~/repos/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "JSON",
@@ -2852,12 +2922,6 @@
 			}
 , 			{
 				"name" : "metronome-tock.maxpat",
-				"bootpath" : "~/repos/dualpianoEEG/stimuli/451c-stimuli-patches",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "piano-note-2.maxpat",
 				"bootpath" : "~/repos/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "JSON",
 				"implicit" : 1
