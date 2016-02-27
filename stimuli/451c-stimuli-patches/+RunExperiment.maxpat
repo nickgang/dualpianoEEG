@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 102.0, 163.0, 1101.0, 937.0 ],
+		"rect" : [ 332.0, 78.0, 1101.0, 937.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,21 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"bubble" : 1,
+					"id" : "obj-80",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1200.5, 291.0, 150.0, 51.0 ],
+					"presentation_rect" : [ 1207.0, 306.5, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "If you want to start at a given block number, enter it here."
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-70",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -45,7 +60,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 385.25, 185.0, 64.0, 22.0 ],
 					"style" : "",
-					"text" : "2 71"
+					"text" : "2 69"
 				}
 
 			}
@@ -71,7 +86,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 229.75, 185.0, 64.0, 22.0 ],
 					"style" : "",
-					"text" : "2 71 50"
+					"text" : "2 69 33"
 				}
 
 			}
@@ -236,19 +251,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1273.0, 386.0, 50.0, 22.0 ],
 					"style" : "",
-					"text" : "1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-119",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1214.0, 334.5, 150.0, 20.0 ],
-					"style" : "",
-					"text" : "changing from 8 to 12"
+					"text" : "6"
 				}
 
 			}
@@ -1241,7 +1244,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 80.75, 828.0, 80.0, 22.0 ],
 					"style" : "",
-					"text" : "239207 240"
+					"text" : "1459546 233"
 				}
 
 			}
@@ -1717,7 +1720,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 20.5, 165.5, 73.0, 22.0 ],
+					"patching_rect" : [ 20.5, 153.0, 73.0, 22.0 ],
 					"style" : "",
 					"text" : "r block-type"
 				}
@@ -1814,7 +1817,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 163.0, 461.0, 117.0, 35.0 ],
 					"style" : "",
-					"text" : "BB-TT"
+					"text" : "06_-2"
 				}
 
 			}
