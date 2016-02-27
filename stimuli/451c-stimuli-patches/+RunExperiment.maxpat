@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 332.0, 78.0, 1101.0, 937.0 ],
+		"rect" : [ 332.0, 78.0, 1478.0, 948.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -45,7 +45,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1200.5, 291.0, 150.0, 51.0 ],
-					"presentation_rect" : [ 1207.0, 306.5, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "If you want to start at a given block number, enter it here."
 				}
@@ -1817,7 +1816,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 163.0, 461.0, 117.0, 35.0 ],
 					"style" : "",
-					"text" : "06_-2"
+					"text" : "BB-TT"
 				}
 
 			}
@@ -1836,6 +1835,7 @@
 			}
 , 			{
 				"box" : 				{
+					"hidden" : 1,
 					"id" : "obj-4",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -1876,6 +1876,7 @@
 			}
 , 			{
 				"box" : 				{
+					"hidden" : 1,
 					"id" : "obj-3",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -2371,7 +2372,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
 					"disabled" : 0,
-					"hidden" : 0,
+					"hidden" : 1,
 					"source" : [ "obj-3", 0 ]
 				}
 
@@ -2380,7 +2381,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-32", 0 ],
 					"disabled" : 0,
-					"hidden" : 0,
+					"hidden" : 1,
 					"source" : [ "obj-3", 0 ]
 				}
 
@@ -2389,7 +2390,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
 					"disabled" : 0,
-					"hidden" : 0,
+					"hidden" : 1,
 					"source" : [ "obj-3", 0 ]
 				}
 
@@ -2434,7 +2435,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
 					"disabled" : 0,
-					"hidden" : 0,
+					"hidden" : 1,
 					"source" : [ "obj-4", 0 ]
 				}
 
