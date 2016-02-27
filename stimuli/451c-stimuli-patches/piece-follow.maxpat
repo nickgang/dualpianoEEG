@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 369.0, 86.0, 1590.0, 1084.0 ],
+		"rect" : [ 76.0, 79.0, 1330.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -6585,7 +6585,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 131.25, 789.5, 174.0, 37.0 ],
-									"presentation_rect" : [ 11.75, 748.5, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "note within piece, phrase number, note within phrase"
 								}
@@ -6638,7 +6637,6 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "int" ],
 									"patching_rect" : [ 458.0, 657.5, 61.0, 22.0 ],
-									"presentation_rect" : [ 227.0, 646.5, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "counter"
 								}
@@ -6653,7 +6651,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 523.5, 652.5, 112.0, 37.0 ],
-									"presentation_rect" : [ 192.75, 655.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "counting notes of the phrase"
 								}
@@ -8144,7 +8141,7 @@
 												"box" : 												{
 													"id" : "obj-4",
 													"maxclass" : "newobj",
-													"numinlets" : 5,
+													"numinlets" : 2,
 													"numoutlets" : 0,
 													"patching_rect" : [ 97.5, 617.0, 77.0, 22.0 ],
 													"style" : "",
@@ -10985,7 +10982,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 1501.0, 478.0, 385.0, 531.0 ],
+						"rect" : [ 925.0, 79.0, 385.0, 531.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -11012,6 +11009,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-4",
@@ -11171,7 +11169,7 @@
 								"box" : 								{
 									"id" : "obj-98",
 									"maxclass" : "newobj",
-									"numinlets" : 5,
+									"numinlets" : 2,
 									"numoutlets" : 0,
 									"patching_rect" : [ 192.583313, 392.5, 77.0, 22.0 ],
 									"style" : "",
@@ -12716,7 +12714,7 @@
 								"box" : 								{
 									"id" : "obj-8",
 									"maxclass" : "newobj",
-									"numinlets" : 5,
+									"numinlets" : 2,
 									"numoutlets" : 0,
 									"patching_rect" : [ 99.0, 399.0, 77.0, 22.0 ],
 									"style" : "",
@@ -12802,7 +12800,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-8", 2 ],
+									"destination" : [ "obj-8", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-119", 1 ]
@@ -12820,7 +12818,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-98", 2 ],
+									"destination" : [ "obj-98", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-121", 1 ]
@@ -24787,49 +24785,49 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "piece1.coll.txt",
-				"bootpath" : "~/repos/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "midi2scaledegree.maxpat",
-				"bootpath" : "~/repos/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "majorscale.coll.txt",
-				"bootpath" : "~/repos/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "==2.maxpat",
-				"bootpath" : "~/repos/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "scaledegree2midi.maxpat",
-				"bootpath" : "~/repos/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "piano-note.maxpat",
-				"bootpath" : "~/repos/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "establish-tempo.maxpat",
-				"bootpath" : "~/repos/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "metronome-tock.maxpat",
-				"bootpath" : "~/repos/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
