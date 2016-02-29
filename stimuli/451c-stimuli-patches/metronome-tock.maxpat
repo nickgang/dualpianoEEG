@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 356.0, 79.0, 990.0, 787.0 ],
+		"rect" : [ 125.0, 79.0, 1280.0, 966.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,32 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-70",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 484.0, 595.5, 114.0, 47.0 ],
+					"style" : "",
+					"text" : "Replacing Human Max State Toggle with Number Box"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-34",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 650.0, 607.0, 35.0, 22.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-80",
 					"linecount" : 2,
@@ -76,7 +102,6 @@
 			}
 , 			{
 				"box" : 				{
-					"fontsize" : 12.0,
 					"id" : "obj-19",
 					"items" : [ "Human/Max", ",", "Human/Human", ",", "Max/Human" ],
 					"maxclass" : "umenu",
@@ -93,7 +118,6 @@
 			}
 , 			{
 				"box" : 				{
-					"fontsize" : 12.0,
 					"id" : "obj-23",
 					"items" : [ "AAAA", ",", "BCBC" ],
 					"maxclass" : "umenu",
@@ -110,7 +134,6 @@
 			}
 , 			{
 				"box" : 				{
-					"fontsize" : 12.0,
 					"id" : "obj-37",
 					"items" : [ "first", "player", "odd", ",", "first", "player", "even" ],
 					"maxclass" : "umenu",
@@ -121,18 +144,6 @@
 					"patching_rect" : [ 523.0625, 434.0, 109.875, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 141.25, 320.5, 215.0, 22.0 ],
-					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-7",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 542.75, 678.0, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -414,9 +425,9 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 838.0, 393.0, 127.0, 22.0 ],
+					"patching_rect" : [ 838.0, 393.0, 149.0, 22.0 ],
 					"style" : "",
-					"text" : "r player1-deviant-note"
+					"text" : "r odd-phrase-deviant-note"
 				}
 
 			}
@@ -668,19 +679,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-34",
-					"maxclass" : "toggle",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 650.0, 607.0, 24.0, 24.0 ],
-					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-35",
 					"maxclass" : "toggle",
 					"numinlets" : 1,
@@ -857,9 +855,9 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1035.0, 393.0, 127.0, 22.0 ],
+					"patching_rect" : [ 1035.0, 393.0, 155.0, 22.0 ],
 					"style" : "",
-					"text" : "r player2-deviant-note"
+					"text" : "r even-phrase-deviant-note"
 				}
 
 			}
@@ -1591,7 +1589,9 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [  ],
+		"autosave" : 0
 	}
 
 }
