@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 103.0, 79.0, 1249.0, 787.0 ],
+		"rect" : [ 103.0, 79.0, 1012.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -45,7 +45,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1419.0, 277.5, 125.0, 22.0 ],
 					"style" : "",
-					"text" : "read order_1D.coll.txt"
+					"text" : "read order_1F.coll.txt"
 				}
 
 			}
@@ -58,7 +58,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1077.0, 467.0, 50.0, 22.0 ],
 					"style" : "",
-					"text" : "1 1"
+					"text" : "2 1"
 				}
 
 			}
@@ -245,7 +245,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 98.0, 318.0, 126.0, 22.0 ],
 									"style" : "",
-									"text" : "read order_1D.coll.txt"
+									"text" : "read order_1F.coll.txt"
 								}
 
 							}
@@ -600,7 +600,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 229.75, 185.0, 64.0, 22.0 ],
 					"style" : "",
-					"text" : "1 69 99"
+					"text" : "1 69 53"
 				}
 
 			}
@@ -991,7 +991,8 @@
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 1147.0, 480.875, 73.0, 22.0 ],
 					"style" : "",
-					"text" : "block-follow"
+					"text" : "block-follow",
+					"varname" : "block-follow"
 				}
 
 			}
@@ -1718,7 +1719,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 80.75, 828.0, 80.0, 22.0 ],
 					"style" : "",
-					"text" : "1021641 233"
+					"text" : "17372 233"
 				}
 
 			}
@@ -2291,7 +2292,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 163.0, 461.0, 117.0, 35.0 ],
 					"style" : "",
-					"text" : "01_03"
+					"text" : "BB-TT"
 				}
 
 			}
@@ -3524,7 +3525,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "order_1D.coll.txt",
+				"name" : "order_1F.coll.txt",
 				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "TEXT",
 				"implicit" : 1
