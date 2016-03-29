@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 78.0, 1635.0, 964.0 ],
+		"rect" : [ 194.0, 117.0, 1635.0, 964.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -100,7 +100,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1419.0, 277.5, 125.0, 22.0 ],
 					"style" : "",
-					"text" : "read order_1H.coll.txt"
+					"text" : "read order_1E.coll.txt"
 				}
 
 			}
@@ -300,7 +300,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 98.0, 318.0, 126.0, 22.0 ],
 									"style" : "",
-									"text" : "read order_1H.coll.txt"
+									"text" : "read order_1E.coll.txt"
 								}
 
 							}
@@ -844,9 +844,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1236.0, 721.0, 224.0, 22.0 ],
+					"patching_rect" : [ 1236.0, 719.0, 182.0, 22.0 ],
 					"style" : "",
-					"text" : "say -v \"Good News\" block $1 completed"
+					"text" : "say -v Good block $1 completed"
 				}
 
 			}
@@ -3612,7 +3612,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "order_1H.coll.txt",
+				"name" : "order_1E.coll.txt",
 				"bootpath" : "~/Experiments/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
