@@ -3,13 +3,13 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 1,
-			"revision" : 0,
+			"minor" : 2,
+			"revision" : 1,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 256.0, 138.0, 1130.0, 700.0 ],
+		"rect" : [ 122.0, 107.0, 1130.0, 700.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,13 +38,37 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 908.5, 134.0, 71.0, 22.0 ],
+					"style" : "",
+					"text" : "s abort-trial"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.665086, 0.106606, 0.136815, 1.0 ],
+					"id" : "obj-36",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 908.5, 80.0, 42.0, 42.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-2",
 					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 381.875, 402.0, 152.0, 47.0 ],
-					"presentation_rect" : [ 380.875, 406.5, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "1 = Human P1 Max P2\n2 = Human P1 Human P2\n3 = Max P1 Human P2"
 				}
@@ -219,7 +243,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 103.0, 225.0, 85.0, 22.0 ],
 					"style" : "",
-					"text" : "1 1 1 -2"
+					"text" : "1 2 1 4"
 				}
 
 			}
@@ -527,6 +551,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-36", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-111", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -539,6 +572,12 @@
 				"name" : "piece-follow.maxpat",
 				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "piece2.coll.txt",
+				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
