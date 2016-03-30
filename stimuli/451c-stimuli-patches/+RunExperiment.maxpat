@@ -3,13 +3,13 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 2,
+			"minor" : 0,
 			"revision" : 1,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 76.0, 79.0, 1109.0, 787.0 ],
+		"rect" : [ 194.0, 117.0, 1635.0, 964.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -100,7 +100,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1419.0, 277.5, 125.0, 22.0 ],
 					"style" : "",
-					"text" : "read order_1B.coll.txt"
+					"text" : "read order_1E.coll.txt"
 				}
 
 			}
@@ -113,7 +113,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1077.0, 467.0, 50.0, 22.0 ],
 					"style" : "",
-					"text" : "1 1"
+					"text" : "1 2"
 				}
 
 			}
@@ -154,7 +154,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
+							"minor" : 0,
 							"revision" : 1,
 							"architecture" : "x86",
 							"modernui" : 1
@@ -300,7 +300,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 98.0, 318.0, 126.0, 22.0 ],
 									"style" : "",
-									"text" : "read order_1B.coll.txt"
+									"text" : "read order_1E.coll.txt"
 								}
 
 							}
@@ -629,7 +629,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 385.25, 185.0, 64.0, 22.0 ],
 					"style" : "",
-					"text" : "1 69"
+					"text" : "2 48"
 				}
 
 			}
@@ -655,7 +655,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 229.75, 185.0, 64.0, 22.0 ],
 					"style" : "",
-					"text" : "1 69 19"
+					"text" : "2 48 67"
 				}
 
 			}
@@ -844,9 +844,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1236.0, 721.0, 224.0, 22.0 ],
+					"patching_rect" : [ 1236.0, 719.0, 182.0, 22.0 ],
 					"style" : "",
-					"text" : "say -v \"Good News\" block $1 completed"
+					"text" : "say -v Good block $1 completed"
 				}
 
 			}
@@ -1115,7 +1115,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
+							"minor" : 0,
 							"revision" : 1,
 							"architecture" : "x86",
 							"modernui" : 1
@@ -3515,91 +3515,106 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "piece1.coll.txt",
-				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"bootpath" : "~/Experiments/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "piece2.coll.txt",
-				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"bootpath" : "~/Experiments/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "block-follow.maxpat",
-				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"bootpath" : "~/Experiments/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "piece-follow.maxpat",
-				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"bootpath" : "~/Experiments/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "midi2scaledegree.maxpat",
-				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"bootpath" : "~/Experiments/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "majorscale.coll.txt",
-				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"bootpath" : "~/Experiments/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "==2.maxpat",
-				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"bootpath" : "~/Experiments/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "scaledegree2midi.maxpat",
-				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"bootpath" : "~/Experiments/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "piano-note.maxpat",
-				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"bootpath" : "~/Experiments/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "establish-tempo.maxpat",
-				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"bootpath" : "~/Experiments/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "metronome-tock.maxpat",
-				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"bootpath" : "~/Experiments/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "pause-between-trials.maxpat",
-				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"bootpath" : "~/Experiments/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "piece3.coll.txt",
-				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"bootpath" : "~/Experiments/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "piece4.coll.txt",
-				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"bootpath" : "~/Experiments/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "order_1B.coll.txt",
-				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"name" : "order_1E.coll.txt",
+				"bootpath" : "~/Experiments/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
@@ -3608,7 +3623,7 @@
 				"type" : "iLaX"
 			}
  ],
-		"autosave" : 0
+		"embedsnapshot" : 0
 	}
 
 }
