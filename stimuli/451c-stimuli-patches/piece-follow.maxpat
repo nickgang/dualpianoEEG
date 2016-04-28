@@ -38,6 +38,18 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-120",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 498.5625, 517.0, 150.0, 20.0 ],
+					"style" : "",
+					"text" : "replace 31 with variable"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-171",
 					"linecount" : 3,
 					"maxclass" : "comment",
