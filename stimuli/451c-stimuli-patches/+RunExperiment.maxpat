@@ -3,13 +3,13 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 2,
-			"revision" : 1,
+			"minor" : 1,
+			"revision" : 0,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 79.0, 79.0, 1057.0, 787.0 ],
+		"rect" : [ 79.0, 79.0, 1474.0, 957.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,407 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-131",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 7,
+							"minor" : 1,
+							"revision" : 0,
+							"architecture" : "x86",
+							"modernui" : 1
+						}
+,
+						"rect" : [ 892.0, 174.0, 640.0, 480.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 0,
+						"default_fontsize" : 12.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Arial",
+						"gridonopen" : 1,
+						"gridsize" : [ 15.0, 15.0 ],
+						"gridsnaponopen" : 1,
+						"objectsnaponopen" : 1,
+						"statusbarvisible" : 2,
+						"toolbarvisible" : 1,
+						"lefttoolbarpinned" : 0,
+						"toptoolbarpinned" : 0,
+						"righttoolbarpinned" : 0,
+						"bottomtoolbarpinned" : 0,
+						"toolbars_unpinned_last_save" : 0,
+						"tallnewobj" : 0,
+						"boxanimatetime" : 200,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
+						"style" : "",
+						"subpatcher_template" : "",
+						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-11",
+									"linecount" : 3,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 53.0, 54.0, 223.0, 47.0 ],
+									"style" : "",
+									"text" : "For aborted trials, first this gets sent, then trial-outcome comes as \"0\", same as an error trial."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-9",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 69.5, 286.0, 38.0, 22.0 ],
+									"presentation_rect" : [ 63.0, 207.0, 0.0, 0.0 ],
+									"style" : "",
+									"text" : "abort"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-8",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 188.0, 286.0, 37.0, 22.0 ],
+									"presentation_rect" : [ 182.0, 290.0, 0.0, 0.0 ],
+									"style" : "",
+									"text" : "good"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-7",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 146.0, 286.0, 36.0, 22.0 ],
+									"style" : "",
+									"text" : "error"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-5",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 229.0, 286.0, 202.0, 22.0 ],
+									"style" : "",
+									"text" : "print error-unexpected-trial-outcome"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-4",
+									"maxclass" : "newobj",
+									"numinlets" : 3,
+									"numoutlets" : 3,
+									"outlettype" : [ "bang", "bang", "" ],
+									"patching_rect" : [ 202.0, 236.0, 46.0, 22.0 ],
+									"style" : "",
+									"text" : "sel 0 1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-119",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 34.0, 358.0, 169.0, 22.0 ],
+									"style" : "",
+									"text" : "value block+trial-name BB-TT"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-39",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 103.0, 438.0, 133.0, 22.0 ],
+									"style" : "",
+									"text" : "write trial-01_03.coll.txt"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-29",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 34.0, 387.0, 227.0, 22.0 ],
+									"style" : "",
+									"text" : "sprintf write trial-%s-triggerlog-%s.coll.txt"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-3",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "bang", "int" ],
+									"patching_rect" : [ 69.5, 171.0, 34.0, 22.0 ],
+									"style" : "",
+									"text" : "t b 0"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-2",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "int", "int" ],
+									"patching_rect" : [ 202.0, 171.0, 30.0, 22.0 ],
+									"style" : "",
+									"text" : "t 1 i"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-1",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 202.0, 208.0, 54.0, 22.0 ],
+									"style" : "",
+									"text" : "gate 1 1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-73",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 202.0, 110.0, 87.0, 22.0 ],
+									"style" : "",
+									"text" : "r trial-outcome"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-114",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 69.5, 110.0, 69.0, 22.0 ],
+									"style" : "",
+									"text" : "r abort-trial"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-130",
+									"maxclass" : "outlet",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 34.0, 434.0, 30.0, 30.0 ],
+									"style" : ""
+								}
+
+							}
+ ],
+						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-3", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-114", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-29", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-119", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-1", 1 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-2", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-1", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-2", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-130", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-29", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-39", 1 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-29", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-1", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-3", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-9", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-3", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-5", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-4", 2 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-7", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-4", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-8", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-4", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-29", 1 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-7", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-2", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-73", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-29", 1 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-8", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-29", 1 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-9", 0 ]
+								}
+
+							}
+ ]
+					}
+,
+					"patching_rect" : [ 267.25, 930.0, 104.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"description" : "",
+						"digest" : "",
+						"globalpatchername" : "",
+						"style" : "",
+						"tags" : ""
+					}
+,
+					"style" : "",
+					"text" : "p write-trigger-log"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-129",
 					"maxclass" : "comment",
@@ -241,7 +642,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1452.333374, 437.0, 125.0, 22.0 ],
 					"style" : "",
-					"text" : "read order_1D.coll.txt"
+					"text" : "read order_1A.coll.txt"
 				}
 
 			}
@@ -295,8 +696,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 1,
+							"minor" : 1,
+							"revision" : 0,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -441,7 +842,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 98.0, 318.0, 126.0, 22.0 ],
 									"style" : "",
-									"text" : "read order_1D.coll.txt"
+									"text" : "read order_1A.coll.txt"
 								}
 
 							}
@@ -1273,8 +1674,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 1,
+							"minor" : 1,
+							"revision" : 0,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -2956,6 +3357,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-56", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-131", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-94", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -3741,91 +4151,91 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "piece1.coll.txt",
-				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "piece2.coll.txt",
-				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "block-follow.maxpat",
-				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "piece-follow.maxpat",
-				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "midi2scaledegree.maxpat",
-				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "majorscale.coll.txt",
-				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "==2.maxpat",
-				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "scaledegree2midi.maxpat",
-				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "piano-note.maxpat",
-				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "establish-tempo.maxpat",
-				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "metronome-tock.maxpat",
-				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "pause-between-trials.maxpat",
-				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "piece3.coll.txt",
-				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "piece4.coll.txt",
-				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "order_1D.coll.txt",
-				"bootpath" : "~/Documents/Stanford/Music451c/dualpianoEEG/stimuli/451c-stimuli-patches",
+				"name" : "order_1A.coll.txt",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/451c-stimuli-patches",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
