@@ -3,13 +3,13 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 0,
-			"revision" : 6,
+			"minor" : 1,
+			"revision" : 0,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 2294.0, 368.0, 636.0, 634.0 ],
+		"rect" : [ 249.0, 325.0, 650.0, 821.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,13 +38,62 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 77.0, 149.0, 24.0, 24.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 82.0, 221.0, 31.0, 22.0 ],
+					"style" : "",
+					"text" : "???"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-28",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 186.0, 181.0, 178.0, 20.0 ],
+					"style" : "",
+					"text" : "Default key is A below middle C"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 77.0, 179.0, 91.0, 22.0 ],
+					"style" : "",
+					"text" : "patcherargs 57"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-72",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 477.0, 218.0, 150.0, 33.0 ],
-					"presentation_rect" : [ 1043.0, 244.5, 0.0, 0.0 ],
+					"patching_rect" : [ 477.0, 344.0, 150.0, 33.0 ],
 					"style" : "",
 					"text" : "replace with another coll for a different scale"
 				}
@@ -58,8 +107,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 104.0, 519.0, 50.0, 22.0 ],
-					"presentation_rect" : [ 667.0, 545.0, 0.0, 0.0 ],
+					"patching_rect" : [ 104.0, 645.0, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -71,7 +119,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "int" ],
-					"patching_rect" : [ 31.0, 218.0, 29.5, 22.0 ],
+					"patching_rect" : [ 31.0, 344.0, 29.5, 22.0 ],
 					"style" : "",
 					"text" : "t i i"
 				}
@@ -84,7 +132,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 104.0, 483.0, 29.5, 22.0 ],
+					"patching_rect" : [ 104.0, 609.0, 29.5, 22.0 ],
 					"style" : "",
 					"text" : "+"
 				}
@@ -97,7 +145,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 77.5, 382.0, 82.5, 33.0 ],
+					"patching_rect" : [ 77.5, 508.0, 82.5, 33.0 ],
 					"style" : "",
 					"text" : "back down the 2 octaves"
 				}
@@ -110,7 +158,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 43.0, 386.0, 29.5, 22.0 ],
+					"patching_rect" : [ 43.0, 512.0, 29.5, 22.0 ],
 					"style" : "",
 					"text" : "* 7"
 				}
@@ -123,7 +171,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 442.0, 291.5, 155.0, 47.0 ],
+					"patching_rect" : [ 442.0, 417.5, 155.0, 47.0 ],
 					"style" : "",
 					"text" : "For wrong notes, pretend it was a correct note a half step lower"
 				}
@@ -136,7 +184,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 389.0, 277.0, 29.5, 22.0 ],
+					"patching_rect" : [ 389.0, 403.0, 29.5, 22.0 ],
 					"style" : "",
 					"text" : "+ 1"
 				}
@@ -149,8 +197,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 389.0, 304.0, 48.0, 22.0 ],
-					"presentation_rect" : [ 957.5, 331.0, 0.0, 0.0 ],
+					"patching_rect" : [ 389.0, 430.0, 48.0, 22.0 ],
 					"style" : "",
 					"text" : "pack i i"
 				}
@@ -164,8 +211,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 359.5, 383.0, 50.0, 22.0 ],
-					"presentation_rect" : [ 739.5, 475.0, 0.0, 0.0 ],
+					"patching_rect" : [ 359.5, 509.0, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -177,7 +223,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 64.5, 297.0, 82.5, 33.0 ],
+					"patching_rect" : [ 64.5, 423.0, 82.5, 33.0 ],
 					"style" : "",
 					"text" : "back down the 2 octaves"
 				}
@@ -190,7 +236,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 30.0, 301.0, 29.5, 22.0 ],
+					"patching_rect" : [ 30.0, 427.0, 29.5, 22.0 ],
 					"style" : "",
 					"text" : "- 2"
 				}
@@ -203,7 +249,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 331.0, 278.0, 48.0, 22.0 ],
+					"patching_rect" : [ 331.0, 404.0, 48.0, 22.0 ],
 					"style" : "",
 					"text" : "pack i i"
 				}
@@ -216,7 +262,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 359.5, 192.0, 41.0, 22.0 ],
+					"patching_rect" : [ 359.5, 318.0, 41.0, 22.0 ],
 					"style" : "",
 					"text" : "dump"
 				}
@@ -229,7 +275,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 359.5, 160.0, 60.0, 22.0 ],
+					"patching_rect" : [ 359.5, 286.0, 60.0, 22.0 ],
 					"style" : "",
 					"text" : "loadbang"
 				}
@@ -242,7 +288,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 416.0, 348.0, 150.0, 33.0 ],
+					"patching_rect" : [ 416.0, 474.0, 150.0, 33.0 ],
 					"style" : "",
 					"text" : "keys are pitch class, values are scale degrees"
 				}
@@ -255,7 +301,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 359.5, 343.0, 50.5, 22.0 ],
+					"patching_rect" : [ 359.5, 469.0, 50.5, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0
 					}
@@ -272,8 +318,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 359.5, 224.0, 111.0, 22.0 ],
-					"presentation_rect" : [ 823.5, 395.0, 0.0, 0.0 ],
+					"patching_rect" : [ 359.5, 350.0, 111.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0
 					}
@@ -289,8 +334,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 181.5, 251.5, 67.0, 20.0 ],
-					"presentation_rect" : [ 677.0, 245.0, 0.0, 0.0 ],
+					"patching_rect" : [ 181.5, 377.5, 67.0, 20.0 ],
 					"style" : "",
 					"text" : "pitch class"
 				}
@@ -302,7 +346,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 30.0, 246.0, 46.0, 20.0 ],
+					"patching_rect" : [ 30.0, 372.0, 46.0, 20.0 ],
 					"style" : "",
 					"text" : "octave"
 				}
@@ -315,7 +359,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 71.5, 156.0, 150.0, 33.0 ],
+					"patching_rect" : [ 71.5, 282.0, 150.0, 33.0 ],
 					"style" : "",
 					"text" : "Up 2 octaves so modulo always works"
 				}
@@ -328,7 +372,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 35.5, 156.0, 34.0, 22.0 ],
+					"patching_rect" : [ 35.5, 282.0, 34.0, 22.0 ],
 					"style" : "",
 					"text" : "+ 24"
 				}
@@ -342,8 +386,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 30.0, 332.0, 50.0, 22.0 ],
-					"presentation_rect" : [ 683.5, 295.0, 0.0, 0.0 ],
+					"patching_rect" : [ 30.0, 458.0, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -356,8 +399,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 182.5, 301.0, 50.0, 22.0 ],
-					"presentation_rect" : [ 601.0, 299.0, 0.0, 0.0 ],
+					"patching_rect" : [ 182.5, 427.0, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -369,7 +411,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 30.0, 267.5, 31.0, 22.0 ],
+					"patching_rect" : [ 30.0, 393.5, 31.0, 22.0 ],
 					"style" : "",
 					"text" : "/ 12"
 				}
@@ -382,7 +424,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 182.5, 273.0, 38.0, 22.0 ],
+					"patching_rect" : [ 182.5, 399.0, 38.0, 22.0 ],
 					"style" : "",
 					"text" : "% 12"
 				}
@@ -396,7 +438,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 31.0, 188.0, 50.0, 22.0 ],
+					"patching_rect" : [ 31.0, 314.0, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -407,8 +449,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 77.0, 124.0, 270.0, 20.0 ],
-					"presentation_rect" : [ 631.0, 176.0, 0.0, 0.0 ],
+					"patching_rect" : [ 77.0, 250.0, 270.0, 20.0 ],
 					"style" : "",
 					"text" : "Tonic pitch (MIDI note number of scale degree 1)"
 				}
@@ -421,7 +462,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 35.5, 124.0, 31.0, 22.0 ],
+					"patching_rect" : [ 35.5, 250.0, 31.0, 22.0 ],
 					"style" : "",
 					"text" : "- 57"
 				}
@@ -434,7 +475,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 104.0, 555.5, 30.0, 30.0 ],
+					"patching_rect" : [ 104.0, 681.5, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -460,7 +501,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "int" ],
 					"patching_rect" : [ 35.5, 13.5, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -468,6 +509,15 @@
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-26", 0 ],
 					"disabled" : 0,
@@ -482,6 +532,24 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-26", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-26", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-3", 0 ]
 				}
 
 			}
@@ -701,15 +769,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "majorscale.coll.txt",
-				"bootpath" : "~/Work/Neuromusic-Max",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
- ],
-		"embedsnapshot" : 0
+ ]
 	}
 
 }
