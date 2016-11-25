@@ -7,8 +7,10 @@
 
 #The coll file orders the information in the following left to right columns:
 #trial number,
-#score
-#which keyboard first (odd/even)
+#max/human (1/2)
+#practice/non-practice (1/2)
+#score (1/2/3/4)
+#which keyboard first (odd/even, 1/2)
 #which phrase of keyboard 1 is the deviant in (1/2) 
 #which phrase of keyboard 2 is the deviant in (1/2)
 #which note for keyboard 1 is the deviant in (4/5) 
@@ -121,6 +123,13 @@ for((i = 1; i <= 12; i++)); do
 		dev_filename="$2/block$i.dev.txt"
 	   	touch "$dev_filename"
 		
+		##writing two practice trials first, somewhat by hand ***CHECK THE METRONOME TRIAL CODE
+		if [ "${arr[0]}" == "1," ]; then
+		
+			( echo -2" "1" "$hummax" "${arr[2]::-1}" "${arr[3]::-1}" "0" "0" "0" "0" "0" "0" "255";" ) >> $dev_filename
+			( echo -1" "1" "$hummax" "${arr[2]::-1}" "${arr[3]::-1}" "0" "0" "0" "0" "0" "0" "255";" ) >> $dev_filename
+		fi
+		
 		while read trigline
 		do
 			trig=($trigline)
@@ -129,7 +138,8 @@ for((i = 1; i <= 12; i++)); do
 				#skipped over here by passing {arr[1]}
 				
 				##  the syntax ::-1 removes the commas from the strings
-				( echo ${arr[0]}" "${arr[2]::-1}" "${arr[3]::-1}" "${arr[4]::-1}" "${arr[5]::-1}" "${arr[6]::-1} "" ${arr[7]::-1} "" ${arr[8]::-1} "" ${arr[9]::-1} "" ${trig[5]}";" ) >> $dev_filename
+				#order is trialnum, practice/not, max/human, piece, which keyboard first, deviant phrase k1, k2, deviant note k1, k2, updown k1, k2, trial number
+				( echo ${arr[0]}" "2" "$hummax" "${arr[2]::-1}" "${arr[3]::-1}" "${arr[4]::-1}" "${arr[5]::-1}" "${arr[6]::-1}" "${arr[7]::-1}" "${arr[8]::-1}" "${arr[9]::-1}" "${trig[5]}";" ) >> $dev_filename
 			fi
 		done < "trigger_logic.txt"
 	done < $filename
