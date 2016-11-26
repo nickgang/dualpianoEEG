@@ -125,9 +125,8 @@ for((i = 1; i <= 12; i++)); do
 		
 		##writing two practice trials first, somewhat by hand ***CHECK THE METRONOME TRIAL CODE
 		if [ "${arr[0]}" == "1," ]; then
-		
-			( echo -2" "1" "$hummax" "${arr[2]::-1}" "${arr[3]::-1}" "0" "0" "0" "0" "0" "0" "255";" ) >> $dev_filename
-			( echo -1" "1" "$hummax" "${arr[2]::-1}" "${arr[3]::-1}" "0" "0" "0" "0" "0" "0" "255";" ) >> $dev_filename
+			( echo -2" "1" "$hummax" "${arr[2]::-1}" "${arr[3]::-1}" "0" "0" "0" "0" "0" "0" "233";" ) >> $dev_filename
+			( echo -1" "1" "$hummax" "${arr[2]::-1}" "${arr[3]::-1}" "0" "0" "0" "0" "0" "0" "233";" ) >> $dev_filename
 		fi
 		
 		while read trigline
