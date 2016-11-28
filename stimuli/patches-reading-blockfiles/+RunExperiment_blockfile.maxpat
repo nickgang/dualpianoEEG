@@ -38,12 +38,25 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-97",
+					"linecount" : 13,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 624.0, 859.5, 395.0, 181.0 ],
+					"style" : "",
+					"text" : "#The coll file orders the information in the following left to right columns:\n#trial number,\n#practice/non-practice (1/2)\n#max/human (1/2)\n#score (1/2/3/4)\n#which keyboard first (odd/even, 1/2)\n#which phrase of keyboard 1 is the deviant in (1/2) \n#which phrase of keyboard 2 is the deviant in (1/2)\n#which note for keyboard 1 is the deviant in (4/5) \n#which note for keyboard 2 is the deviant in (4/5) \n#does the deviant descend or ascend for keyboard 1 (-2/2) \n#does the deviant descend or ascend for keyboard 2 (-2/2)\n#trigger code identifying the trial\n"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-88",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 558.25, 817.166687, 64.0, 22.0 ],
+					"patching_rect" : [ 567.75, 789.0, 64.0, 22.0 ],
 					"style" : "",
 					"text" : "r trial-type"
 				}
@@ -55,7 +68,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 481.75, 856.5, 77.0, 20.0 ],
+					"patching_rect" : [ 447.75, 824.5, 77.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 79.75, 225.665283, 104.0, 20.0 ],
 					"style" : "",
@@ -71,10 +84,11 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 558.25, 849.0, 327.0, 35.0 ],
+					"patching_rect" : [ 524.25, 817.0, 394.333313, 35.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 185.75, 218.165283, 594.75, 35.0 ],
-					"style" : ""
+					"style" : "",
+					"text" : "2 2 piece1.coll.txt 1 1 1 4 4 2 2 217"
 				}
 
 			}
@@ -838,14 +852,16 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-145",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1325.0, 563.0, 455.0, 22.0 ],
+					"patching_rect" : [ 1325.0, 563.0, 455.0, 35.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 185.75, 91.0, 543.0, 22.0 ],
-					"style" : ""
+					"style" : "",
+					"text" : "Matt_SSD:/Users/matt/repos/dualpianoEEG/stimuli/block_making/MW_TD/block1.coll.txt"
 				}
 
 			}
@@ -893,14 +909,16 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-149",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1287.0, 468.0, 383.0, 22.0 ],
+					"patching_rect" : [ 1287.0, 468.0, 383.0, 35.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 185.75, 66.0, 543.0, 22.0 ],
-					"style" : ""
+					"style" : "",
+					"text" : "Matt_SSD:/Users/matt/repos/dualpianoEEG/stimuli/block_making/MW_TD/"
 				}
 
 			}
@@ -4456,7 +4474,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-77", 0 ],
+					"destination" : [ "obj-77", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-88", 0 ]
@@ -4588,6 +4606,12 @@
 				"name" : "pause-between-trials.maxpat",
 				"bootpath" : "~/repos/dualpianoEEG/stimuli/patches-reading-blockfiles",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "block1.coll.txt",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/block_making/MW_TD",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
