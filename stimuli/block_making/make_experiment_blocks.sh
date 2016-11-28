@@ -7,8 +7,8 @@
 
 #The coll file orders the information in the following left to right columns:
 #trial number,
-#max/human (1/2)
 #practice/non-practice (1/2)
+#max/human (1/2)
 #score (1/2/3/4)
 #which keyboard first (odd/even, 1/2)
 #which phrase of keyboard 1 is the deviant in (1/2) 
