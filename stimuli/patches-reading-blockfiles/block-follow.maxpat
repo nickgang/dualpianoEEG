@@ -3,13 +3,13 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 1,
-			"revision" : 0,
+			"minor" : 2,
+			"revision" : 5,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 95.0, 1261.0, 1084.0 ],
+		"rect" : [ 2175.0, 93.0, 1261.0, 1084.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,13 +38,45 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-17",
-					"maxclass" : "message",
-					"numinlets" : 2,
+					"id" : "obj-18",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 11.25, 257.5, 182.0, 47.0 ],
+					"style" : "",
+					"text" : "Assumption: this coll contains the series of trials for the block, with 1-origin index numbers."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-224",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 64.5, 310.0, 113.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"embed" : 0
+					}
+,
+					"style" : "",
+					"text" : "coll trials-sequence"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 0.4, 1.0, 1.0, 1.0 ],
+					"id" : "obj-5",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 371.0, 181.0, 50.0, 22.0 ],
-					"style" : ""
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 51.25, 419.333344, 74.0, 22.0 ],
+					"style" : "",
+					"text" : "piece-follow"
 				}
 
 			}
@@ -54,22 +86,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 308.0, 117.0, 194.0, 20.0 ],
+					"patching_rect" : [ 295.833344, 93.0, 194.0, 20.0 ],
 					"style" : "",
-					"text" : "block number, block type (1-origin)"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-2",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "int", "int" ],
-					"patching_rect" : [ 476.25, 181.0, 61.0, 22.0 ],
-					"style" : "",
-					"text" : "unpack i i"
+					"text" : "block number"
 				}
 
 			}
@@ -122,8 +141,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 1,
-							"revision" : 0,
+							"minor" : 2,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -707,8 +726,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 1,
-							"revision" : 0,
+							"minor" : 2,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -1028,7 +1047,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 330.0, 227.5, 132.0, 22.0 ],
+					"patching_rect" : [ 595.5, 209.5, 132.0, 22.0 ],
 					"style" : "",
 					"text" : "value block-number 99"
 				}
@@ -1065,10 +1084,10 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 258.25, 148.0, 237.0, 22.0 ],
+					"outlettype" : [ "bang", "int" ],
+					"patching_rect" : [ 258.25, 148.0, 30.0, 22.0 ],
 					"style" : "",
-					"text" : "t b l"
+					"text" : "t b i"
 				}
 
 			}
@@ -1192,19 +1211,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-10",
-					"linecount" : 3,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 540.5, 208.5, 55.0, 47.0 ],
-					"style" : "",
-					"text" : "current block type"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontsize" : 20.0,
 					"id" : "obj-9",
 					"maxclass" : "number",
@@ -1267,8 +1273,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 1,
-							"revision" : 0,
+							"minor" : 2,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -1594,8 +1600,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 1,
-							"revision" : 0,
+							"minor" : 2,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -2994,24 +3000,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-2", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-96", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-2", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"color" : [ 0.25098, 0.501961, 0.0, 1.0 ],
 					"destination" : [ "obj-51", 0 ],
 					"disabled" : 0,
@@ -3166,28 +3154,19 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-17", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-54", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-54", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-63", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-54", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-54", 1 ]
 				}
 
 			}
