@@ -42,7 +42,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 358.0, 675.833374, 61.0, 20.0 ],
+					"patching_rect" : [ 359.0, 693.833374, 61.0, 20.0 ],
 					"style" : "",
 					"text" : "success?"
 				}
@@ -55,7 +55,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "int" ],
-					"patching_rect" : [ 424.083313, 740.333374, 30.0, 22.0 ],
+					"patching_rect" : [ 424.083313, 748.333374, 30.0, 22.0 ],
 					"style" : "",
 					"text" : "t b i"
 				}
@@ -105,7 +105,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 424.083313, 646.333374, 122.0, 22.0 ],
+					"patching_rect" : [ 424.083313, 668.333374, 122.0, 22.0 ],
 					"style" : "",
 					"text" : "pause-between-trials"
 				}
@@ -222,7 +222,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 399.083313, 739.333374, 24.0, 24.0 ],
+					"patching_rect" : [ 399.083313, 747.333374, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -259,7 +259,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 340.0, 709.0, 59.0, 20.0 ],
+					"patching_rect" : [ 340.0, 721.0, 59.0, 20.0 ],
 					"style" : "",
 					"text" : "practice?"
 				}
@@ -272,7 +272,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "bang", "bang", "" ],
-					"patching_rect" : [ 424.083313, 675.833374, 46.0, 22.0 ],
+					"patching_rect" : [ 424.083313, 693.833374, 46.0, 22.0 ],
 					"style" : "",
 					"text" : "sel 0 1"
 				}
@@ -285,7 +285,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 399.083313, 709.0, 44.0, 22.0 ],
+					"patching_rect" : [ 399.083313, 721.0, 44.0, 22.0 ],
 					"style" : "",
 					"text" : "gate 2"
 				}
@@ -349,13 +349,13 @@
 			}
 , 			{
 				"box" : 				{
-					"color" : [ 0.4, 1.0, 1.0, 1.0 ],
+					"fontsize" : 24.0,
 					"id" : "obj-5",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 424.083313, 585.333374, 74.0, 22.0 ],
+					"patching_rect" : [ 424.083313, 590.333374, 141.0, 35.0 ],
 					"style" : "",
 					"text" : "piece-follow"
 				}
@@ -1741,7 +1741,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 450.083313, 609.833374, 85.5, 33.0 ],
+					"patching_rect" : [ 450.083313, 631.833374, 85.5, 33.0 ],
 					"style" : "",
 					"text" : "Correct performance?"
 				}
@@ -1755,7 +1755,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 424.083313, 614.333374, 24.0, 24.0 ],
+					"patching_rect" : [ 424.083313, 636.333374, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -2128,7 +2128,73 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "piece-follow.maxpat",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/patches-reading-blockfiles",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "piece1.coll.txt",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/patches-reading-blockfiles",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "midi2scaledegree.maxpat",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/patches-reading-blockfiles",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "majorscale.coll.txt",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/patches-reading-blockfiles",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "==2.maxpat",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/patches-reading-blockfiles",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "scaledegree2midi.maxpat",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/patches-reading-blockfiles",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "piano-note.maxpat",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/patches-reading-blockfiles",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "establish-tempo.maxpat",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/patches-reading-blockfiles",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "metronome-tock.maxpat",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/patches-reading-blockfiles",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pause-between-trials.maxpat",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/patches-reading-blockfiles",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "shell.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0
 	}
 
 }
