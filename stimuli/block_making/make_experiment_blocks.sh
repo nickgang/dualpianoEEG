@@ -8,11 +8,11 @@
 #The coll file orders the information in the following left to right columns:
 #trial number,
 #practice/non-practice (1/2)
-#max/human (1/2)
+#humanK1-maxK2 / humanK1 - humanK2 / maxK1 - humanK2 (1/2/3)
 #score (1/2/3/4)
 #which keyboard first (odd/even, 1/2)
-#which phrase of keyboard 1 is the deviant in (1/2) 
-#which phrase of keyboard 2 is the deviant in (1/2)
+#which phrase of keyboard 1 is the deviant in (1/2/3/4) 
+#which phrase of keyboard 2 is the deviant in (1/2/3/4)
 #which note for keyboard 1 is the deviant in (4/5) 
 #which note for keyboard 2 is the deviant in (4/5) 
 #does the deviant descend or ascend for keyboard 1 (-2/2) 
@@ -95,50 +95,92 @@ for((i = 1; i <= 12; i++)); do
 		if [ "${arr[2]}" == "piece4.coll.txt," ]; then
 			samediff=2;
 		fi
-		#human/max
+		#human/max - checking trigger numbers
 		if (( (i >= 5 ) && (i <= 8 ) )) ; then
-			hummax=1;
-		else
-			hummax=2;
+			hummaxtrig=2;
+		else 
+			hummaxtrig=1;
 		fi
+		
+		#human/max - what is actually stored
+		if (( (i < 5 ) )) ; then
+			hummax=1;
+		elif (( (i < 5 ) && (i <= 8 ) )) ; then
+			hummax=2;
+		else 
+			hummax=3;
+		fi
+		
 		#keyboard 1 first or second
 		if [ "${arr[3]}" == "1," ]; then
 			K1=1;
 		else
 			K1=2;
 		fi
+		
+		##checking triggers - careful, two processes related to deviant phrase location!!
 		#which deviant phrase keyboard 1
 		if [ "${arr[4]}" == "1," ]; then
-			K1dev=1;
+			K1devtrig=1;
 		else
-			K1dev=2;
+			K1devtrig=2;
 		fi	
 		#which deviant phrase keyboard 2
 		if [ "${arr[5]}" == "1," ]; then
-			K2dev=1;
+			K2devtrig=1;
 		else
-			K2dev=2;
-		fi		
+			K2devtrig=2;
+		fi	
+		
+		#what is actually stored
+		#which deviant phrase keyboard 1
+		if [ $K1 -eq 1 ]; then
+			if [[ "${arr[4]}" == "1," ]]; then
+				K1dev=1;
+			else
+				K1dev=3;
+			fi
+		elif  [ $K1 -eq 2 ]; then 
+			if [[ "${arr[4]}" == "1," ]]; then
+				K1dev=2;
+			else
+				K1dev=4;
+			fi	
+		fi
+		#which deviant phrase keyboard 2
+		if [ $K1 -eq 1 ]; then
+			if [[ "${arr[5]}" == "1," ]]; then
+				K2dev=2;
+			else
+				K2dev=4;
+			fi
+		elif [ $K1 -eq 2 ]; then 
+			if [[ "${arr[5]}" == "1," ]]; then
+				K2dev=1;
+			else
+				K2dev=3;
+			fi	
+		fi
 		
 		dev_filename="$2/block$i.dev.txt"
 	   	touch "$dev_filename"
 		
-		##writing two practice trials first, somewhat by hand ***CHECK THE METRONOME TRIAL CODE
+		##writing two practice trials first, somewhat by hand
 		if [ "${arr[0]}" == "1," ]; then
-			( echo -2", "1" "$hummax" "${arr[2]::-1}" "${arr[3]::-1}" "0" "0" "0" "0" "0" "0" "233";" ) >> $dev_filename
-			( echo -1", "1" "$hummax" "${arr[2]::-1}" "${arr[3]::-1}" "0" "0" "0" "0" "0" "0" "233";" ) >> $dev_filename
+			( echo -2", "1" "$hummax" "${arr[2]::-1}" "${arr[3]::-1}" "999" "999" "0" "0" "0" "0" "233";" ) >> $dev_filename
+			( echo -1", "1" "$hummax" "${arr[2]::-1}" "${arr[3]::-1}" "999" "999" "0" "0" "0" "0" "233";" ) >> $dev_filename
 		fi
 		
 		while read trigline
 		do
 			trig=($trigline)
-			if (( ( $hummax == ${trig[0]} ) && ( $samediff == ${trig[1]} ) && ( $K1 == ${trig[2]} ) && ( $K1dev == ${trig[3]} ) && ( $K2dev == ${trig[4]} ) )); then
+			if (( ( $hummaxtrig == ${trig[0]} ) && ( $samediff == ${trig[1]} ) && ( $K1 == ${trig[2]} ) && ( $K1devtrig == ${trig[3]} ) && ( $K2devtrig == ${trig[4]} ) )); then
 				#paste into new file - note that the sorting process from above results in a random number appearing in the intermediate file - this is
 				#skipped over here by passing {arr[1]}
 				
 				##  the syntax ::-1 removes the commas from the strings
-				#order is trialnum, practice/not, max/human, piece, which keyboard first, deviant phrase k1, k2, deviant note k1, k2, updown k1, k2, trial number
-				( echo ${arr[0]}" "2" "$hummax" "${arr[2]::-1}" "${arr[3]::-1}" "${arr[4]::-1}" "${arr[5]::-1}" "${arr[6]::-1}" "${arr[7]::-1}" "${arr[8]::-1}" "${arr[9]::-1}" "${trig[5]}";" ) >> $dev_filename
+				#order is trialnum, practice/not, max/human keybaord arrangement, piece, which keyboard first, deviant phrase k1, k2, deviant note k1, k2, updown k1, k2, trial number
+				( echo ${arr[0]}" "2" "$hummax" "${arr[2]::-1}" "${arr[3]::-1}" "$K1dev" "$K2dev" "${arr[6]::-1}" "${arr[7]::-1}" "${arr[8]::-1}" "${arr[9]::-1}" "${trig[5]}";" ) >> $dev_filename
 			fi
 		done < "trigger_logic.txt"
 	done < $filename
