@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 1956.0, 78.0, 1850.0, 1048.0 ],
+		"rect" : [ 2023.0, 96.0, 1850.0, 1048.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,50 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontsize" : 20.0,
+					"id" : "obj-103",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 427.25, 462.5, 62.0, 31.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 462.25, 407.334717, 62.0, 31.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-104",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 487.75, 450.0, 72.0, 47.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 455.0, 385.334717, 141.25, 20.0 ],
+					"style" : "",
+					"text" : "First metro tock's trigger"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-98",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 427.25, 434.875, 165.0, 22.0 ],
+					"style" : "",
+					"text" : "value first-metronome-trigger"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-102",
 					"maxclass" : "number",
@@ -277,7 +321,8 @@
 									"patching_rect" : [ 113.0, 757.0, 450.0, 22.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 10.0, 275.0, 450.0, 22.0 ],
-									"style" : ""
+									"style" : "",
+									"text" : "601 Patch Opened at 12/2/2016 at 10:54:58"
 								}
 
 							}
@@ -291,7 +336,8 @@
 									"patching_rect" : [ 113.0, 716.0, 450.0, 22.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 10.0, 234.0, 450.0, 22.0 ],
-									"style" : ""
+									"style" : "",
+									"text" : "1601 write logs/DPE-log-ltthoail.coll.txt"
 								}
 
 							}
@@ -932,14 +978,13 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-45",
-									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 1104.0, 464.0, 189.0, 35.0 ],
 									"style" : "",
-									"text" : "write logs/DPE-log-gavuqvmt.coll.txt"
+									"text" : "write logs/DPE-log-ltthoail.coll.txt"
 								}
 
 							}
@@ -1046,7 +1091,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 86.0, 278.0, 79.0, 22.0 ],
 													"style" : "",
-													"text" : "gavuqvmt"
+													"text" : "ltthoail"
 												}
 
 											}
@@ -1238,7 +1283,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 1159.0, 392.0, 65.0, 22.0 ],
 									"style" : "",
-									"text" : "gavuqvmt"
+									"text" : "ltthoail"
 								}
 
 							}
@@ -1283,6 +1328,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-15",
+									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
@@ -1291,7 +1337,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 10.0, 41.0, 560.0, 22.0 ],
 									"style" : "",
-									"text" : "1 1527 write logs/DPE-log-gavuqvmt.coll.txt"
+									"text" : "3 435585 read Matt_SSD:/Users/matt/repos/dualpianoEEG/stimuli/block_making/MW_TD/block1.coll.txt"
 								}
 
 							}
@@ -1802,7 +1848,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 98.0, 329.0, 214.0, 22.0 ],
 													"style" : "",
-													"text" : "Patch Opened at 11/30/2016 at 15: 6:49"
+													"text" : "Patch Opened at 12/2/2016 at 10:54:58"
 												}
 
 											}
@@ -2279,7 +2325,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 38.5, 105.0, 221.0, 35.0 ],
 									"style" : "",
-									"text" : "Patch Opened at 11/30/2016 at 15: 6:49"
+									"text" : "Patch Opened at 12/2/2016 at 10:54:58"
 								}
 
 							}
@@ -2566,7 +2612,8 @@
 									"patching_rect" : [ 113.0, 672.0, 450.0, 22.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 10.0, 190.0, 450.0, 22.0 ],
-									"style" : ""
+									"style" : "",
+									"text" : "1601 write logs/DPE-log-ltthoail.coll.txt"
 								}
 
 							}
@@ -2641,15 +2688,17 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-4",
+									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 113.0, 634.0, 450.0, 22.0 ],
 									"presentation" : 1,
+									"presentation_linecount" : 2,
 									"presentation_rect" : [ 10.0, 152.0, 450.0, 22.0 ],
 									"style" : "",
-									"text" : "527 Patch Opened at 11/30/2016 at 15: 6:49"
+									"text" : "435585 readfolder Matt_SSD:/Users/matt/repos/dualpianoEEG/stimuli/block_making/MW_TD/"
 								}
 
 							}
@@ -2690,7 +2739,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 10.0, 112.0, 550.0, 22.0 ],
 									"style" : "",
-									"text" : "1527 write logs/DPE-log-gavuqvmt.coll.txt"
+									"text" : "435585 read Matt_SSD:/Users/matt/repos/dualpianoEEG/stimuli/block_making/MW_TD/block1.coll.txt"
 								}
 
 							}
@@ -4763,11 +4812,11 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 683.25, 568.5, 149.0, 20.0 ],
+					"patching_rect" : [ 683.25, 568.5, 120.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 162.0, 385.334717, 115.25, 20.0 ],
+					"presentation_rect" : [ 162.0, 385.334717, 120.0, 20.0 ],
 					"style" : "",
-					"text" : "# of Trials Owed"
+					"text" : "# of Trials Still Owed"
 				}
 
 			}
@@ -7413,6 +7462,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-98", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-31", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -7925,6 +7983,15 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-103", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-98", 0 ]
+				}
+
+			}
  ],
 		"dependency_cache" : [ 			{
 				"name" : "piece1.coll.txt",
@@ -7942,6 +8009,12 @@
 				"name" : "block-follow.maxpat",
 				"bootpath" : "~/repos/dualpianoEEG/stimuli/patches-reading-blockfiles",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "block1.coll.txt",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/block_making/MW_TD",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
