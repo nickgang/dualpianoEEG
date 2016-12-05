@@ -97,9 +97,9 @@ for((i = 1; i <= 12; i++)); do
 		fi
 		#human/max - checking trigger numbers
 		if (( (i >= 5 ) && (i <= 8 ) )) ; then
-			hummaxtrig=2;
-		else 
 			hummaxtrig=1;
+		else 
+			hummaxtrig=2;
 		fi
 		
 		#human/max - what is actually stored
