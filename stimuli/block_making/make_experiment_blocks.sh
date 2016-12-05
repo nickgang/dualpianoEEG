@@ -105,7 +105,7 @@ for((i = 1; i <= 12; i++)); do
 		#human/max - what is actually stored
 		if (( (i < 5 ) )) ; then
 			hummax=1;
-		elif (( (i < 5 ) && (i <= 8 ) )) ; then
+		elif (( (i >= 5 ) && (i <= 8 ) )) ; then
 			hummax=2;
 		else 
 			hummax=3;
