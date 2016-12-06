@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 2244.0, 104.0, 1115.0, 879.0 ],
+		"rect" : [ 557.0, 85.0, 931.0, 864.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,20 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 331.0, 747.333374, 68.0, 33.0 ],
+					"presentation_rect" : [ 312.0, 743.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "Redo now or later?"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-48",
 					"maxclass" : "comment",
@@ -118,21 +132,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 174.833344, 421.5, 156.0, 33.0 ],
+					"patching_rect" : [ 182.833344, 425.833374, 156.0, 33.0 ],
 					"style" : "",
 					"text" : "In case we fail this trial and will have to make it up later"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-30",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 715.0, 105.833313, 171.0, 20.0 ],
-					"style" : "",
-					"text" : "Axe this from metronome-tock"
 				}
 
 			}
@@ -306,19 +308,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-97",
-					"linecount" : 14,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 676.75, 244.166687, 395.0, 194.0 ],
-					"style" : "",
-					"text" : "The coll file orders the information as follows:\nIndex is trial type number according to\tthe sequence of\tall trials owed\nData values are\tlist in the following left to right columns:\n  practice/non-practice (1/2)\n  max/human (1/2)\n  score (filename)\n  which keyboard first (odd/even, 1/2)\n  which phrase of keyboard 1 is the deviant in (0/1/2)\n  which phrase of keyboard 2 is the deviant in (0/1/2)\n  which note for keyboard 1 is the deviant in (0/4/5)\n  which note for keyboard 2 is the deviant in (0/4/5)\n  does the deviant descend or ascend for keyboard 1 (-2/0/2)\n  does the deviant descend or ascend for keyboard 2 (-2/0/2)\n  trigger code identifying the trial"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-18",
 					"linecount" : 3,
 					"maxclass" : "comment",
@@ -408,19 +397,6 @@
 					"patching_rect" : [ 99.0, 130.5, 57.0, 22.0 ],
 					"style" : "",
 					"text" : "onebang"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"color" : [ 0.819608, 0.858824, 0.219608, 1.0 ],
-					"id" : "obj-56",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 728.333374, 130.5, 75.0, 22.0 ],
-					"style" : "",
-					"text" : "s block-type"
 				}
 
 			}
@@ -1849,7 +1825,7 @@
 					"destination" : [ "obj-17", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 408.583313, 783.0, 330.0, 783.0, 330.0, 518.0, 433.583313, 518.0 ],
+					"midpoints" : [ 408.583313, 783.0, 318.0, 783.0, 318.0, 518.0, 433.583313, 518.0 ],
 					"source" : [ "obj-21", 0 ]
 				}
 
@@ -1959,7 +1935,7 @@
 					"destination" : [ "obj-103", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 444.583313, 796.0, 166.0, 796.0, 166.0, 356.0, 184.333344, 356.0 ],
+					"midpoints" : [ 444.583313, 797.0, 166.0, 797.0, 166.0, 356.0, 184.333344, 356.0 ],
 					"source" : [ "obj-47", 1 ]
 				}
 
@@ -2128,73 +2104,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "piece-follow.maxpat",
-				"bootpath" : "~/repos/dualpianoEEG/stimuli/patches-reading-blockfiles",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "piece1.coll.txt",
-				"bootpath" : "~/repos/dualpianoEEG/stimuli/patches-reading-blockfiles",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "midi2scaledegree.maxpat",
-				"bootpath" : "~/repos/dualpianoEEG/stimuli/patches-reading-blockfiles",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "majorscale.coll.txt",
-				"bootpath" : "~/repos/dualpianoEEG/stimuli/patches-reading-blockfiles",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "==2.maxpat",
-				"bootpath" : "~/repos/dualpianoEEG/stimuli/patches-reading-blockfiles",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "scaledegree2midi.maxpat",
-				"bootpath" : "~/repos/dualpianoEEG/stimuli/patches-reading-blockfiles",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "piano-note.maxpat",
-				"bootpath" : "~/repos/dualpianoEEG/stimuli/patches-reading-blockfiles",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "establish-tempo.maxpat",
-				"bootpath" : "~/repos/dualpianoEEG/stimuli/patches-reading-blockfiles",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "metronome-tock.maxpat",
-				"bootpath" : "~/repos/dualpianoEEG/stimuli/patches-reading-blockfiles",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "pause-between-trials.maxpat",
-				"bootpath" : "~/repos/dualpianoEEG/stimuli/patches-reading-blockfiles",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "shell.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }
