@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 1967.0, 79.0, 1877.0, 964.0 ],
+		"rect" : [ 1955.0, 87.0, 1877.0, 964.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -101,7 +101,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 594.75, 405.334717, 167.0, 35.0 ],
 					"style" : "",
-					"text" : "piece1.coll.txt"
+					"text" : "-"
 				}
 
 			}
@@ -422,6 +422,19 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-73",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 897.5, 347.5, 83.0, 22.0 ],
+									"style" : "",
+									"text" : "r save-log-file"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-69",
 									"maxclass" : "message",
 									"numinlets" : 2,
@@ -605,8 +618,7 @@
 									"patching_rect" : [ 113.0, 757.0, 508.0, 22.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 10.0, 275.0, 508.0, 22.0 ],
-									"style" : "",
-									"text" : "865914 trigger 233"
+									"style" : ""
 								}
 
 							}
@@ -620,8 +632,7 @@
 									"patching_rect" : [ 113.0, 716.0, 550.0, 22.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 10.0, 234.0, 550.0, 22.0 ],
-									"style" : "",
-									"text" : "865914 metronome 2"
+									"style" : ""
 								}
 
 							}
@@ -1278,7 +1289,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 1104.0, 464.0, 185.0, 35.0 ],
 									"style" : "",
-									"text" : "write logs/DPE-log-idqhemiu.coll.txt"
+									"text" : "write logs/DPE-log-bfsjrygd.coll.txt"
 								}
 
 							}
@@ -1385,7 +1396,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 86.0, 278.0, 79.0, 22.0 ],
 													"style" : "",
-													"text" : "idqhemiu"
+													"text" : "bfsjrygd"
 												}
 
 											}
@@ -1577,7 +1588,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 1159.0, 392.0, 65.0, 22.0 ],
 									"style" : "",
-									"text" : "idqhemiu"
+									"text" : "bfsjrygd"
 								}
 
 							}
@@ -1630,7 +1641,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 10.0, 41.0, 560.0, 22.0 ],
 									"style" : "",
-									"text" : "107 866414 metronome 3"
+									"text" : "1 1442 write logs/DPE-log-bfsjrygd.coll.txt"
 								}
 
 							}
@@ -2141,7 +2152,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 98.0, 329.0, 214.0, 22.0 ],
 													"style" : "",
-													"text" : "Patch Opened at 12/12/2016 at 11:39:58"
+													"text" : "Patch Opened at 12/12/2016 at 12:14:28"
 												}
 
 											}
@@ -2618,7 +2629,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 38.5, 105.0, 225.0, 22.0 ],
 									"style" : "",
-									"text" : "Patch Opened at 12/12/2016 at 11:39:58"
+									"text" : "Patch Opened at 12/12/2016 at 12:14:28"
 								}
 
 							}
@@ -2905,8 +2916,7 @@
 									"patching_rect" : [ 113.0, 672.0, 550.0, 22.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 10.0, 190.0, 550.0, 22.0 ],
-									"style" : "",
-									"text" : "865914 metronome 2"
+									"style" : ""
 								}
 
 							}
@@ -2989,7 +2999,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 10.0, 152.0, 450.0, 22.0 ],
 									"style" : "",
-									"text" : "866414 trigger 233"
+									"text" : "442 Patch Opened at 12/12/2016 at 12:14:28"
 								}
 
 							}
@@ -3030,7 +3040,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 10.0, 112.0, 550.0, 22.0 ],
 									"style" : "",
-									"text" : "866414 metronome 3"
+									"text" : "1442 write logs/DPE-log-bfsjrygd.coll.txt"
 								}
 
 							}
@@ -3072,15 +3082,6 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-12", 1 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-58", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-12", 0 ]
 								}
 
 							}
@@ -3324,15 +3325,6 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-35", 1 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-58", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-35", 0 ]
 								}
 
 							}
@@ -3698,6 +3690,15 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-58", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-73", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-55", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -3801,7 +3802,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 155.75, 216.165283, 594.75, 35.0 ],
 					"style" : "",
-					"text" : "1 1 piece1.coll.txt 1 999 999 0 0 0 0 233"
+					"text" : "-"
 				}
 
 			}
@@ -5280,7 +5281,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 525.5, 341.165283, 61.0, 35.0 ],
 					"style" : "",
-					"text" : "-1 -1"
+					"text" : "-"
 				}
 
 			}
@@ -5297,7 +5298,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 451.0, 341.165283, 61.0, 35.0 ],
 					"style" : "",
-					"text" : "-1 -1"
+					"text" : "-"
 				}
 
 			}
@@ -6872,7 +6873,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 130.25, 341.165283, 117.0, 35.0 ],
 					"style" : "",
-					"text" : "01_02"
+					"text" : "BB-TT"
 				}
 
 			}
@@ -8269,12 +8270,6 @@
 				"name" : "block-follow.maxpat",
 				"bootpath" : "~/repos/dualpianoEEG/stimuli/patches-reading-blockfiles",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "block1.coll.txt",
-				"bootpath" : "~/repos/dualpianoEEG/stimuli/block_making/MW_TD",
-				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
