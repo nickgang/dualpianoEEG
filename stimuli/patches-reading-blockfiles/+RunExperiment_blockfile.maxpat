@@ -101,7 +101,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 594.75, 405.334717, 167.0, 35.0 ],
 					"style" : "",
-					"text" : "m, ndsfg kl dfg"
+					"text" : "piece1.coll.txt"
 				}
 
 			}
@@ -420,7 +420,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-69",
@@ -607,7 +606,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 10.0, 275.0, 508.0, 22.0 ],
 									"style" : "",
-									"text" : "86410 entering free practice"
+									"text" : "865914 trigger 233"
 								}
 
 							}
@@ -622,7 +621,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 10.0, 234.0, 550.0, 22.0 ],
 									"style" : "",
-									"text" : "86857 write logs/SPRF-log-zvuqohib.coll.txt"
+									"text" : "865914 metronome 2"
 								}
 
 							}
@@ -1097,7 +1096,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 1266.75, 60.0, 64.0, 22.0 ],
 									"style" : "",
-									"text" : "2 69"
+									"text" : "1 53"
 								}
 
 							}
@@ -1123,7 +1122,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 951.5, 60.0, 64.0, 22.0 ],
 									"style" : "",
-									"text" : "2 69 65"
+									"text" : "1 53 74"
 								}
 
 							}
@@ -1631,7 +1630,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 10.0, 41.0, 560.0, 22.0 ],
 									"style" : "",
-									"text" : "5 359735 write logs/SPRF-log-ykoybiyc.coll.txt"
+									"text" : "107 866414 metronome 3"
 								}
 
 							}
@@ -2907,7 +2906,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 10.0, 190.0, 550.0, 22.0 ],
 									"style" : "",
-									"text" : "86857 write logs/SPRF-log-zvuqohib.coll.txt"
+									"text" : "865914 metronome 2"
 								}
 
 							}
@@ -2990,7 +2989,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 10.0, 152.0, 450.0, 22.0 ],
 									"style" : "",
-									"text" : "358906 entering free practice"
+									"text" : "866414 trigger 233"
 								}
 
 							}
@@ -3031,7 +3030,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 10.0, 112.0, 550.0, 22.0 ],
 									"style" : "",
-									"text" : "359735 write logs/SPRF-log-ykoybiyc.coll.txt"
+									"text" : "866414 metronome 3"
 								}
 
 							}
@@ -3802,7 +3801,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 155.75, 216.165283, 594.75, 35.0 ],
 					"style" : "",
-					"text" : "-"
+					"text" : "1 1 piece1.coll.txt 1 999 999 0 0 0 0 233"
 				}
 
 			}
@@ -4574,7 +4573,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 124.75, 89.0, 577.25, 22.0 ],
 					"style" : "",
-					"text" : "\"Macintosh HD:/Users/neuromusic/Experiments/dualpianoEEG/stimuli/block_making/MH/block10.coll.txt\""
+					"text" : "Matt_SSD:/Users/matt/repos/dualpianoEEG/stimuli/block_making/MW_TD/block1.coll.txt"
 				}
 
 			}
@@ -4630,7 +4629,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 124.75, 64.0, 577.25, 22.0 ],
 					"style" : "",
-					"text" : "\"Macintosh HD:/Users/neuromusic/Experiments/dualpianoEEG/stimuli/block_making/MH/\""
+					"text" : "Matt_SSD:/Users/matt/repos/dualpianoEEG/stimuli/block_making/MW_TD/"
 				}
 
 			}
@@ -5281,7 +5280,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 525.5, 341.165283, 61.0, 35.0 ],
 					"style" : "",
-					"text" : "-"
+					"text" : "-1 -1"
 				}
 
 			}
@@ -5298,7 +5297,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 451.0, 341.165283, 61.0, 35.0 ],
 					"style" : "",
-					"text" : "-"
+					"text" : "-1 -1"
 				}
 
 			}
@@ -5328,7 +5327,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 386.5, 258.0, 64.0, 22.0 ],
 					"style" : "",
-					"text" : "2 69"
+					"text" : "1 53"
 				}
 
 			}
@@ -5354,7 +5353,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 231.0, 258.0, 64.0, 22.0 ],
 					"style" : "",
-					"text" : "2 69 65"
+					"text" : "1 53 74"
 				}
 
 			}
@@ -5564,7 +5563,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1149.666748, 645.5, 138.0, 35.0 ],
+					"patching_rect" : [ 1149.666748, 647.0, 136.0, 35.0 ],
 					"style" : "",
 					"text" : "block-follow",
 					"varname" : "block-follow"
@@ -6355,7 +6354,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 82.0, 930.0, 80.0, 22.0 ],
 					"style" : "",
-					"text" : "1078136 237"
+					"text" : "432560 233"
 				}
 
 			}
@@ -6873,7 +6872,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 130.25, 341.165283, 117.0, 35.0 ],
 					"style" : "",
-					"text" : "BB-TT"
+					"text" : "01_02"
 				}
 
 			}
@@ -8270,6 +8269,12 @@
 				"name" : "block-follow.maxpat",
 				"bootpath" : "~/repos/dualpianoEEG/stimuli/patches-reading-blockfiles",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "block1.coll.txt",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/block_making/MW_TD",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
