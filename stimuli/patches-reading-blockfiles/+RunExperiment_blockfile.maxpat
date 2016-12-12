@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 1955.0, 87.0, 1877.0, 964.0 ],
+		"rect" : [ 40.0, 87.0, 1877.0, 964.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,60 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontsize" : 24.0,
+					"id" : "obj-153",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1311.0, 907.0, 436.0, 35.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1313.25, 904.0, 594.75, 35.0 ],
+					"style" : "",
+					"text" : "1 2 piece3.coll.txt 1 999 999 0 0 0 0 233"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-152",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1398.0, 782.0, 54.0, 22.0 ],
+					"style" : "",
+					"text" : "print foo"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bubble" : 1,
+					"id" : "obj-112",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1511.5, 702.0, 197.0, 37.0 ],
+					"style" : "",
+					"text" : "Just so display will be correct before the block actually begins"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-67",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1378.5, 728.0, 131.0, 22.0 ],
+					"style" : "",
+					"text" : "decode-trial-conditions"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-63",
 					"maxclass" : "comment",
@@ -101,7 +155,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 594.75, 405.334717, 167.0, 35.0 ],
 					"style" : "",
-					"text" : "-"
+					"text" : "piece2.coll.txt"
 				}
 
 			}
@@ -422,12 +476,64 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-79",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 923.0, 343.0, 46.0, 20.0 ],
+									"style" : "",
+									"text" : "kludge"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-77",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 863.0, 343.0, 56.0, 22.0 ],
+									"style" : "",
+									"text" : "delay 10"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-76",
+									"linecount" : 2,
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 878.0, 296.0, 117.0, 35.0 ],
+									"style" : "",
+									"text" : ";\rlog saving log so far"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-67",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "bang", "bang" ],
+									"patching_rect" : [ 863.0, 267.0, 34.0, 22.0 ],
+									"style" : "",
+									"text" : "t b b"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-73",
 									"maxclass" : "newobj",
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 897.5, 347.5, 83.0, 22.0 ],
+									"patching_rect" : [ 863.0, 235.5, 83.0, 22.0 ],
 									"style" : "",
 									"text" : "r save-log-file"
 								}
@@ -618,21 +724,25 @@
 									"patching_rect" : [ 113.0, 757.0, 508.0, 22.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 10.0, 275.0, 508.0, 22.0 ],
-									"style" : ""
+									"style" : "",
+									"text" : "1691905 trial-conditions 1 1 piece2.coll.txt 2 999 999 0 0 0 0 233"
 								}
 
 							}
 , 							{
 								"box" : 								{
 									"id" : "obj-42",
+									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 113.0, 716.0, 550.0, 22.0 ],
+									"patching_rect" : [ 113.0, 716.0, 550.0, 35.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 10.0, 234.0, 550.0, 22.0 ],
-									"style" : ""
+									"presentation_linecount" : 2,
+									"presentation_rect" : [ 10.0, 234.0, 550.0, 35.0 ],
+									"style" : "",
+									"text" : "1691905 read Matt_SSD:/Users/matt/repos/dualpianoEEG/stimuli/block_making/MW_TD/block4.coll.txt"
 								}
 
 							}
@@ -1107,7 +1217,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 1266.75, 60.0, 64.0, 22.0 ],
 									"style" : "",
-									"text" : "1 53"
+									"text" : "1 64"
 								}
 
 							}
@@ -1133,7 +1243,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 951.5, 60.0, 64.0, 22.0 ],
 									"style" : "",
-									"text" : "1 53 74"
+									"text" : "1 64 45"
 								}
 
 							}
@@ -1289,7 +1399,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 1104.0, 464.0, 185.0, 35.0 ],
 									"style" : "",
-									"text" : "write logs/DPE-log-bfsjrygd.coll.txt"
+									"text" : "write logs/DPE-log-yqyjrpdn.coll.txt"
 								}
 
 							}
@@ -1396,7 +1506,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 86.0, 278.0, 79.0, 22.0 ],
 													"style" : "",
-													"text" : "bfsjrygd"
+													"text" : "yqyjrpdn"
 												}
 
 											}
@@ -1588,7 +1698,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 1159.0, 392.0, 65.0, 22.0 ],
 									"style" : "",
-									"text" : "bfsjrygd"
+									"text" : "yqyjrpdn"
 								}
 
 							}
@@ -1633,15 +1743,17 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-15",
+									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 680.0, 544.0, 479.0, 22.0 ],
+									"patching_rect" : [ 680.0, 544.0, 479.0, 35.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 10.0, 41.0, 560.0, 22.0 ],
+									"presentation_linecount" : 2,
+									"presentation_rect" : [ 10.0, 41.0, 560.0, 35.0 ],
 									"style" : "",
-									"text" : "1 1442 write logs/DPE-log-bfsjrygd.coll.txt"
+									"text" : "323 1692617 read Matt_SSD:/Users/matt/repos/dualpianoEEG/stimuli/block_making/MW_TD/block3.coll.txt"
 								}
 
 							}
@@ -2152,7 +2264,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 98.0, 329.0, 214.0, 22.0 ],
 													"style" : "",
-													"text" : "Patch Opened at 12/12/2016 at 12:14:28"
+													"text" : "Patch Opened at 12/12/2016 at 12:19:35"
 												}
 
 											}
@@ -2629,7 +2741,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 38.5, 105.0, 225.0, 22.0 ],
 									"style" : "",
-									"text" : "Patch Opened at 12/12/2016 at 12:14:28"
+									"text" : "Patch Opened at 12/12/2016 at 12:19:35"
 								}
 
 							}
@@ -2658,7 +2770,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 897.5, 380.0, 65.0, 22.0 ],
+									"patching_rect" : [ 863.0, 374.0, 65.0, 22.0 ],
 									"style" : "",
 									"text" : "writeagain"
 								}
@@ -2909,14 +3021,17 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-22",
+									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 113.0, 672.0, 550.0, 22.0 ],
+									"patching_rect" : [ 113.0, 672.0, 550.0, 35.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 10.0, 190.0, 550.0, 22.0 ],
-									"style" : ""
+									"presentation_linecount" : 2,
+									"presentation_rect" : [ 10.0, 190.0, 550.0, 35.0 ],
+									"style" : "",
+									"text" : "1691905 read Matt_SSD:/Users/matt/repos/dualpianoEEG/stimuli/block_making/MW_TD/block4.coll.txt"
 								}
 
 							}
@@ -2999,7 +3114,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 10.0, 152.0, 450.0, 22.0 ],
 									"style" : "",
-									"text" : "442 Patch Opened at 12/12/2016 at 12:14:28"
+									"text" : "1692617 trial-conditions 1 1 piece2.coll.txt 1 999 999 0 0 0 0 233"
 								}
 
 							}
@@ -3032,15 +3147,17 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-3",
+									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 113.0, 594.0, 550.0, 22.0 ],
+									"patching_rect" : [ 113.0, 594.0, 550.0, 35.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 10.0, 112.0, 550.0, 22.0 ],
+									"presentation_linecount" : 2,
+									"presentation_rect" : [ 10.0, 112.0, 550.0, 35.0 ],
 									"style" : "",
-									"text" : "1442 write logs/DPE-log-bfsjrygd.coll.txt"
+									"text" : "1692617 read Matt_SSD:/Users/matt/repos/dualpianoEEG/stimuli/block_making/MW_TD/block3.coll.txt"
 								}
 
 							}
@@ -3654,6 +3771,24 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-76", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-67", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-77", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-67", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-55", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -3690,10 +3825,19 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-58", 0 ],
+									"destination" : [ "obj-67", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-73", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-58", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-77", 0 ]
 								}
 
 							}
@@ -3802,7 +3946,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 155.75, 216.165283, 594.75, 35.0 ],
 					"style" : "",
-					"text" : "-"
+					"text" : "1 1 piece2.coll.txt 1 999 999 0 0 0 0 233"
 				}
 
 			}
@@ -3827,7 +3971,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1415.5, 580.833313, 141.0, 39.0 ],
+					"patching_rect" : [ 1440.5, 580.833313, 141.0, 39.0 ],
 					"style" : "",
 					"text" : "This one reads each file"
 				}
@@ -3909,7 +4053,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1492.166626, 654.16803, 24.0, 24.0 ],
+					"patching_rect" : [ 1517.166626, 654.16803, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -4485,7 +4629,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1304.333374, 711.0, 66.0, 22.0 ],
+					"patching_rect" : [ 1304.833374, 728.0, 66.0, 22.0 ],
 					"style" : "",
 					"text" : "s trial-type"
 				}
@@ -4498,7 +4642,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 1429.5, 624.16803, 113.0, 22.0 ],
+					"patching_rect" : [ 1454.5, 624.16803, 113.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 589.0, 116.0, 113.0, 22.0 ],
 					"saved_object_attributes" : 					{
@@ -4516,7 +4660,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1322.333374, 652.0, 157.0, 22.0 ],
+					"patching_rect" : [ 1347.333374, 652.0, 157.0, 22.0 ],
 					"style" : "",
 					"text" : "s num-good-trials-still-owed"
 				}
@@ -4529,7 +4673,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 1322.333374, 619.166626, 35.0, 22.0 ],
+					"patching_rect" : [ 1347.333374, 619.166626, 35.0, 22.0 ],
 					"style" : "",
 					"text" : "grab"
 				}
@@ -4540,11 +4684,11 @@
 					"id" : "obj-192",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "", "int", "length", "" ],
-					"patching_rect" : [ 1287.0, 580.833313, 72.0, 22.0 ],
+					"numoutlets" : 5,
+					"outlettype" : [ "", "bang", "start", "length", "" ],
+					"patching_rect" : [ 1287.0, 580.833313, 99.0, 22.0 ],
 					"style" : "",
-					"text" : "t l 1 length l"
+					"text" : "t l b start length l"
 				}
 
 			}
@@ -4574,7 +4718,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 124.75, 89.0, 577.25, 22.0 ],
 					"style" : "",
-					"text" : "Matt_SSD:/Users/matt/repos/dualpianoEEG/stimuli/block_making/MW_TD/block1.coll.txt"
+					"text" : "Matt_SSD:/Users/matt/repos/dualpianoEEG/stimuli/block_making/MW_TD/block3.coll.txt"
 				}
 
 			}
@@ -5281,7 +5425,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 525.5, 341.165283, 61.0, 35.0 ],
 					"style" : "",
-					"text" : "-"
+					"text" : "-1 -1"
 				}
 
 			}
@@ -5298,7 +5442,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 451.0, 341.165283, 61.0, 35.0 ],
 					"style" : "",
-					"text" : "-"
+					"text" : "-1 -1"
 				}
 
 			}
@@ -5328,7 +5472,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 386.5, 258.0, 64.0, 22.0 ],
 					"style" : "",
-					"text" : "1 53"
+					"text" : "1 64"
 				}
 
 			}
@@ -5354,7 +5498,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 231.0, 258.0, 64.0, 22.0 ],
 					"style" : "",
-					"text" : "1 53 74"
+					"text" : "1 64 45"
 				}
 
 			}
@@ -6355,7 +6499,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 82.0, 930.0, 80.0, 22.0 ],
 					"style" : "",
-					"text" : "432560 233"
+					"text" : "620923 233"
 				}
 
 			}
@@ -6873,7 +7017,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 130.25, 341.165283, 117.0, 35.0 ],
 					"style" : "",
-					"text" : "BB-TT"
+					"text" : "01_04"
 				}
 
 			}
@@ -7399,6 +7543,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-67", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-153", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-13", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -7492,13 +7645,22 @@
 					"destination" : [ "obj-186", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-192", 3 ]
+					"source" : [ "obj-192", 4 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-193", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-192", 3 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-224", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-192", 2 ]
@@ -7580,6 +7742,24 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-139", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-224", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-152", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-224", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-67", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-224", 0 ]
@@ -8273,6 +8453,12 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "block3.coll.txt",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/block_making/MW_TD",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "piece-follow.maxpat",
 				"bootpath" : "~/repos/dualpianoEEG/stimuli/patches-reading-blockfiles",
 				"type" : "JSON",
@@ -8316,6 +8502,12 @@
 			}
 , 			{
 				"name" : "metronome-tock.maxpat",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/patches-reading-blockfiles",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "decode-trial-conditions.maxpat",
 				"bootpath" : "~/repos/dualpianoEEG/stimuli/patches-reading-blockfiles",
 				"type" : "JSON",
 				"implicit" : 1
