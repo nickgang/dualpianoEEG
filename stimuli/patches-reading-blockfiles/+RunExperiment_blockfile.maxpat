@@ -3,15 +3,15 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 0,
-			"revision" : 1,
+			"minor" : 2,
+			"revision" : 5,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 93.0, 78.0, 1243.0, 906.0 ],
+		"rect" : [ 93.0, 78.0, 1074.0, 795.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -108,7 +108,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 720.0, 462.5, 72.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 658.25, 383.334717, 40.0, 20.0 ],
+					"presentation_rect" : [ 659.25, 383.334717, 40.0, 20.0 ],
 					"style" : "",
 					"text" : "Score"
 				}
@@ -163,9 +163,9 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 634.25, 486.375, 186.0, 35.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 594.75, 405.334717, 167.0, 35.0 ],
+					"presentation_rect" : [ 595.75, 405.334717, 167.0, 35.0 ],
 					"style" : "",
-					"text" : "piece3.coll.txt"
+					"text" : "-"
 				}
 
 			}
@@ -177,7 +177,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 506.75, 263.5, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 638.0, 317.25, 100.0, 20.0 ],
+					"presentation_rect" : [ 639.0, 317.25, 100.0, 20.0 ],
 					"style" : "",
 					"text" : "Deviant Intervals"
 				}
@@ -194,7 +194,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 544.75, 354.0, 62.0, 31.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 699.75, 343.25, 62.0, 31.0 ],
+					"presentation_rect" : [ 700.75, 343.25, 62.0, 31.0 ],
 					"style" : ""
 				}
 
@@ -210,7 +210,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 476.75, 354.0, 62.0, 31.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 631.75, 343.25, 62.0, 31.0 ],
+					"presentation_rect" : [ 632.75, 343.25, 62.0, 31.0 ],
 					"style" : ""
 				}
 
@@ -341,7 +341,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 435.666626, 90.0, 36.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 389.666626, 684.25, 36.0, 22.0 ],
+					"presentation_rect" : [ 390.666626, 684.25, 36.0, 22.0 ],
 					"style" : "",
 					"text" : "flush"
 				}
@@ -356,7 +356,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 69.5, 90.0, 36.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 23.5, 684.25, 36.0, 22.0 ],
+					"presentation_rect" : [ 24.5, 684.25, 36.0, 22.0 ],
 					"style" : "",
 					"text" : "flush"
 				}
@@ -373,7 +373,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 427.25, 462.5, 62.0, 31.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 432.25, 405.334717, 62.0, 31.0 ],
+					"presentation_rect" : [ 433.25, 405.334717, 62.0, 31.0 ],
 					"style" : ""
 				}
 
@@ -387,7 +387,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 487.75, 450.0, 72.0, 47.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 425.0, 383.334717, 141.25, 20.0 ],
+					"presentation_rect" : [ 426.0, 383.334717, 141.25, 20.0 ],
 					"style" : "",
 					"text" : "First metro tock's trigger"
 				}
@@ -455,8 +455,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 0,
-							"revision" : 1,
+							"minor" : 2,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -765,8 +765,7 @@
 									"patching_rect" : [ -3.0, 768.0, 589.0, 22.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 10.0, 275.0, 589.0, 22.0 ],
-									"style" : "",
-									"text" : "134841 piano-note 3 71 127"
+									"style" : ""
 								}
 
 							}
@@ -780,8 +779,7 @@
 									"patching_rect" : [ -3.0, 727.0, 565.0, 22.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 10.0, 234.0, 565.0, 22.0 ],
-									"style" : "",
-									"text" : "134841 trigger 234"
+									"style" : ""
 								}
 
 							}
@@ -836,8 +834,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 0,
-											"revision" : 1,
+											"minor" : 2,
+											"revision" : 5,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -1149,8 +1147,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 0,
-											"revision" : 1,
+											"minor" : 2,
+											"revision" : 5,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -1466,8 +1464,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 0,
-											"revision" : 1,
+											"minor" : 2,
+											"revision" : 5,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -1752,7 +1750,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 10.0, 41.0, 574.0, 22.0 ],
 									"style" : "",
-									"text" : "628 135291 piano-note 3 71 0"
+									"text" : "0 452 Patch Opened at 12/13/2016 at 13:12:17"
 								}
 
 							}
@@ -1767,8 +1765,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 0,
-											"revision" : 1,
+											"minor" : 2,
+											"revision" : 5,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -1981,8 +1979,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 0,
-											"revision" : 1,
+											"minor" : 2,
+											"revision" : 5,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -2208,8 +2206,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 0,
-											"revision" : 1,
+											"minor" : 2,
+											"revision" : 5,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -2263,7 +2261,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 98.0, 329.0, 214.0, 22.0 ],
 													"style" : "",
-													"text" : "Patch Opened at 12/13/2016 at 11:53:49"
+													"text" : "Patch Opened at 12/13/2016 at 13:12:17"
 												}
 
 											}
@@ -2740,7 +2738,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 38.5, 105.0, 225.0, 22.0 ],
 									"style" : "",
-									"text" : "Patch Opened at 12/13/2016 at 11:53:49"
+									"text" : "Patch Opened at 12/13/2016 at 13:12:17"
 								}
 
 							}
@@ -2799,8 +2797,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 0,
-											"revision" : 1,
+											"minor" : 2,
+											"revision" : 5,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -3027,8 +3025,7 @@
 									"patching_rect" : [ -3.0, 683.0, 565.0, 22.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 10.0, 190.0, 565.0, 22.0 ],
-									"style" : "",
-									"text" : "134841 trigger 234"
+									"style" : ""
 								}
 
 							}
@@ -3110,8 +3107,7 @@
 									"patching_rect" : [ -3.0, 645.0, 347.0, 22.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 10.0, 152.0, 347.0, 22.0 ],
-									"style" : "",
-									"text" : "134861 trigger 237"
+									"style" : ""
 								}
 
 							}
@@ -3152,7 +3148,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 10.0, 112.0, 498.0, 22.0 ],
 									"style" : "",
-									"text" : "135291 piano-note 3 71 0"
+									"text" : "452 Patch Opened at 12/13/2016 at 13:12:17"
 								}
 
 							}
@@ -3886,7 +3882,7 @@
 ,
 					"patching_rect" : [ 408.666626, 971.0, 63.0, 35.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 18.75, 603.0, 63.0, 35.0 ],
+					"presentation_rect" : [ 19.75, 603.0, 63.0, 35.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -3934,7 +3930,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 443.75, 815.5, 77.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 49.75, 223.665283, 104.0, 20.0 ],
+					"presentation_rect" : [ 50.75, 223.665283, 104.0, 20.0 ],
 					"style" : "",
 					"text" : "Current trial:"
 				}
@@ -3950,9 +3946,9 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 520.25, 808.0, 436.0, 35.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 155.75, 216.165283, 594.75, 35.0 ],
+					"presentation_rect" : [ 156.75, 216.165283, 594.75, 35.0 ],
 					"style" : "",
-					"text" : "1 1 piece3.coll.txt 2 999 999 0 0 0 0 233"
+					"text" : "-"
 				}
 
 			}
@@ -3991,7 +3987,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 40.0, 493.875, 149.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 28.125, 493.875, 115.0, 20.0 ],
+					"presentation_rect" : [ 29.125, 493.875, 115.0, 20.0 ],
 					"style" : "",
 					"text" : "Practice or regular?"
 				}
@@ -4085,7 +4081,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1549.5, 493.875, 159.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 18.75, 89.0, 104.0, 20.0 ],
+					"presentation_rect" : [ 19.75, 89.0, 104.0, 20.0 ],
 					"style" : "",
 					"text" : "Current block file:"
 				}
@@ -4102,8 +4098,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 0,
-							"revision" : 1,
+							"minor" : 2,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -4780,7 +4776,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1522.0, 428.0, 159.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 5.75, 64.0, 117.0, 20.0 ],
+					"presentation_rect" : [ 6.75, 64.0, 117.0, 20.0 ],
 					"style" : "",
 					"text" : "Folder of block files:"
 				}
@@ -4832,7 +4828,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 1454.5, 624.16803, 113.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 589.0, 116.0, 113.0, 22.0 ],
+					"presentation_rect" : [ 590.0, 116.0, 113.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0
 					}
@@ -4904,7 +4900,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1311.0, 515.875, 567.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 124.75, 89.0, 577.25, 22.0 ],
+					"presentation_rect" : [ 125.75, 89.0, 577.25, 22.0 ],
 					"style" : "",
 					"text" : "\"Macintosh HD:/Users/neuromusic/Experiments/dualpianoEEG/stimuli/block_making/MH/block1.coll.txt\""
 				}
@@ -4936,7 +4932,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1277.0, 363.5, 66.0, 35.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 617.625, 622.0, 66.0, 35.0 ],
+					"presentation_rect" : [ 618.625, 622.0, 66.0, 35.0 ],
 					"style" : ""
 				}
 
@@ -4950,7 +4946,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1287.0, 450.0, 514.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 124.75, 64.0, 577.25, 22.0 ],
+					"presentation_rect" : [ 125.75, 64.0, 577.25, 22.0 ],
 					"style" : "",
 					"text" : "\"Macintosh HD:/Users/neuromusic/Experiments/dualpianoEEG/stimuli/block_making/MH/\""
 				}
@@ -4968,7 +4964,7 @@
 					"patching_rect" : [ 1498.5, 219.166672, 98.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 774.5, 70.5, 98.0, 33.0 ],
+					"presentation_rect" : [ 775.5, 70.5, 98.0, 33.0 ],
 					"style" : "",
 					"text" : "drop folder of block files here "
 				}
@@ -4983,7 +4979,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 1460.0, 183.166672, 175.0, 105.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 736.0, 34.5, 175.0, 105.0 ]
+					"presentation_rect" : [ 737.0, 34.5, 175.0, 105.0 ]
 				}
 
 			}
@@ -5000,7 +4996,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1460.0, 183.166672, 175.0, 105.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 736.0, 34.5, 175.0, 105.0 ],
+					"presentation_rect" : [ 737.0, 34.5, 175.0, 105.0 ],
 					"proportion" : 0.39,
 					"rounded" : 0,
 					"style" : ""
@@ -5057,8 +5053,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 0,
-							"revision" : 1,
+							"minor" : 2,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -5453,7 +5449,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 683.25, 568.5, 120.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 132.0, 383.334717, 120.0, 20.0 ],
+					"presentation_rect" : [ 133.0, 383.334717, 120.0, 20.0 ],
 					"style" : "",
 					"text" : "# of Trials Still Owed"
 				}
@@ -5467,7 +5463,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 652.833313, 404.166656, 196.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 425.0, 317.25, 196.5, 20.0 ],
+					"presentation_rect" : [ 426.0, 317.25, 196.5, 20.0 ],
 					"style" : "",
 					"text" : "Deviant Phrase and Note Numbers"
 				}
@@ -5481,7 +5477,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 448.75, 597.334717, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 263.0, 317.25, 148.5, 20.0 ],
+					"presentation_rect" : [ 264.0, 317.25, 148.5, 20.0 ],
 					"style" : "",
 					"text" : "Phrase and Note Number"
 				}
@@ -5497,7 +5493,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 254.875, 40.0, 221.25, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 262.0, 650.0, 227.5, 27.0 ],
+					"presentation_rect" : [ 263.0, 650.0, 227.5, 27.0 ],
 					"style" : "",
 					"text" : "MIDI Keyboard Feedback"
 				}
@@ -5513,7 +5509,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 806.583313, 194.5, 146.0, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 600.125, 466.334717, 146.0, 27.0 ],
+					"presentation_rect" : [ 601.125, 466.334717, 146.0, 27.0 ],
 					"style" : "",
 					"text" : "Block Navigation"
 				}
@@ -5530,7 +5526,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 570.333374, 7.0, 624.0, 60.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 109.0, 5.499996, 624.0, 60.0 ],
+					"presentation_rect" : [ 110.0, 5.499996, 624.0, 60.0 ],
 					"style" : "",
 					"text" : "Dual Piano EEG - block file",
 					"textjustification" : 1
@@ -5545,7 +5541,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 164.25, 515.875, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 129.5, 317.25, 118.5, 20.0 ],
+					"presentation_rect" : [ 130.5, 317.25, 118.5, 20.0 ],
 					"style" : "",
 					"text" : "Block_Trial Number"
 				}
@@ -5559,7 +5555,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 806.583313, 232.166672, 137.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 13.125, 317.25, 107.0, 20.0 ],
+					"presentation_rect" : [ 14.125, 317.25, 107.0, 20.0 ],
 					"style" : "",
 					"text" : "Abort Current Trial"
 				}
@@ -5601,9 +5597,9 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 750.833313, 367.166656, 61.0, 35.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 525.5, 341.165283, 61.0, 35.0 ],
+					"presentation_rect" : [ 526.5, 341.165283, 61.0, 35.0 ],
 					"style" : "",
-					"text" : "-1 -1"
+					"text" : "-"
 				}
 
 			}
@@ -5618,9 +5614,9 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 676.333313, 367.166656, 61.0, 35.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 451.0, 341.165283, 61.0, 35.0 ],
+					"presentation_rect" : [ 452.0, 341.165283, 61.0, 35.0 ],
 					"style" : "",
-					"text" : "-1 -1"
+					"text" : "-"
 				}
 
 			}
@@ -5635,7 +5631,7 @@
 					"patching_rect" : [ 1346.0, 363.5, 155.0, 37.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 685.625, 614.0, 150.0, 37.0 ],
+					"presentation_rect" : [ 686.625, 614.0, 150.0, 37.0 ],
 					"style" : "",
 					"text" : "To start from any block number, enter it here."
 				}
@@ -5739,7 +5735,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 235.75, 367.166656, 240.0, 35.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 396.25, 268.5, 219.0, 35.0 ],
+					"presentation_rect" : [ 397.25, 268.5, 219.0, 35.0 ],
 					"style" : ""
 				}
 
@@ -5756,7 +5752,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 14.25, 367.166656, 207.0, 35.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 20.5, 268.5, 215.0, 35.0 ],
+					"presentation_rect" : [ 21.5, 268.5, 215.0, 35.0 ],
 					"style" : ""
 				}
 
@@ -5905,7 +5901,7 @@
 					"outlettype" : [ "bang", "bang", "", "int" ],
 					"patching_rect" : [ 12.25, 123.0, 336.0, 53.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 25.5, 708.25, 336.0, 53.0 ]
+					"presentation_rect" : [ 26.5, 708.25, 336.0, 53.0 ]
 				}
 
 			}
@@ -5934,7 +5930,7 @@
 					"outlettype" : [ "bang", "bang", "", "int" ],
 					"patching_rect" : [ 376.75, 123.0, 336.0, 53.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 388.0, 708.25, 336.0, 53.0 ]
+					"presentation_rect" : [ 389.0, 708.25, 336.0, 53.0 ]
 				}
 
 			}
@@ -5961,8 +5957,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 0,
-							"revision" : 1,
+							"minor" : 2,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -6575,7 +6571,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 850.0, 409.875, 137.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 589.875, 498.209717, 137.0, 20.0 ],
+					"presentation_rect" : [ 590.875, 498.209717, 137.0, 20.0 ],
 					"style" : "",
 					"text" : "Actually start next block"
 				}
@@ -6590,7 +6586,7 @@
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 850.0, 434.875, 86.25, 86.25 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 615.25, 524.209717, 86.25, 86.25 ],
+					"presentation_rect" : [ 616.25, 524.209717, 86.25, 86.25 ],
 					"style" : ""
 				}
 
@@ -6615,7 +6611,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 613.25, 633.834717, 149.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 210.0, 493.875, 149.0, 20.0 ],
+					"presentation_rect" : [ 211.0, 493.875, 149.0, 20.0 ],
 					"style" : "",
 					"text" : "Most recent trial outcome:"
 				}
@@ -6633,7 +6629,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 613.25, 655.834717, 131.0, 35.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 219.0, 515.875, 131.0, 35.0 ],
+					"presentation_rect" : [ 220.0, 515.875, 131.0, 35.0 ],
 					"style" : ""
 				}
 
@@ -6794,7 +6790,7 @@
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 839.583313, 259.0, 42.0, 42.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 20.5, 341.165283, 86.25, 86.25 ],
+					"presentation_rect" : [ 21.5, 341.165283, 86.25, 86.25 ],
 					"style" : ""
 				}
 
@@ -6811,7 +6807,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 20.5, 454.0, 168.0, 35.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 7.25, 515.875, 167.0, 35.0 ],
+					"presentation_rect" : [ 8.25, 515.875, 167.0, 35.0 ],
 					"style" : ""
 				}
 
@@ -7120,7 +7116,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 525.75, 563.0, 62.0, 31.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 338.25, 341.165283, 62.0, 31.0 ],
+					"presentation_rect" : [ 339.25, 341.165283, 62.0, 31.0 ],
 					"style" : ""
 				}
 
@@ -7136,7 +7132,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 457.75, 563.0, 62.0, 31.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 270.25, 341.165283, 62.0, 31.0 ],
+					"presentation_rect" : [ 271.25, 341.165283, 62.0, 31.0 ],
 					"style" : ""
 				}
 
@@ -7165,7 +7161,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 613.25, 563.0, 62.0, 31.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 132.0, 405.334717, 62.0, 31.0 ],
+					"presentation_rect" : [ 133.0, 405.334717, 62.0, 31.0 ],
 					"style" : ""
 				}
 
@@ -7193,9 +7189,9 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 164.25, 563.0, 117.0, 35.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 130.25, 341.165283, 117.0, 35.0 ],
+					"presentation_rect" : [ 131.25, 341.165283, 117.0, 35.0 ],
 					"style" : "",
-					"text" : "01_04"
+					"text" : "BB-TT"
 				}
 
 			}
@@ -7237,7 +7233,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 304.25, 563.0, 62.0, 31.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 270.25, 405.334717, 62.0, 31.0 ],
+					"presentation_rect" : [ 271.25, 405.334717, 62.0, 31.0 ],
 					"style" : ""
 				}
 
@@ -7251,7 +7247,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 372.25, 563.0, 72.0, 47.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 263.0, 383.334717, 141.25, 20.0 ],
+					"presentation_rect" : [ 264.0, 383.334717, 141.25, 20.0 ],
 					"style" : "",
 					"text" : "Absolute Note Number"
 				}
@@ -7395,7 +7391,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 376.75, 123.0, 336.0, 53.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 388.0, 708.25, 336.0, 53.0 ],
+					"presentation_rect" : [ 389.0, 708.25, 336.0, 53.0 ],
 					"style" : ""
 				}
 
@@ -7421,7 +7417,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 517.25, 91.0, 65.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 528.5, 676.25, 55.0, 20.0 ],
+					"presentation_rect" : [ 529.5, 676.25, 55.0, 20.0 ],
 					"style" : "",
 					"text" : "Player 2"
 				}
@@ -7435,7 +7431,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 152.75, 90.0, 68.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 164.0, 675.25, 55.0, 20.0 ],
+					"presentation_rect" : [ 165.0, 675.25, 55.0, 20.0 ],
 					"style" : "",
 					"text" : "Player 1"
 				}
@@ -7453,7 +7449,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 12.25, 123.0, 336.0, 53.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 23.5, 708.25, 336.0, 53.0 ],
+					"presentation_rect" : [ 24.5, 708.25, 336.0, 53.0 ],
 					"style" : ""
 				}
 
@@ -7468,7 +7464,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 114.25, 313.0, 116.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 155.75, 154.0, 115.0, 33.0 ],
+					"presentation_rect" : [ 156.75, 154.0, 115.0, 33.0 ],
 					"style" : "",
 					"text" : "This Trial:",
 					"textcolor" : [ 0.098039, 0.098039, 0.098039, 1.0 ]
@@ -8623,113 +8619,91 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "piece1.coll.txt",
-				"bootpath" : "~/Experiments/dualpianoEEG/stimuli/patches-reading-blockfiles",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/patches-reading-blockfiles",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "piece2.coll.txt",
-				"bootpath" : "~/Experiments/dualpianoEEG/stimuli/patches-reading-blockfiles",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/patches-reading-blockfiles",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "block-follow.maxpat",
-				"bootpath" : "~/Experiments/dualpianoEEG/stimuli/patches-reading-blockfiles",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/patches-reading-blockfiles",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "block1.coll.txt",
-				"bootpath" : "~/Experiments/dualpianoEEG/stimuli/block_making/MH",
-				"patcherrelativepath" : "../block_making/MH",
-				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "piece-follow.maxpat",
-				"bootpath" : "~/Experiments/dualpianoEEG/stimuli/patches-reading-blockfiles",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/patches-reading-blockfiles",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "piece3.coll.txt",
-				"bootpath" : "~/Experiments/dualpianoEEG/stimuli/patches-reading-blockfiles",
-				"patcherrelativepath" : ".",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "midi2scaledegree.maxpat",
-				"bootpath" : "~/Experiments/dualpianoEEG/stimuli/patches-reading-blockfiles",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/patches-reading-blockfiles",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "majorscale.coll.txt",
-				"bootpath" : "~/Experiments/dualpianoEEG/stimuli/patches-reading-blockfiles",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/patches-reading-blockfiles",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "==2.maxpat",
-				"bootpath" : "~/Experiments/dualpianoEEG/stimuli/patches-reading-blockfiles",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/patches-reading-blockfiles",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "scaledegree2midi.maxpat",
-				"bootpath" : "~/Experiments/dualpianoEEG/stimuli/patches-reading-blockfiles",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/patches-reading-blockfiles",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "piano-note.maxpat",
-				"bootpath" : "~/Experiments/dualpianoEEG/stimuli/patches-reading-blockfiles",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/patches-reading-blockfiles",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "establish-tempo.maxpat",
-				"bootpath" : "~/Experiments/dualpianoEEG/stimuli/patches-reading-blockfiles",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/patches-reading-blockfiles",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "metronome-tock.maxpat",
-				"bootpath" : "~/Experiments/dualpianoEEG/stimuli/patches-reading-blockfiles",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/patches-reading-blockfiles",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "decode-trial-conditions.maxpat",
-				"bootpath" : "~/Experiments/dualpianoEEG/stimuli/patches-reading-blockfiles",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/patches-reading-blockfiles",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "pause-between-trials.maxpat",
-				"bootpath" : "~/Experiments/dualpianoEEG/stimuli/patches-reading-blockfiles",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/patches-reading-blockfiles",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
+				"name" : "piece3.coll.txt",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/patches-reading-blockfiles",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "piece4.coll.txt",
-				"bootpath" : "~/Experiments/dualpianoEEG/stimuli/patches-reading-blockfiles",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/patches-reading-blockfiles",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
@@ -8738,7 +8712,7 @@
 				"type" : "iLaX"
 			}
  ],
-		"embedsnapshot" : 0
+		"autosave" : 0
 	}
 
 }
