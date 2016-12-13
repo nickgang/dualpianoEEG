@@ -1,0 +1,13 @@
+-2, 1 2 piece4.coll.txt 1 999 999 0 0 0 0 233;
+-1, 1 2 piece4.coll.txt 1 999 999 0 0 0 0 233;
+1, 2 2 piece4.coll.txt 1 1 4 4 5 -2 2 210;
+2, 2 2 piece4.coll.txt 1 3 2 4 4 -2 2 211;
+3, 2 2 piece4.coll.txt 1 3 2 5 5 -2 2 211;
+4, 2 2 piece4.coll.txt 1 1 2 4 4 -2 -2 209;
+5, 2 2 piece4.coll.txt 1 3 2 5 4 2 -2 211;
+6, 2 2 piece4.coll.txt 1 3 4 4 5 2 -2 212;
+7, 2 2 piece4.coll.txt 1 3 2 5 5 -2 -2 211;
+8, 2 2 piece4.coll.txt 1 1 4 5 4 -2 -2 210;
+9, 2 2 piece4.coll.txt 1 3 4 4 4 2 -2 212;
+10, 2 2 piece4.coll.txt 1 1 4 4 4 -2 -2 210;
+
