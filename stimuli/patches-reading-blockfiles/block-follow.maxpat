@@ -839,7 +839,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 2962.0, 290.0, 844.0, 765.0 ],
+						"rect" : [ 745.0, 217.0, 689.0, 816.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -868,25 +868,41 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
-									"id" : "obj-24",
-									"maxclass" : "newobj",
+									"bubble" : 1,
+									"bubbleside" : 3,
+									"id" : "obj-10",
+									"linecount" : 2,
+									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 263.416656, 540.333313, 157.0, 22.0 ],
+									"patching_rect" : [ 136.75, 474.5, 125.0, 37.0 ],
 									"style" : "",
-									"text" : "s num-good-trials-still-owed"
+									"text" : "Because we still owe *this* trial"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-19",
-									"maxclass" : "comment",
+									"id" : "obj-1",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "int" ],
+									"patching_rect" : [ 263.333374, 482.0, 29.5, 22.0 ],
+									"style" : "",
+									"text" : "- 1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-24",
+									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 122.416656, 508.0, 139.0, 20.0 ],
+									"patching_rect" : [ 263.416656, 570.333313, 157.0, 22.0 ],
 									"style" : "",
-									"text" : "# correct trials still owed"
+									"text" : "s num-good-trials-still-owed"
 								}
 
 							}
@@ -898,7 +914,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 263.416656, 508.0, 50.0, 22.0 ],
+									"patching_rect" : [ 263.416656, 538.0, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -910,7 +926,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 263.333374, 477.5, 29.5, 22.0 ],
+									"patching_rect" : [ 263.333374, 507.5, 45.5, 22.0 ],
 									"style" : "",
 									"text" : "!-"
 								}
@@ -1004,7 +1020,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 436.25, 642.166687, 187.0, 74.0 ],
+									"patching_rect" : [ 475.25, 672.166687, 187.0, 74.0 ],
 									"style" : "",
 									"text" : "Future feature?  Write out this coll (the log of how many trials were performed and what type each one was) at the end of the block..."
 								}
@@ -1025,13 +1041,16 @@
 							}
 , 							{
 								"box" : 								{
+									"bubble" : 1,
+									"bubbleside" : 3,
 									"id" : "obj-36",
+									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 126.083344, 447.0, 83.0, 20.0 ],
+									"patching_rect" : [ 117.75, 439.5, 101.0, 37.0 ],
 									"style" : "",
-									"text" : "Current trial #"
+									"text" : "Current trial # [one-origin]"
 								}
 
 							}
@@ -1042,7 +1061,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "int", "int" ],
-									"patching_rect" : [ 218.75, 536.0, 29.5, 22.0 ],
+									"patching_rect" : [ 218.75, 566.0, 29.5, 22.0 ],
 									"style" : "",
 									"text" : "t i i"
 								}
@@ -1055,7 +1074,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 322.75, 657.166687, 30.0, 30.0 ],
+									"patching_rect" : [ 322.75, 687.166687, 30.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -1107,7 +1126,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 400.25, 657.166687, 30.0, 30.0 ],
+									"patching_rect" : [ 439.25, 687.166687, 30.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -1144,7 +1163,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 322.75, 606.333313, 44.0, 44.0 ],
+									"patching_rect" : [ 322.75, 636.333313, 44.0, 44.0 ],
 									"style" : ""
 								}
 
@@ -1376,7 +1395,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 4,
 									"outlettype" : [ "", "", "", "" ],
-									"patching_rect" : [ 400.25, 611.666687, 50.5, 22.0 ],
+									"patching_rect" : [ 439.25, 641.666687, 50.5, 22.0 ],
 									"saved_object_attributes" : 									{
 										"embed" : 0
 									}
@@ -1401,6 +1420,15 @@
 							}
  ],
 						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-18", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
 								"patchline" : 								{
 									"destination" : [ "obj-18", 1 ],
 									"disabled" : 0,
@@ -1432,7 +1460,7 @@
 									"destination" : [ "obj-54", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 349.25, 364.666656, 409.75, 364.666656 ],
+									"midpoints" : [ 349.25, 364.666656, 448.75, 364.666656 ],
 									"source" : [ "obj-11", 1 ]
 								}
 
@@ -1529,7 +1557,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-18", 0 ],
+									"destination" : [ "obj-1", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-23", 0 ]
@@ -1605,7 +1633,7 @@
 									"destination" : [ "obj-54", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 228.25, 575.833374, 409.75, 575.833374 ],
+									"midpoints" : [ 228.25, 605.833374, 448.75, 605.833374 ],
 									"source" : [ "obj-34", 0 ]
 								}
 
@@ -1634,7 +1662,7 @@
 									"destination" : [ "obj-54", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 527.166626, 173.0, 409.75, 173.0 ],
+									"midpoints" : [ 527.166626, 173.0, 448.75, 173.0 ],
 									"source" : [ "obj-35", 1 ]
 								}
 
@@ -1653,7 +1681,7 @@
 									"destination" : [ "obj-54", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 524.5, 576.666687, 409.75, 576.666687 ],
+									"midpoints" : [ 524.5, 576.666687, 448.75, 576.666687 ],
 									"source" : [ "obj-50", 0 ]
 								}
 
@@ -1691,7 +1719,7 @@
 									"destination" : [ "obj-54", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 540.5, 473.5, 409.75, 473.5 ],
+									"midpoints" : [ 540.5, 473.5, 448.75, 473.5 ],
 									"source" : [ "obj-53", 1 ]
 								}
 
@@ -2242,7 +2270,79 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "piece-follow.maxpat",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/patches-reading-blockfiles",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "piece1.coll.txt",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/patches-reading-blockfiles",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "midi2scaledegree.maxpat",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/patches-reading-blockfiles",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "majorscale.coll.txt",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/patches-reading-blockfiles",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "==2.maxpat",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/patches-reading-blockfiles",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "scaledegree2midi.maxpat",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/patches-reading-blockfiles",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "piano-note.maxpat",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/patches-reading-blockfiles",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "establish-tempo.maxpat",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/patches-reading-blockfiles",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "metronome-tock.maxpat",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/patches-reading-blockfiles",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "decode-trial-conditions.maxpat",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/patches-reading-blockfiles",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pause-between-trials.maxpat",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/patches-reading-blockfiles",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "shell.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0
 	}
 
 }
