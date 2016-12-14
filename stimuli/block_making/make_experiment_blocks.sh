@@ -1,9 +1,11 @@
+#!~/bin/bash
+
 #Madeline Huberth, 10/16/16
 #Piano Duet study: this script makes the files block{1..12}.coll.txt for Max to read in
 
 #to run:
 # >> ./make_experiment_blocks.sh blockorder_VERSION.csv pairfolder
-# for example: ./make_experiment_blocks.sh blockorder_11.csv MW_TD
+# for example: ./make_experiment_blocks.sh blockorder_1.csv MW_TD
 
 #The coll file orders the information in the following left to right columns:
 #trial number,
