@@ -1,4 +1,4 @@
-#!Users/neuromusic/bin/bash
+#!/usr/local/bin/bash
 
 #Madeline Huberth, 10/16/16
 #Piano Duet study: this script makes the files block{1..12}.coll.txt for Max to read in
