@@ -3,10 +3,4 @@
 1, 2 1 piece2.coll.txt 2 2 1 5 5 2 -2 229;
 2, 2 1 piece2.coll.txt 2 2 1 5 5 2 2 229;
 3, 2 1 piece2.coll.txt 2 2 1 4 5 2 -2 229;
-4, 2 1 piece2.coll.txt 2 4 1 4 4 -2 2 231;
-5, 2 1 piece2.coll.txt 2 2 1 5 4 2 2 229;
-6, 2 1 piece2.coll.txt 2 4 3 5 5 2 2 232;
-7, 2 1 piece2.coll.txt 2 4 3 5 4 -2 2 232;
-8, 2 1 piece2.coll.txt 2 4 3 5 4 2 2 232;
-9, 2 1 piece2.coll.txt 2 4 1 4 4 2 2 231;
-10, 2 1 piece2.coll.txt 2 2 3 5 5 2 -2 230;
+
