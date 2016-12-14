@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 93.0, 78.0, 1074.0, 795.0 ],
+		"rect" : [ 93.0, 78.0, 1061.0, 855.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -1750,7 +1750,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 10.0, 41.0, 574.0, 22.0 ],
 									"style" : "",
-									"text" : "0 783 Patch Opened at 12/13/2016 at 14:21:56"
+									"text" : "0 491 Patch Opened at 12/13/2016 at 14:26:36"
 								}
 
 							}
@@ -2261,7 +2261,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 98.0, 329.0, 214.0, 22.0 ],
 													"style" : "",
-													"text" : "Patch Opened at 12/13/2016 at 14:21:56"
+													"text" : "Patch Opened at 12/13/2016 at 14:26:36"
 												}
 
 											}
@@ -2738,7 +2738,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 38.5, 105.0, 225.0, 22.0 ],
 									"style" : "",
-									"text" : "Patch Opened at 12/13/2016 at 14:21:56"
+									"text" : "Patch Opened at 12/13/2016 at 14:26:36"
 								}
 
 							}
@@ -3148,7 +3148,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 10.0, 112.0, 498.0, 22.0 ],
 									"style" : "",
-									"text" : "783 Patch Opened at 12/13/2016 at 14:21:56"
+									"text" : "491 Patch Opened at 12/13/2016 at 14:26:36"
 								}
 
 							}
@@ -5345,7 +5345,7 @@
 				"box" : 				{
 					"fontsize" : 24.0,
 					"id" : "obj-108",
-					"items" : [ "first", "player", "odd", ",", "first", "player", "even" ],
+					"items" : [ "first", "keyboard", "starts", ",", "second", "keyboard", "starts" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -5353,7 +5353,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 14.25, 367.166656, 207.0, 35.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 21.5, 268.5, 215.0, 35.0 ],
+					"presentation_rect" : [ 21.5, 268.5, 286.0, 35.0 ],
 					"style" : ""
 				}
 
