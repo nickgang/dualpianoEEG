@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 79.0, 1002.0, 664.0 ],
+		"rect" : [ 34.0, 79.0, 667.0, 664.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -38,11 +38,38 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-51",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1484.0, 76.0, 248.0, 22.0 ],
+					"style" : "",
+					"text" : "loadmess bgfillcolor 1. 0.117647 0.164706 1."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-44",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1460.0, 48.0, 188.0, 22.0 ],
+					"presentation_rect" : [ 1126.833374, 187.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "bgfillcolor 0.74902 0.792157 1. 1."
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-152",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1651.0, 378.5, 97.0, 22.0 ],
+					"patching_rect" : [ 1775.0, 396.5, 97.0, 22.0 ],
 					"style" : "",
 					"text" : "s blockfile-folder"
 				}
@@ -165,7 +192,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 595.75, 330.334717, 167.0, 35.0 ],
 					"style" : "",
-					"text" : "-"
+					"text" : "piece2.coll.txt"
 				}
 
 			}
@@ -426,7 +453,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1657.0, 309.0, 81.0, 22.0 ],
+					"patching_rect" : [ 1781.0, 327.0, 81.0, 22.0 ],
 					"style" : "",
 					"text" : "readfolder $1"
 				}
@@ -438,7 +465,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1657.0, 334.5, 36.0, 22.0 ],
+					"patching_rect" : [ 1781.0, 352.5, 36.0, 22.0 ],
 					"style" : "",
 					"text" : "s log"
 				}
@@ -764,21 +791,25 @@
 									"patching_rect" : [ -3.0, 768.0, 589.0, 22.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 10.0, 275.0, 589.0, 22.0 ],
-									"style" : ""
+									"style" : "",
+									"text" : "981112 readfolder \"Macintosh HD:/Users/matt/repos/dualpianoEEG/stimuli/block_making/short_test/\""
 								}
 
 							}
 , 							{
 								"box" : 								{
 									"id" : "obj-42",
+									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ -3.0, 727.0, 565.0, 22.0 ],
 									"presentation" : 1,
+									"presentation_linecount" : 2,
 									"presentation_rect" : [ 10.0, 234.0, 565.0, 22.0 ],
-									"style" : ""
+									"style" : "",
+									"text" : "981112 write \"Macintosh HD:/Users/matt/repos/dualpianoEEG/stimuli/block_making/short_test//DPE-log-sndjmkma.coll.txt\""
 								}
 
 							}
@@ -1435,7 +1466,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 1104.0, 464.0, 352.0, 49.0 ],
 									"style" : "",
-									"text" : "write \"Macintosh HD:/Users/neuromusic/Experiments/dualpianoEEG/stimuli/block_making/MH//DPE-log-quvezvky.coll.txt\""
+									"text" : "write \"Macintosh HD:/Users/matt/repos/dualpianoEEG/stimuli/block_making/short_test//DPE-log-sndjmkma.coll.txt\""
 								}
 
 							}
@@ -1530,7 +1561,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 86.0, 278.0, 79.0, 22.0 ],
 													"style" : "",
-													"text" : "quvezvky"
+													"text" : "sndjmkma"
 												}
 
 											}
@@ -1722,7 +1753,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 1177.0, 390.0, 71.0, 22.0 ],
 									"style" : "",
-									"text" : "quvezvky"
+									"text" : "sndjmkma"
 								}
 
 							}
@@ -1741,15 +1772,17 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-15",
+									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 680.0, 544.0, 573.0, 22.0 ],
 									"presentation" : 1,
+									"presentation_linecount" : 2,
 									"presentation_rect" : [ 10.0, 41.0, 574.0, 22.0 ],
 									"style" : "",
-									"text" : "0 982 Patch Opened at 1/10/2017 at 11:46:42"
+									"text" : "5 981114 read \"Macintosh HD:/Users/matt/repos/dualpianoEEG/stimuli/block_making/short_test/block1.coll.txt\""
 								}
 
 							}
@@ -2259,7 +2292,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 98.0, 329.0, 233.0, 22.0 ],
 													"style" : "",
-													"text" : "Patch Opened at 1/10/2017 at 11:46:42"
+													"text" : "Patch Opened on 1/10/2017 at 13:23: 1"
 												}
 
 											}
@@ -2736,7 +2769,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 38.5, 105.0, 225.0, 22.0 ],
 									"style" : "",
-									"text" : "Patch Opened at 1/10/2017 at 11:46:42"
+									"text" : "Patch Opened on 1/10/2017 at 13:23: 1"
 								}
 
 							}
@@ -3016,14 +3049,17 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-22",
+									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ -3.0, 683.0, 565.0, 22.0 ],
 									"presentation" : 1,
+									"presentation_linecount" : 2,
 									"presentation_rect" : [ 10.0, 190.0, 565.0, 22.0 ],
-									"style" : ""
+									"style" : "",
+									"text" : "981112 write \"Macintosh HD:/Users/matt/repos/dualpianoEEG/stimuli/block_making/short_test//DPE-log-sndjmkma.coll.txt\""
 								}
 
 							}
@@ -3105,7 +3141,8 @@
 									"patching_rect" : [ -3.0, 645.0, 347.0, 22.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 10.0, 152.0, 347.0, 22.0 ],
-									"style" : ""
+									"style" : "",
+									"text" : "981114 trial-conditions 1 1 piece2.coll.txt 1 999 999 0 0 0 0 233"
 								}
 
 							}
@@ -3138,15 +3175,17 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-3",
+									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ -3.0, 605.0, 498.0, 22.0 ],
 									"presentation" : 1,
+									"presentation_linecount" : 2,
 									"presentation_rect" : [ 10.0, 112.0, 498.0, 22.0 ],
 									"style" : "",
-									"text" : "982 Patch Opened at 1/10/2017 at 11:46:42"
+									"text" : "981114 read \"Macintosh HD:/Users/matt/repos/dualpianoEEG/stimuli/block_making/short_test/block1.coll.txt\""
 								}
 
 							}
@@ -3946,7 +3985,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 125.75, 153.165283, 594.75, 35.0 ],
 					"style" : "",
-					"text" : "-"
+					"text" : "1 1 piece2.coll.txt 1 999 999 0 0 0 0 233"
 				}
 
 			}
@@ -3955,11 +3994,11 @@
 					"id" : "obj-89",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "int", "", "", "" ],
-					"patching_rect" : [ 1460.0, 328.666656, 52.0, 22.0 ],
+					"numoutlets" : 5,
+					"outlettype" : [ "int", "", "", "", "bang" ],
+					"patching_rect" : [ 1460.0, 253.666656, 81.166626, 22.0 ],
 					"style" : "",
-					"text" : "t 1 s s s"
+					"text" : "t 1 s s s b"
 				}
 
 			}
@@ -4102,7 +4141,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 733.0, 355.0, 837.0, 627.0 ],
+						"rect" : [ 234.0, 79.0, 837.0, 627.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -4131,11 +4170,36 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-17",
+									"maxclass" : "button",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 78.0, 501.0, 24.0, 24.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-10",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"patching_rect" : [ 285.0, 435.0, 33.0, 22.0 ],
+									"style" : "",
+									"text" : "t s b"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-2",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 387.0, 523.0, 163.0, 22.0 ],
+									"patching_rect" : [ 494.0, 536.0, 163.0, 22.0 ],
 									"style" : "",
 									"text" : "s num-files-in-blockfile-folder"
 								}
@@ -4147,7 +4211,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 439.5, 497.0, 36.0, 22.0 ],
+									"patching_rect" : [ 546.5, 510.0, 36.0, 22.0 ],
 									"style" : "",
 									"text" : "s log"
 								}
@@ -4160,7 +4224,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 439.5, 468.0, 317.0, 22.0 ],
+									"patching_rect" : [ 546.5, 481.0, 317.0, 22.0 ],
 									"style" : "",
 									"text" : "Dropped folder contains $1 files that may all be block files"
 								}
@@ -4172,7 +4236,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 31.0, 468.0, 103.0, 20.0 ],
+									"patching_rect" : [ 28.0, 399.0, 103.0, 20.0 ],
 									"style" : "",
 									"text" : "1 = error; 2=good"
 								}
@@ -4185,7 +4249,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 418.5, 430.0, 29.5, 22.0 ],
+									"patching_rect" : [ 525.5, 443.0, 29.5, 22.0 ],
 									"style" : "",
 									"text" : "int"
 								}
@@ -4199,7 +4263,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 429.0, 403.0, 38.0, 22.0 ],
+									"patching_rect" : [ 536.0, 416.0, 38.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -4211,7 +4275,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 403.0, 374.0, 24.0, 24.0 ],
+									"patching_rect" : [ 510.0, 387.0, 24.0, 24.0 ],
 									"style" : ""
 								}
 
@@ -4223,7 +4287,7 @@
 									"numinlets" : 5,
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "int" ],
-									"patching_rect" : [ 429.0, 374.0, 61.0, 22.0 ],
+									"patching_rect" : [ 536.0, 387.0, 61.0, 22.0 ],
 									"style" : "",
 									"text" : "counter"
 								}
@@ -4236,7 +4300,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 121.0, 578.0, 341.0, 22.0 ],
+									"patching_rect" : [ 78.0, 532.0, 341.0, 22.0 ],
 									"style" : "",
 									"text" : "Dropped folder does not contain a file named block1.coll.txt!!!"
 								}
@@ -4248,7 +4312,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 121.0, 604.0, 121.0, 22.0 ],
+									"patching_rect" : [ 78.0, 558.0, 121.0, 22.0 ],
 									"style" : "",
 									"text" : "print error @popup 1"
 								}
@@ -4261,7 +4325,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 174.0, 431.0, 29.5, 22.0 ],
+									"patching_rect" : [ 171.0, 362.0, 29.5, 22.0 ],
 									"style" : "",
 									"text" : "2"
 								}
@@ -4274,7 +4338,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 137.0, 468.0, 44.0, 22.0 ],
+									"patching_rect" : [ 134.0, 399.0, 44.0, 22.0 ],
 									"style" : "",
 									"text" : "gate 2"
 								}
@@ -4287,7 +4351,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 174.0, 403.0, 24.0, 24.0 ],
+									"patching_rect" : [ 171.0, 334.0, 24.0, 24.0 ],
 									"style" : ""
 								}
 
@@ -4299,7 +4363,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "bang", "" ],
-									"patching_rect" : [ 174.0, 375.0, 101.0, 22.0 ],
+									"patching_rect" : [ 171.0, 306.0, 101.0, 22.0 ],
 									"style" : "",
 									"text" : "sel block1.coll.txt"
 								}
@@ -4311,10 +4375,10 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 4,
-									"outlettype" : [ "bang", "", "int", "int" ],
-									"patching_rect" : [ 132.5, 246.0, 53.0, 22.0 ],
+									"outlettype" : [ "", "", "int", "int" ],
+									"patching_rect" : [ 129.5, 177.0, 53.0, 22.0 ],
 									"style" : "",
-									"text" : "t b s 1 0"
+									"text" : "t s s 1 0"
 								}
 
 							}
@@ -4325,7 +4389,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 174.0, 329.0, 81.0, 22.0 ],
+									"patching_rect" : [ 171.0, 260.0, 81.0, 22.0 ],
 									"style" : "",
 									"text" : "route append"
 								}
@@ -4334,13 +4398,13 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-20",
-									"items" : [ "block1.coll.txt", ",", "block10.coll.txt", ",", "block11.coll.txt", ",", "block12.coll.txt", ",", "block2.coll.txt", ",", "block3.coll.txt", ",", "block4.coll.txt", ",", "block5.coll.txt", ",", "block6.coll.txt", ",", "block7.coll.txt", ",", "block8.coll.txt", ",", "block9.coll.txt", ",", "DPE-log-ndrpnnso.coll.txt" ],
+									"items" : [ "block1.coll.txt", ",", "block10.coll.txt", ",", "block11.coll.txt", ",", "block12.coll.txt", ",", "block2.coll.txt", ",", "block3.coll.txt", ",", "block4.coll.txt", ",", "block5.coll.txt", ",", "block6.coll.txt", ",", "block7.coll.txt", ",", "block8.coll.txt", ",", "block9.coll.txt" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "int", "", "" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 270.0, 329.0, 130.0, 22.0 ],
+									"patching_rect" : [ 267.0, 260.0, 130.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -4355,7 +4419,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "int" ],
-									"patching_rect" : [ 174.0, 292.0, 130.0, 23.0 ],
+									"patching_rect" : [ 171.0, 223.0, 130.0, 23.0 ],
 									"style" : "",
 									"text" : "folder C74:/help/max"
 								}
@@ -4368,7 +4432,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 96.0, 131.0, 29.5, 22.0 ],
+									"patching_rect" : [ 176.0, 80.0, 29.5, 22.0 ],
 									"style" : "",
 									"text" : "0"
 								}
@@ -4382,7 +4446,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 142.0, 133.0, 211.0, 35.0 ],
+									"patching_rect" : [ 222.0, 82.0, 211.0, 35.0 ],
 									"style" : "",
 									"text" : "Need a folder - instead you sent a $1 file. Try again."
 								}
@@ -4394,7 +4458,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 142.0, 174.0, 121.0, 22.0 ],
+									"patching_rect" : [ 222.0, 123.0, 121.0, 22.0 ],
 									"style" : "",
 									"text" : "print error @popup 1"
 								}
@@ -4407,7 +4471,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 131.0, 29.5, 22.0 ],
+									"patching_rect" : [ 130.0, 80.0, 29.5, 22.0 ],
 									"style" : "",
 									"text" : "1"
 								}
@@ -4420,7 +4484,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 198.0, 34.0, 22.0 ],
+									"patching_rect" : [ 130.0, 147.0, 34.0, 22.0 ],
 									"style" : "",
 									"text" : "gate"
 								}
@@ -4433,7 +4497,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "bang", "" ],
-									"patching_rect" : [ 50.0, 100.0, 65.0, 22.0 ],
+									"patching_rect" : [ 130.0, 49.0, 65.0, 22.0 ],
 									"style" : "",
 									"text" : "select fold"
 								}
@@ -4447,7 +4511,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 64.0, 30.0, 30.0 ],
+									"patching_rect" : [ 130.0, 13.0, 30.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -4460,7 +4524,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 9.0, 116.0, 30.0, 30.0 ],
+									"patching_rect" : [ 89.0, 65.0, 30.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -4472,7 +4536,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 50.0, 245.0, 30.0, 30.0 ],
+									"patching_rect" : [ 285.0, 473.0, 30.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -4484,6 +4548,24 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-54", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-10", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-7", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-10", 1 ]
 								}
 
 							}
@@ -4511,6 +4593,15 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-16", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-44", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-17", 0 ]
 								}
 
 							}
@@ -4555,7 +4646,7 @@
 									"destination" : [ "obj-1", 3 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 176.0, 279.0, 470.0, 279.0 ],
+									"midpoints" : [ 173.0, 210.0, 577.0, 210.0 ],
 									"source" : [ "obj-34", 3 ]
 								}
 
@@ -4607,19 +4698,19 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-44", 0 ],
+									"destination" : [ "obj-10", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"source" : [ "obj-39", 0 ]
+									"source" : [ "obj-39", 1 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-7", 0 ],
+									"destination" : [ "obj-17", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"source" : [ "obj-39", 1 ]
+									"source" : [ "obj-39", 0 ]
 								}
 
 							}
@@ -4740,19 +4831,10 @@
 								}
 
 							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-54", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-9", 0 ]
-								}
-
-							}
  ]
 					}
 ,
-					"patching_rect" : [ 1460.0, 302.166656, 86.0, 22.0 ],
+					"patching_rect" : [ 1460.0, 227.166656, 86.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -4866,11 +4948,11 @@
 					"id" : "obj-192",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 5,
-					"outlettype" : [ "", "bang", "start", "length", "" ],
-					"patching_rect" : [ 1287.0, 580.833313, 99.0, 22.0 ],
+					"numoutlets" : 6,
+					"outlettype" : [ "", "bang", "start", "length", "", "clear" ],
+					"patching_rect" : [ 1287.0, 580.833313, 128.0, 22.0 ],
 					"style" : "",
-					"text" : "t l b start length l"
+					"text" : "t l b start length l clear"
 				}
 
 			}
@@ -4900,7 +4982,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 125.75, 89.0, 577.25, 22.0 ],
 					"style" : "",
-					"text" : "\"Macintosh HD:/Users/neuromusic/Experiments/dualpianoEEG/stimuli/block_making/MH/block1.coll.txt\""
+					"text" : "\"Macintosh HD:/Users/matt/repos/dualpianoEEG/stimuli/block_making/short_test/block1.coll.txt\""
 				}
 
 			}
@@ -4922,7 +5004,7 @@
 					"fontsize" : 24.0,
 					"id" : "obj-148",
 					"maxclass" : "number",
-					"maximum" : 13,
+					"maximum" : 12,
 					"minimum" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 2,
@@ -4946,7 +5028,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 125.75, 64.0, 577.25, 22.0 ],
 					"style" : "",
-					"text" : "\"Macintosh HD:/Users/neuromusic/Experiments/dualpianoEEG/stimuli/block_making/MH/\""
+					"text" : "\"Macintosh HD:/Users/matt/repos/dualpianoEEG/stimuli/block_making/short_test/\""
 				}
 
 			}
@@ -4959,7 +5041,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1498.5, 219.166672, 98.0, 33.0 ],
+					"patching_rect" : [ 1498.5, 144.166672, 98.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 792.5, 70.5, 98.0, 33.0 ],
@@ -4975,7 +5057,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 1460.0, 183.166672, 175.0, 105.0 ],
+					"patching_rect" : [ 1460.0, 108.166672, 175.0, 105.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 754.0, 34.5, 175.0, 105.0 ]
 				}
@@ -4992,7 +5074,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1460.0, 183.166672, 175.0, 105.0 ],
+					"patching_rect" : [ 1460.0, 108.166672, 175.0, 105.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 754.0, 34.5, 175.0, 105.0 ],
 					"proportion" : 0.39,
@@ -5198,7 +5280,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 526.5, 267.165283, 61.0, 35.0 ],
 					"style" : "",
-					"text" : "-"
+					"text" : "-1 -1"
 				}
 
 			}
@@ -5215,7 +5297,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 452.0, 267.165283, 61.0, 35.0 ],
 					"style" : "",
-					"text" : "-"
+					"text" : "-1 -1"
 				}
 
 			}
@@ -7273,6 +7355,15 @@
 					"destination" : [ "obj-186", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"source" : [ "obj-192", 5 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-186", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
 					"source" : [ "obj-192", 4 ]
 				}
 
@@ -7558,6 +7649,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-183", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-44", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-83", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -7625,6 +7725,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-50", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-183", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-51", 0 ]
 				}
 
 			}
@@ -7946,6 +8055,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-44", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 1531.666626, 284.0, 1778.0, 284.0, 1778.0, 27.0, 1469.5, 27.0 ],
+					"source" : [ "obj-89", 4 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-148", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -8009,6 +8128,12 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "block1.coll.txt",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/block_making/short_test",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "piece-follow.maxpat",
 				"bootpath" : "~/repos/dualpianoEEG/stimuli/patches-reading-blockfiles",
 				"type" : "JSON",
@@ -8024,6 +8149,12 @@
 				"name" : "majorscale.coll.txt",
 				"bootpath" : "~/repos/dualpianoEEG/stimuli/patches-reading-blockfiles",
 				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "check-for-deviant.maxpat",
+				"bootpath" : "~/repos/dualpianoEEG/stimuli/patches-reading-blockfiles",
+				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
