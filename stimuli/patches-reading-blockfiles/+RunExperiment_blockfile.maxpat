@@ -461,7 +461,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 81.0, 79.0, 763.0, 647.0 ],
+						"rect" : [ 49.0, 79.0, 763.0, 647.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -488,7 +488,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-75",
@@ -2212,7 +2211,7 @@
 											"modernui" : 1
 										}
 ,
-										"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
+										"rect" : [ 59.0, 104.0, 640.0, 480.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -2254,12 +2253,11 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-78",
-													"linecount" : 2,
 													"maxclass" : "message",
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 98.0, 329.0, 214.0, 22.0 ],
+													"patching_rect" : [ 98.0, 329.0, 233.0, 22.0 ],
 													"style" : "",
 													"text" : "Patch Opened at 1/10/2017 at 11:46:42"
 												}
@@ -2272,9 +2270,9 @@
 													"numinlets" : 6,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 71.0, 289.0, 294.0, 22.0 ],
+													"patching_rect" : [ 71.0, 289.0, 297.0, 22.0 ],
 													"style" : "",
-													"text" : "sprintf Patch Opened at %d/%d/%d at %2d:%2d:%2d"
+													"text" : "sprintf Patch Opened on %d/%d/%d at %2d:%2d:%2d"
 												}
 
 											}
