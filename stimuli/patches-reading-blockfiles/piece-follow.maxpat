@@ -38,12 +38,51 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-45",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 20.5, 913.0, 87.0, 22.0 ],
+					"style" : "",
+					"text" : "prepend error:"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-43",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 361.0, 1030.0, 198.0, 33.0 ],
+					"style" : "",
+					"text" : "Report trial success/failure via trigger code: 80 = fail; 81 = success"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-29",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 322.5, 1068.5, 107.0, 22.0 ],
+					"presentation_rect" : [ 352.5, 820.5, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "s trigger-message"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-27",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 321.0, 1061.0, 34.0, 22.0 ],
+					"patching_rect" : [ 322.5, 1040.5, 34.0, 22.0 ],
 					"style" : "",
 					"text" : "+ 80"
 				}
@@ -56,7 +95,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "int", "int" ],
-					"patching_rect" : [ 160.125, 1030.0, 40.0, 22.0 ],
+					"patching_rect" : [ 160.125, 1030.0, 57.0, 22.0 ],
 					"style" : "",
 					"text" : "t i i i"
 				}
@@ -2134,7 +2173,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 708.0, 330.0, 140.0, 24.0 ],
-									"presentation_rect" : [ 713.5, 325.5, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "Phrase #"
 								}
@@ -15496,7 +15534,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 196.0, 1064.0, 89.0, 22.0 ],
+					"patching_rect" : [ 196.0, 1068.5, 89.0, 22.0 ],
 					"style" : "",
 					"text" : "s trial-outcome"
 				}
@@ -16876,9 +16914,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 20.5, 952.5, 121.0, 22.0 ],
+					"patching_rect" : [ 20.5, 952.5, 36.0, 22.0 ],
 					"style" : "",
-					"text" : "print error @popup 1"
+					"text" : "s log"
 				}
 
 			}
@@ -17712,7 +17750,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-77", 0 ],
+					"destination" : [ "obj-45", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-19", 0 ]
@@ -17929,6 +17967,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-29", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-27", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-9", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -18069,6 +18116,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-44", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-77", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-45", 0 ]
 				}
 
 			}
