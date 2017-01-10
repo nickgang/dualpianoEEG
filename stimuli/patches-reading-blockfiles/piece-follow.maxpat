@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 50.0, 78.0, 1510.0, 981.0 ],
+		"rect" : [ 58.0, 79.0, 1510.0, 981.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -2047,7 +2047,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 76.0, 79.0, 1452.0, 1080.0 ],
+						"rect" : [ 34.0, 79.0, 1212.0, 683.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2076,11 +2076,37 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-106",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 794.0, 518.0, 29.5, 22.0 ],
+									"style" : "",
+									"text" : "0"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-105",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 794.0, 491.0, 69.0, 22.0 ],
+									"style" : "",
+									"text" : "r abort-trial"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-89",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 756.0, 75.5, 137.0, 20.0 ],
+									"patching_rect" : [ 745.0, 83.0, 137.0, 20.0 ],
 									"style" : "",
 									"text" : "H/M H/H or M/H, (1/2/3)"
 								}
@@ -2093,7 +2119,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 687.25, 49.0, 87.0, 22.0 ],
+									"patching_rect" : [ 687.25, 54.0, 87.0, 22.0 ],
 									"style" : "",
 									"text" : "r skynet-mode"
 								}
@@ -5039,7 +5065,7 @@
 											"modernui" : 1
 										}
 ,
-										"rect" : [ 1188.0, 404.0, 657.0, 669.0 ],
+										"rect" : [ 556.0, 138.0, 657.0, 669.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -5073,7 +5099,7 @@
 													"maxclass" : "comment",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 348.0, 547.5, 215.0, 74.0 ],
+													"patching_rect" : [ 348.0, 547.5, 218.0, 74.0 ],
 													"style" : "",
 													"text" : "Send a trigger to record in Neuroscan that says whether each Skynet note was normal (237) or a deviant (237+ # scale degrees of difference the deviant note had, e.g., 2 or -2)"
 												}
@@ -5196,6 +5222,7 @@
 											}
 , 											{
 												"box" : 												{
+													"fontsize" : 36.0,
 													"id" : "obj-198",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
@@ -5640,7 +5667,7 @@
  ]
 													}
 ,
-													"patching_rect" : [ 226.0, 282.0, 117.0, 22.0 ],
+													"patching_rect" : [ 226.0, 282.0, 334.0, 49.0 ],
 													"saved_object_attributes" : 													{
 														"description" : "",
 														"digest" : "",
@@ -6536,7 +6563,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "bang", "int", "int" ],
-									"patching_rect" : [ 621.25, 537.0, 151.0, 22.0 ],
+									"patching_rect" : [ 621.25, 516.0, 151.0, 22.0 ],
 									"style" : "",
 									"text" : "t b 1 1"
 								}
@@ -6549,7 +6576,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 705.0, 610.0, 34.0, 22.0 ],
+									"patching_rect" : [ 705.0, 610.0, 48.75, 22.0 ],
 									"style" : "",
 									"text" : "gate"
 								}
@@ -7126,7 +7153,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 681.75, 480.0, 81.0, 37.0 ],
+									"patching_rect" : [ 664.75, 469.0, 81.0, 37.0 ],
 									"style" : "",
 									"text" : "Launch Skynet!"
 								}
@@ -7139,7 +7166,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 621.25, 474.0, 56.0, 56.0 ],
+									"patching_rect" : [ 621.25, 470.0, 36.0, 36.0 ],
 									"style" : ""
 								}
 
@@ -7152,7 +7179,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 664.75, 405.5, 96.0, 51.0 ],
+									"patching_rect" : [ 664.75, 403.5, 96.0, 51.0 ],
 									"style" : "",
 									"text" : "Is this a Skynet phrase?"
 								}
@@ -7165,7 +7192,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "bang", "" ],
-									"patching_rect" : [ 621.25, 447.0, 36.0, 22.0 ],
+									"patching_rect" : [ 621.25, 444.0, 36.0, 22.0 ],
 									"style" : "",
 									"text" : "sel 1"
 								}
@@ -7191,7 +7218,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 621.25, 420.0, 41.5, 22.0 ],
+									"patching_rect" : [ 621.25, 418.0, 41.5, 22.0 ],
 									"style" : "",
 									"text" : "||"
 								}
@@ -7204,7 +7231,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 621.25, 394.0, 29.5, 22.0 ],
+									"patching_rect" : [ 621.25, 393.0, 29.5, 22.0 ],
 									"style" : "",
 									"text" : "=="
 								}
@@ -7810,6 +7837,33 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-104", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-106", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-105", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-36", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-106", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-9", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-106", 0 ]
 								}
 
 							}
