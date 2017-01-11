@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 79.0, 1563.0, 873.0 ],
+		"rect" : [ 34.0, 79.0, 994.0, 672.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -38,13 +38,41 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"bubble" : 1,
+					"bubbleside" : 2,
+					"id" : "obj-54",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1135.4375, 521.831909, 78.458374, 52.0 ],
+					"presentation_rect" : [ 1105.333374, 465.5, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "same kludge but worse"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-35",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1149.666748, 575.831909, 57.0, 22.0 ],
+					"style" : "",
+					"text" : "pipe 199"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-18",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 1509.333374, 745.5, 113.0, 22.0 ],
-					"presentation_rect" : [ 1515.333374, 804.5, 0.0, 0.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0
 					}
@@ -146,7 +174,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 762.0, 34.0, 833.0, 22.0 ],
-									"presentation_rect" : [ 762.0, 34.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "cat sudoer-password.txt | sudo -S osascript -e \\\"set Volume 3\\\" \\; say block $1 completed \\; cat sudoer-password.txt | sudo -S osascript -e \\\"set Volume 10\\\""
 								}
@@ -160,7 +187,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 385.0, 134.0, 833.0, 22.0 ],
-									"presentation_rect" : [ 385.0, 134.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "cat sudoer-password.txt | sudo -S osascript -e \\\"set Volume 3\\\" \\; say block $1 completed \\; cat sudoer-password.txt | sudo -S osascript -e \\\"set Volume 10\\\""
 								}
@@ -188,7 +214,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 133.666626, 260.0, 833.0, 49.0 ],
-									"presentation_rect" : [ 135.0, 260.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "cd /Users/matt/repos/dualpianoEEG/stimuli/patches-reading-blockfiles/ cat sudoer-password.txt | sudo -S osascript -e \\\"set Volume 3\\\";\rsay block 3 completed;\rcat sudoer-password.txt | sudo -S osascript -e \\\"set Volume 10\\\""
 								}
@@ -202,7 +227,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 317.0, 162.0, 427.0, 22.0 ],
-									"presentation_rect" : [ 377.166626, 157.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "cd /Users/matt/repos/dualpianoEEG/stimuli/patches-reading-blockfiles/;\r"
 								}
@@ -1572,25 +1596,21 @@
 									"patching_rect" : [ -3.0, 768.0, 589.0, 22.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 10.0, 275.0, 589.0, 22.0 ],
-									"style" : "",
-									"text" : "58342 read \"Macintosh HD:/Users/matt/repos/dualpianoEEG/stimuli/block_making/short_test/block0.coll.txt\""
+									"style" : ""
 								}
 
 							}
 , 							{
 								"box" : 								{
 									"id" : "obj-42",
-									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ -3.0, 727.0, 565.0, 22.0 ],
 									"presentation" : 1,
-									"presentation_linecount" : 2,
 									"presentation_rect" : [ 10.0, 234.0, 589.0, 22.0 ],
-									"style" : "",
-									"text" : "1666429 read \"Macintosh HD:/Users/matt/repos/dualpianoEEG/stimuli/block_making/short_test/block0.coll.txt\""
+									"style" : ""
 								}
 
 							}
@@ -2553,17 +2573,16 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-15",
-									"linecount" : 3,
+									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 680.0, 544.0, 253.0, 22.0 ],
 									"presentation" : 1,
-									"presentation_linecount" : 2,
 									"presentation_rect" : [ 10.0, 41.0, 589.0, 22.0 ],
 									"style" : "",
-									"text" : "5 2479830 read \"Macintosh HD:/Users/matt/repos/dualpianoEEG/stimuli/block_making/short_test/block0.coll.txt\""
+									"text" : "0 432 Patch Opened on 1/11/2017 at 15:52:57"
 								}
 
 							}
@@ -3073,7 +3092,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 98.0, 329.0, 233.0, 22.0 ],
 													"style" : "",
-													"text" : "Patch Opened on 1/11/2017 at 15: 7:14"
+													"text" : "Patch Opened on 1/11/2017 at 15:52:57"
 												}
 
 											}
@@ -3550,7 +3569,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 38.5, 105.0, 225.0, 22.0 ],
 									"style" : "",
-									"text" : "Patch Opened on 1/11/2017 at 15: 7:14"
+									"text" : "Patch Opened on 1/11/2017 at 15:52:57"
 								}
 
 							}
@@ -3830,17 +3849,14 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-22",
-									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ -3.0, 683.0, 565.0, 22.0 ],
 									"presentation" : 1,
-									"presentation_linecount" : 2,
 									"presentation_rect" : [ 10.0, 190.0, 589.0, 22.0 ],
-									"style" : "",
-									"text" : "1666429 read \"Macintosh HD:/Users/matt/repos/dualpianoEEG/stimuli/block_making/short_test/block0.coll.txt\""
+									"style" : ""
 								}
 
 							}
@@ -3915,17 +3931,14 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-4",
-									"linecount" : 3,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ -3.0, 645.0, 347.0, 22.0 ],
 									"presentation" : 1,
-									"presentation_linecount" : 2,
 									"presentation_rect" : [ 10.0, 152.0, 589.0, 22.0 ],
-									"style" : "",
-									"text" : "2473257 read \"Macintosh HD:/Users/matt/repos/dualpianoEEG/stimuli/block_making/short_test/block0.coll.txt\""
+									"style" : ""
 								}
 
 							}
@@ -3958,17 +3971,15 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-3",
-									"linecount" : 3,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ -3.0, 605.0, 244.0, 22.0 ],
 									"presentation" : 1,
-									"presentation_linecount" : 2,
 									"presentation_rect" : [ 10.0, 112.0, 589.0, 22.0 ],
 									"style" : "",
-									"text" : "2479830 read \"Macintosh HD:/Users/matt/repos/dualpianoEEG/stimuli/block_making/short_test/block0.coll.txt\""
+									"text" : "432 Patch Opened on 1/11/2017 at 15:52:57"
 								}
 
 							}
@@ -7903,15 +7914,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-102", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-137", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-146", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -7934,6 +7936,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-137", 3 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-35", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-137", 0 ]
 				}
 
 			}
@@ -8330,6 +8341,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-33", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-102", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-35", 0 ]
 				}
 
 			}
