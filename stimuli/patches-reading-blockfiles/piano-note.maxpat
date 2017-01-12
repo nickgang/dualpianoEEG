@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 79.0, 465.0, 622.0 ],
+		"rect" : [ 1093.0, 291.0, 465.0, 622.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,33 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 215.0, 175.0, 129.5, 60.0 ],
+					"presentation_rect" : [ 242.0, 211.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "incoming note-offs used to come through this gate; maybe they should again?"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 12.0, 410.0, 50.0, 22.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"bubble" : 1,
 					"id" : "obj-10",
@@ -347,7 +374,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 131.5, 106.0, 107.0, 22.0 ],
+					"patching_rect" : [ 175.5, 68.0, 107.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -364,13 +391,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-35",
-					"linecount" : 3,
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 171.0, 178.5, 58.0, 47.0 ],
+					"patching_rect" : [ 207.0, 132.0, 98.0, 33.0 ],
 					"style" : "",
-					"text" : "Fix for staccato notes"
+					"text" : "Fix for staccato notes - bad?"
 				}
 
 			}
@@ -381,7 +408,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 131.5, 131.0, 24.0, 24.0 ],
+					"patching_rect" : [ 175.5, 93.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -393,7 +420,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 95.0, 199.0, 57.0, 22.0 ],
+					"patching_rect" : [ 139.0, 161.0, 57.0, 22.0 ],
 					"style" : "",
 					"text" : "pipe 100"
 				}
@@ -406,7 +433,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "int" ],
-					"patching_rect" : [ 131.5, 158.0, 34.0, 22.0 ],
+					"patching_rect" : [ 175.5, 120.0, 34.0, 22.0 ],
 					"style" : "",
 					"text" : "t 1 0"
 				}
@@ -420,7 +447,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 146.5, 246.0, 24.0, 24.0 ],
+					"patching_rect" : [ 190.5, 208.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -432,7 +459,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 146.5, 275.0, 54.0, 22.0 ],
+					"patching_rect" : [ 190.5, 237.0, 54.0, 22.0 ],
 					"style" : "",
 					"text" : "gate 1 1"
 				}
@@ -648,6 +675,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-15", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-16", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -720,7 +756,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-26", 1 ],
+					"destination" : [ "obj-15", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-19", 0 ]
