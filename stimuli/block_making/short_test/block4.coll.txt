@@ -1,7 +1,0 @@
--2, 1 1 piece1.coll.txt 2 999 999 0 0 0 0 233;
--1, 1 1 piece1.coll.txt 2 999 999 0 0 0 0 233;
-1, 2 1 piece1.coll.txt 2 4 1 5 4 -2 2 223;
-2, 2 1 piece1.coll.txt 2 2 1 5 4 -2 2 221;
-3, 2 1 piece1.coll.txt 2 2 1 4 5 2 2 221;
-
-
