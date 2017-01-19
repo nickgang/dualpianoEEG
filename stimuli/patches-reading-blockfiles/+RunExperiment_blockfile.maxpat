@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 47.0, 110.0, 1488.0, 914.0 ],
+		"rect" : [ 47.0, 110.0, 1024.0, 677.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -147,32 +147,6 @@
 					"patching_rect" : [ 1156.666748, 660.291565, 115.0, 22.0 ],
 					"style" : "",
 					"text" : "value block-number"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bubble" : 1,
-					"id" : "obj-135",
-					"linecount" : 7,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1678.5, 282.0, 179.0, 104.0 ],
-					"style" : "",
-					"text" : "Sending the very first trigger message (via serial) takes many ms (initializing the serial communications?) so workaround: send trigger code 0 when we first load the folder of block files"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-82",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1563.0, 328.0, 107.0, 22.0 ],
-					"style" : "",
-					"text" : "s trigger-message"
 				}
 
 			}
@@ -1314,7 +1288,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 49.0, 79.0, 654.0, 600.0 ],
+						"rect" : [ 49.0, 79.0, 701.0, 612.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -1640,12 +1614,11 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ -3.0, 768.0, 589.0, 22.0 ],
+									"patching_rect" : [ -3.0, 768.0, 65.0, 49.0 ],
 									"presentation" : 1,
-									"presentation_linecount" : 3,
 									"presentation_rect" : [ 10.0, 275.0, 589.0, 22.0 ],
 									"style" : "",
-									"text" : "7565 write \"Macintosh HD:/Users/neuromusic/Experiments/dualpianoEEG/stimuli/block_making/short_test_19012017//DPE-log-hjofaymg.coll.txt\""
+									"text" : "43480 trigger 233"
 								}
 
 							}
@@ -1657,12 +1630,11 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ -3.0, 727.0, 575.0, 22.0 ],
+									"patching_rect" : [ -3.0, 727.0, 77.0, 49.0 ],
 									"presentation" : 1,
-									"presentation_linecount" : 3,
 									"presentation_rect" : [ 10.0, 234.0, 589.0, 22.0 ],
 									"style" : "",
-									"text" : "7568 read \"Macintosh HD:/Users/neuromusic/Experiments/dualpianoEEG/stimuli/block_making/short_test_19012017/block1.coll.txt\""
+									"text" : "43480 metronome 2"
 								}
 
 							}
@@ -2137,7 +2109,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 1266.75, 60.0, 64.0, 22.0 ],
 									"style" : "",
-									"text" : "1 64"
+									"text" : "1 69"
 								}
 
 							}
@@ -2163,7 +2135,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 951.5, 60.0, 64.0, 22.0 ],
 									"style" : "",
-									"text" : "1 64 50"
+									"text" : "1 69 90"
 								}
 
 							}
@@ -2317,9 +2289,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1116.25, 464.0, 352.0, 22.0 ],
+									"patching_rect" : [ 1116.25, 464.0, 352.0, 49.0 ],
 									"style" : "",
-									"text" : "write \"Macintosh HD:/Users/neuromusic/Experiments/dualpianoEEG/stimuli/block_making/short_test_19012017//DPE-log-hjofaymg.coll.txt\""
+									"text" : "write \"Macintosh HD:/Users/neuromusic/Experiments/dualpianoEEG/stimuli/block_making/short_test_19012017//DPE-log-gkcokrel.coll.txt\""
 								}
 
 							}
@@ -2414,7 +2386,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 86.0, 278.0, 79.0, 22.0 ],
 													"style" : "",
-													"text" : "hjofaymg"
+													"text" : "gkcokrel"
 												}
 
 											}
@@ -2606,7 +2578,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 1177.0, 390.0, 71.0, 22.0 ],
 									"style" : "",
-									"text" : "hjofaymg"
+									"text" : "gkcokrel"
 								}
 
 							}
@@ -2633,7 +2605,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 10.0, 41.0, 589.0, 22.0 ],
 									"style" : "",
-									"text" : "6 12565 trigger 1"
+									"text" : "205 43980 metronome 3"
 								}
 
 							}
@@ -3143,7 +3115,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 98.0, 329.0, 233.0, 22.0 ],
 													"style" : "",
-													"text" : "Patch Opened on 1/19/2017 at 12:26:33"
+													"text" : "Patch Opened on 1/19/2017 at 13:28:21"
 												}
 
 											}
@@ -3620,7 +3592,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 38.5, 105.0, 225.0, 22.0 ],
 									"style" : "",
-									"text" : "Patch Opened on 1/19/2017 at 12:26:33"
+									"text" : "Patch Opened on 1/19/2017 at 13:28:21"
 								}
 
 							}
@@ -3905,12 +3877,11 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ -3.0, 683.0, 575.0, 22.0 ],
+									"patching_rect" : [ -3.0, 683.0, 77.0, 49.0 ],
 									"presentation" : 1,
-									"presentation_linecount" : 3,
 									"presentation_rect" : [ 10.0, 190.0, 589.0, 22.0 ],
 									"style" : "",
-									"text" : "7568 read \"Macintosh HD:/Users/neuromusic/Experiments/dualpianoEEG/stimuli/block_making/short_test_19012017/block1.coll.txt\""
+									"text" : "43480 metronome 2"
 								}
 
 							}
@@ -3993,7 +3964,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 10.0, 152.0, 589.0, 22.0 ],
 									"style" : "",
-									"text" : "7568 trial-conditions 1 1 piece2.coll.txt 1 999 999 0 0 0 0 233"
+									"text" : "43980 trigger 233"
 								}
 
 							}
@@ -4034,7 +4005,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 10.0, 112.0, 589.0, 22.0 ],
 									"style" : "",
-									"text" : "12565 trigger 1"
+									"text" : "43980 metronome 3"
 								}
 
 							}
@@ -5253,7 +5224,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-20",
-									"items" : [ "block1.coll.txt", ",", "block10.coll.txt", ",", "block11.coll.txt", ",", "block12.coll.txt", ",", "block2.coll.txt", ",", "block3.coll.txt", ",", "block4.coll.txt", ",", "block5.coll.txt", ",", "block6.coll.txt", ",", "block7.coll.txt", ",", "block8.coll.txt", ",", "block9.coll.txt", ",", "DPE-log-agowwlsw.coll.txt", ",", "DPE-log-aqbfjemy.coll.txt", ",", "DPE-log-buyegnxv.coll.txt", ",", "DPE-log-mznihonv.coll.txt", ",", "DPE-log-nerqfkkj.coll.txt", ",", "DPE-log-vdsjrbjm.coll.txt", ",", "DPE-log-wborcxwc.coll.txt", ",", "DPE-log-wekrzifn.coll.txt" ],
+									"items" : [ "#triggers#", ",", ".#triggers", ",", "block1.coll.txt", ",", "block10.coll.txt", ",", "block11.coll.txt", ",", "block12.coll.txt", ",", "block2.coll.txt", ",", "block3.coll.txt", ",", "block4.coll.txt", ",", "block5.coll.txt", ",", "block6.coll.txt", ",", "block7.coll.txt", ",", "block8.coll.txt", ",", "block9.coll.txt", ",", "DPE-log-agowwlsw.coll.txt", ",", "DPE-log-aqbfjemy.coll.txt", ",", "DPE-log-buyegnxv.coll.txt", ",", "DPE-log-hjofaymg.coll.txt", ",", "DPE-log-kcybrced.coll.txt", ",", "DPE-log-mznihonv.coll.txt", ",", "DPE-log-mzydokfd.coll.txt", ",", "DPE-log-nerqfkkj.coll.txt", ",", "DPE-log-vdsjrbjm.coll.txt", ",", "DPE-log-vvkvfesk.coll.txt", ",", "DPE-log-wborcxwc.coll.txt", ",", "DPE-log-wekrzifn.coll.txt", ",", "DPE-log-xiuxblrt.coll.txt", ",", "triggers" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -5847,7 +5818,7 @@
 					"fontsize" : 24.0,
 					"id" : "obj-148",
 					"maxclass" : "number",
-					"maximum" : 20,
+					"maximum" : 28,
 					"minimum" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 2,
@@ -6171,7 +6142,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 386.5, 258.0, 64.0, 22.0 ],
 					"style" : "",
-					"text" : "1 64"
+					"text" : "1 69"
 				}
 
 			}
@@ -6197,7 +6168,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 231.0, 258.0, 64.0, 22.0 ],
 					"style" : "",
-					"text" : "1 64 50"
+					"text" : "1 69 90"
 				}
 
 			}
@@ -7554,7 +7525,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 131.25, 266.165283, 117.0, 35.0 ],
 					"style" : "",
-					"text" : "BB-TT"
+					"text" : "01_02"
 				}
 
 			}
