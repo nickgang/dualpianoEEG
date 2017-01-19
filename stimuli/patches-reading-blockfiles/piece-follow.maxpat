@@ -142,7 +142,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 59.0, 103.0, 640.0, 480.0 ],
+						"rect" : [ 59.0, 103.0, 632.0, 339.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -170,6 +170,19 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-2",
+									"linecount" : 4,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 377.0, 109.0, 158.0, 60.0 ],
+									"style" : "",
+									"text" : "Connect this to [coll thistrial] to bring back the crappy pre-logfile way of saving trial performances in a coll."
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-138",
 									"maxclass" : "newobj",
@@ -1052,7 +1065,7 @@
  ]
 									}
 ,
-									"patching_rect" : [ 144.25, 126.0, 68.0, 22.0 ],
+									"patching_rect" : [ 380.5, 71.0, 68.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -1156,7 +1169,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 162.5, 40.0, 30.0, 30.0 ],
+									"patching_rect" : [ 380.5, 35.0, 30.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -1195,15 +1208,6 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-155", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-63", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-29", 0 ]
 								}
 
 							}
